@@ -1,0 +1,19 @@
+From the meanderings of a pond’s edge to the branching of trees and the intricate forms of snowflakes, shapes in
+nature are often more complicated than geometrical shapes such as circles, spheres, angles, cones, rectangles, and
+cubes. Benoit Mandelbrot, a mathematics professor at Yale University and an IBM fellow, was the first person to recognize how amazingly common this type of structure is in nature. In 1975, he coined the term fractal for shapes that
+repeat themselves within an object. The word fractal comes from the Latin term for “broken.”
+In 1904, long before Mandelbrot conceived of fractals, Swedish mathematician Helge von Koch created and intriguing but puzzling curve. It zigzags in such an odd pattern that it seems impossible to start at one point and follow the
+curve to reach another point.
+Like many figures now known to be fractals, Koch’s curve is easy to generate by starting with a simple figure and
+turning it into an increasingly crinkly form.
+What to Do
+Draw an equilateral triangle with each side measuring 9 centimeters. (Remember, each angle of an equilateral triangle measures 60.)
+Divide each 9-centimeter side into three parts, each measuring three centimeters. At the middle of each side, add
+an equilateral triangle one third the size of the original, facing outward. Because each side of the original triangle is 9
+centimeters, the new triangles will have 3-centimeter sides. When you examine the outer edge of your diagram you
+should see a six-pointed star made up of 12 line segments.
+At the middle of each segment of the star, add a triangle one ninth the side of the original triangle. The new triangles will have sides 1 centimeter in length so divide each 3-centimeter segment into thirds, and use the middle third
+to form a new triangle.
+Going one step farther, you create a shape that begins to resemble a snowflake. If you were to continue the process
+by endlessly adding smaller and smaller triangles to every new side, you would produce the Koch snowflake curve.
+Between any two points, the snowflake would have an infinite number of zigzags. 
