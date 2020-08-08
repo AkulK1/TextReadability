@@ -1,0 +1,12 @@
+Though animals come in many shapes and sizes, there are definite limits on the possible size of an animal of a particular shape. King Kong simply could not exist, for instance. As Labarbara has calculated, if you were to take a gorilla
+and blow it up to the size of King Kong, its weight would increase by more than 14,000 times but the size of its bones
+would increase by only a few hundred times. Kong’s bones would simply not be able to support his body. He would
+collapse under his own weight!
+And the same is true for all those giant locusts, giant ants, and the like. Imagining giants—giant people, giant animals,
+or giant insects—might prove the basis for an entertaining story, but the rules of science say that giants could not
+happen. You can’t have a giant anything. If you want to change size, you have to change to overall design.
+The reason is quite simple. Suppose you double the height (or length) of any creature, say, a gorilla. The weight will
+increase 8 times (i.e., 2 cubed), but the cross section of the bones will increase only fourfold (2 squared). Or, if you increase the height of the gorilla 10 times, the weight will increase, 1,000 times (10 cubed), but the cross-sectional area
+of the bones will increase only 100 times (10 squared). In general, when you increase the height by a certain factor,
+the weight will increase by the cube of that factor but the cross section of the bone will increase only by the square
+of that factor. 

@@ -1,0 +1,26 @@
+Whenever you search for more than one keyword at a time, a search engine has a default strategy for handling and
+combining those keywords. Can those words appear individually in a page, or do they have to be right next to each
+other? Will the engine search for both keywords or for either keyword?
+Phrase Searches
+Google defaults to searching for occurrences of your specified keywords anywhere on the page, whether side-by-side
+or scattered throughout. To return results of pages containing specifically ordered words, enclose them in quotes,
+turning your keyword search into a phrase search, to use Google’s terminology.
+On entering a search for the keywords:
+to be or not to be
+Google will find matches where the keywords appear anywhere on the page. If you want Google to find you matches
+where the keywords appear together as a phrase, surround them with quotes, like this:
+“to be or not to be”
+Google will return matches only where those words appear together (not to mention explicitly including stop words
+such as “to” and “or” […]).
+Phrase searches are also useful when you want to find a phrase but aren’t sure of the exact wording. This is accomplished in combination with wildcards […])
+Basic Boolean
+Whether an engine searches for all keywords or any of them depends on what is called its Boolean default. Search
+engines can default to Boolean AND (searching for all keywords) or Boolean OR (searching for any keywords). Of
+course, even if a search engine defaults to searching for all keywords, you can usually give it a special command to
+instruct it to search for any keyword. Lacking specific instructions, the engine falls back on its default setting.
+Google’s Boolean default is AND, which means that, if you enter query words without modifiers, Google will search or
+all of your query words. For example if you search for:
+snowblower Honda “Green Bay”
+Google will search for all the words. If you prefer to specify that any one word or phrase is acceptable, put an OR
+between each:
+snowblower OR Honda OR “Green Bay”.

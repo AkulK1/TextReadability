@@ -1,0 +1,15 @@
+The astrolabe (in Greek, “star reckoner”) is a manual computing and observation device with myriad uses in astronomy, time keeping, surveying, navigation, and astrology. The principles behind the most common variety, the
+planispheric astrolabe, were first laid down in antiquity by the Greeks, who pioneered the notion of projecting threedimensional images on flat surfaces. The device reached a high degree of refinement in the medieval Islamic world,
+where it was invaluable for determining prayer times and the direction of Mecca from anywhere in the Muslim world.
+The astrolabe was introduced to Europe by the eleventh century, where is saw wide use until the Renaissance.
+The fundamental innovation underlying the astrolabe was the projection of an image of the sky (usually the northern
+hemisphere, centered on Polaris) on a plane corresponding to the earth’s equator. This image, which was typically
+etched on a brass plate, was inserted into a round frame (the mater) whose circumference was marked in degrees
+or hours. Over the plate was fitted a lattice-work disk, the rete, with pointers to indicate the positions of major stars.
+A metal hand, similar to those on a clock, was hinged with the rete at the center of the instrument, as was a sighting
+vane (the alidade) for determining the angular height of the stars or other features, such as mountaintops. The entire
+device was usually not more than six to eight inches in diameter and half an inch thick.
+One common use of the astrolabe was to determine the time of day, even after dark.
+Other uses included determination of sunrise, and sunset times for any date past or future, predicting eclipses, finding
+important stars or constellations, and measuring the height of earthbound objects and the circumference of the earth.
+For this and other reasons, the astrolabe has been called “the world’s first personal computer.

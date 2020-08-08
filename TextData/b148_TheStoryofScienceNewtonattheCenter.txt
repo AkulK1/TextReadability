@@ -1,0 +1,9 @@
+Probability, a branch of mathematics, began with gambling. Pierre de Fermat (of the famous Last Theorem), Blaise
+Pascal, and the Bernoullis wanted to know the mathematical odds of winning at the card table. Probability didn’t tell
+them for certain that they would or wouldn’t draw an ace; it just told them how likely it was. A deck of 52 cards has 4
+aces, so the odds of the first drawn card being an ace are 4 in 52 (or 1in 13).
+If 20 cards have been played and not an ace among them, those odds improve to 4 in 32 (1in 8). Always keep in mind
+that probability is about the likelihood of outcomes, not the certainty. If there are only 4 cards left in the deck, and no
+aces have been played, you can predict with certainty that the next card will be an ace—but you’re not using probability; you’re using fact. Probability is central to the physics that deals with the complex world inside atoms. We can’t
+determine the action of an individual particle, but with a large number of atoms, predictions based on probability
+become very accurate.

@@ -1,0 +1,12 @@
+Automakers are offering electronic stability control on more and more passenger vehicles to help prevent them from
+sliding, veering off the road, or even rolling over. The technology is a product of an ongoing evolution stemming from
+antilock brakes.
+When a driver jams the brake pedal too hard, anti-lock hydraulic valves subtract brake pressure at a given wheel so
+the wheel does not lock up. As these systems proliferated in the 1990s, manufacturers tacked on traction-control
+valves that help a spinning drive wheel grip the road.
+For stability control, engineers mounted more hydraulics that can apply pressure to any wheel, even if the driver is
+not braking. When sensors indicate the car is sliding forward instead of turning or is turning too sharply, the actuators
+momentarily brake certain wheels to correct the trajectory. “Going to electronic stability control was a big step,” says
+Scott Dahl, director of chassis-control strategy at supplier Robert Bosch in Farmington Hills, Michigan. “We had to
+add sensors that can determine what the driver intends to do and compare that with what the car is actually doing.”
+Most systems also petition the engine-control computer to reduce engine torque to dampen wayward movement.

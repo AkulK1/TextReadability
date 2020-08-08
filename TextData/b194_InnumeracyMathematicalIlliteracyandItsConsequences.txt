@@ -1,0 +1,223 @@
+Introduction
+"Math was always my worst subject."
+"A million dollars, a billion, a trillion, whatever. It doesn't matter as long as we do something
+about the problem."
+"Jerry and I aren't going to Europe, what with all the terrorists."
+Innumeracy, an inability to deal comfortably with the fundamental notions of number and
+chance, plagues far too many otherwise knowledgeable citizens. The same people who cringe
+when words such as "imply" and "infer" are confused react without a trace of embarrassment to
+even the most egregious of numerical solecisms. I remember once listening to someone at a
+party drone on about the difference between "continually" and "continuously." Later that
+evening we were watching the news, and the TV weathercaster announced that there was a
+50 percent chance of rain for Saturday and a 50 percent chance for Sunday, and concluded that
+there was therefore a 100 percent chance of rain that weekend. The remark went right by the
+self-styled grammarian, and even after I explained the mistake to him, he wasn't nearly as
+indignant as he would have been had the weathercaster left a dangling participle. In fact, unlike
+other failings which are hidden, mathematical illiteracy is often flaunted: "I can't even balance
+my checkbook." "I'm a people person, not a numbers person." Or "I always hated math."
+Part of the reason for this perverse pride in mathematical ignorance is that its consequences
+are not usually as obvious as are those of other weaknesses. Because of this, and because I
+firmly believe that people respond better to illustrative particulars than they do to general
+exposition, this book will examine many real-world examples of innumeracy— stock scams,
+choice of a spouse, newspaper psychics, diet and medical claims, the risk of terrorism, astrology,
+sports records, elections, sex discrimination, UFOs, insurance and law, psychoanalysis,
+parapsychology, lotteries, and drug testing among them.
+I've tried not to pontificate excessively or to make too many sweeping generalizations about
+popular culture or our educational system (a la Allan Bloom), but I have made a number of
+general remarks and observations that I hope are supported by the examples. In my opinion,
+some of the blocks to dealing comfortably with numbers and probabilities are due to quite natural
+psychological responses to uncertainty, to coincidence, or to how a problem is framed. Others can
+be attributed to anxiety, or to romantic misconceptions about the nature and importance of
+mathematics.
+One rarely discussed consequence of innumeracy is its link with belief in pseudoscience, and
+the interrelationship between the two is here explored. In a society where genetic engineering,
+laser technology, and microchip circuits are daily adding to our understanding of the world, it's
+especially sad that a significant portion of our adult population still believes in Tarot cards,
+channeling mediums, and crystal power.
+Even more ominous is the gap between scientists' assessments of various risks and the
+popular perceptions of those risks, a gap that threatens eventually to lead either to unfounded and
+crippling anxieties or to impossible and economically paralyzing demands for risk-free guarantees.
+Politicians are seldom a help in this regard since they deal with public opinion and are therefore
+loath to clarify the likely hazards and trade-offs associated with almost any policy.
+Because the book is largely concerned with various inadequacies—a lack of numerical
+perspective, an exaggerated appreciation for meaningless coincidence, a credulous acceptance of
+pseudosciences, an inability to recognize social trade-offs, and so on— much of the writing has a
+debunking flavor to it. Nevertheless, I hope I've avoided the overly earnest and scolding tone
+common to many such endeavors.
+The approach throughout is gently mathematical, using some elementary ideas from
+probability and statistics which, though deep in a sense, will require nothing more than
+common sense and arithmetic. Some of the notions presented are rarely discussed in terms
+accessible to a wide audience and are the kind of thing that my students, for example, often
+enjoy but usually respond to with: "Will we need to know that for the quiz?" There won't be a
+quiz, so they can be enjoyed freely, and the occasional difficult passage can be ignored with
+impunity.
+One contention of the book is that innumerate people characteristically have a strong
+tendency to personalize—to be misled by their own experiences, or by the media's focus on
+individuals and drama. From this it doesn't necessarily follow that mathematicians are
+impersonal or formal. I'm not, and the book isn't either. My goal in writing it has been to
+appeal to the educated but innumerate—at least to those whose fear of mathematics is not so
+great that (num)(ber) is automatically read as (numb)(er). The book will have been well worth
+the effort if it can begin to clarify just how much innumeracy pervades both our private and our
+public lives.
+1Examples and Principles
+Two aristocrats are out horseback riding and one challenges the other to see which can come
+up with the larger number. The second agrees to the contest, concentrates for a few minutes, and
+proudly announces, "Three." The proposer of the game is quiet for half an hour, then finally
+shrugs and concedes defeat.
+A summer visitor enters a hardware store in Maine and buys a large number of expensive
+items. The skeptical, reticent owner doesn't say a word as he adds the bill on the cash register.
+When he's finished, he points to the total and watches as the man counts out $1,528.47. He then
+methodically recounts the money once, twice, three times. The visitor finally asks if he's given
+him the right amount of money, to which the Mainer grudgingly responds, "Just barely."
+The mathematician G. H. Hardy was visiting his protege, the Indian mathematician
+Ramanujan, in the hospital. To make small talk, he remarked that 1729, the number of the taxi
+which had brought him, was a rather dull number, to which Ramanujan replied immediately, "No,
+Hardy! No, Hardy! It is a very interesting number. It is the smallest number expressible as the sum
+of two cubes in two different ways."
+BIG NUMBERS, SMALL PROBABILITIES
+People's facility with numbers ranges from the aristocratic to the Ramanujanian, but it's an
+unfortunate fact that most are on the aristocrats' side of our old Mainer. I'm always amazed and
+depressed when I encounter students who have no idea what the population of the United States
+is, or the approximate distance from coast to coast, or roughly what percentage of the world is
+Chinese. I sometimes ask them as an exercise to estimate how fast human hair grows in miles per
+hour, or approximately how many people die on earth each day, or how many cigarettes are
+smoked annually in this country. Despite some initial reluctance (one student maintained that
+hair just doesn't grow in miles per hour), they often improve their feeling for numbers dramatically.
+Without some appreciation of common large numbers, it's impossible to react with the proper
+skepticism to terrifying reports that more than a million American kids are kidnapped each year,
+or with the proper sobriety to a warhead carrying a megaton of explosive power—the equivalent of a
+million tons (or two billion pounds) of TNT.
+And if you don't have some feeling for probabilities, automobile accidents might seem a
+relatively minor problem of local travel, whereas being killed by terrorists might seem to be a
+major risk when going overseas. As often observed, however, the 45,000 people killed annually on
+American roads are approximately equal in number to all American dead in the Vietnam War. On
+the other hand, the seventeen Americans killed by terrorists in 1985 were among the 28 million of
+us who traveled abroad that year—that's one chance in 1.6 million of becoming a victim. Compare
+that with these annual rates in the United States: one chance in 68,000 of choking to death; one
+chance in 75,000 of dying in a bicycle crash; one chance in 20,000 of drowning; and one chance in
+only 5,300 of dying in a car crash.
+Confronted with these large numbers and with the correspondingly small probabilities
+associated with them, the innumerate will inevitably respond with the non sequitur, "Yes, but
+what if you're that one," and then nod knowingly, as if they've demolished your argument with
+their penetrating insight. This tendency to personalize is, as we'll see, a characteristic of many
+people who suffer from innumeracy. Equally typical is a tendency to equate the risk from some
+obscure and exotic malady with the chances of suffering from heart and circulatory disease,
+from which about 12,000 Americans die each week.
+There's a joke I like that's marginally relevant. An old married couple in their nineties
+contact a divorce lawyer, who pleads with them to stay together. "Why get divorced now after
+seventy years of marriage? Why not last it out? Why now?" The little old lady finally pipes up
+in a creaky voice: "We wanted to wait until the children were dead."
+A feeling for what quantities or time spans are appropriate in various contexts is essential
+to getting the joke. Slipping between millions and billions or between billions and trillions
+should in this sense be equally funny, but it isn't, because we too often lack an intuitive feeling
+for these numbers. Many educated people have little grasp for these numbers and are even
+unaware that a million is 1,000,000; a billion is 1,000,000,000; and a trillion,
+1,000,000,000,000.
+A recent study by Drs. Kronlund and Phillips of the University of Washington showed
+that most doctors' assessments of the risks of various operations, procedures, and medications
+(even in their own specialties) were way off the mark, often by several orders of magnitude. I
+once had a conversation with a doctor who, within approximately twenty minutes, stated that
+a certain procedure he was contemplating (a) had a one-chance-in-a-million risk associated with
+it; (6) was 99 percent safe; and (c) usually went quite well. Given the fact that so many doctors
+seem to believe that there must be at least eleven people in the waiting room if they're to avoid
+being idle, I'm not surprised at this new evidence of their innumeracy.
+For very big or very small numbers, so-called scientific notation is often clearer and easier
+to work with than standard notation and I'll therefore sometimes use it. There's nothing very
+tricky about it.
+It is not exactly commonplace, but numbers like ten thousand, one
+million, and a trillion are. Examples of collections each having a million elements, a billion
+elements, and so on, should be at hand for quick comparison. For example, knowing that it
+takes only about eleven and a half days for a million seconds to tick away, whereas almost
+thirty-two years are required for a billion seconds to pass, gives one a better grasp of the
+relative magnitudes of these two common numbers. What about trillions? Modern Homo sapiens
+is probably less than 10 trillion seconds old; and the subsequent complete disappearance of the
+Neanderthal version of early Homo sapiens occurred only a trillion or so seconds ago.
+Agriculture's been here for approximately 300 billion seconds (ten thousand years), writing for
+about 150 billion seconds, and rock music has been around for only about one billion seconds.
+More common sources of such large numbers are the trillion-dollar federal budget and our
+burgeoning weapons stockpiles. Given a U.S. population of about 250 million people, every
+billion dollars in the federal budget translates into $4 for every American. Thus, an annual
+Defense Department budget of almost a third of a trillion dollars amounts to approximately
+$5,000 per year for a family of four. What have all these expenditures (ours and theirs) bought
+over the years? The TNT equivalent of all the nuclear weapons in the world amounts to 25,000
+megatons, or 50 trillion pounds, or 10,000 pounds for every man, woman, and child on earth.
+(One pound in a car, incidentally, demolishes the car and kills everyone in it.) The nuclear
+weapons on board just one of our Trident submarines contain eight times the firepower
+expended in all of World War II.
+To cite some happier illustrations for smaller numbers, the standard I use for the lowly
+thousand is a section of Veterans Stadium in Philadelphia which I know contains 1,008 seats
+and which is easy to picture. The north wall of a garage near my house contains almost exactly
+ten thousand narrow bricks. For one hundred thousand, I generally think of the number of
+words in a good-sized novel.
+To get a handle on big numbers, it's useful to come up with one or two collections such as
+the above corresponding to each power of ten, up to maybe 13 or 14. The more personal you can
+make these collections, the better. It's also good practice to estimate whatever quantity piques
+your curiosity: How many pizzas are consumed each year in the United States? How many
+words have you spoken in your life? How many different people's names appear in The New
+York Times each year? How many watermelons would fit inside the U.S. Capitol building?
+Compute roughly how many acts of sexual intercourse occur each day in the world. Does the
+number vary much from day to day? Estimate the number of potential human beings, given all the
+human ova and sperm there have ever been, and you find that the ones who make it to
+actuality are ipso facto incredibly, improbably fortunate.
+These estimations are generally quite easy and often suggestive. For example, what is the
+volume of all the human blood in the world? The average adult male has about six quarts of
+blood, adult women slightly less, children considerably less. Thus, if we estimate that on
+average each of the approximately 5 billion people in the world has about one gallon of blood,
+we get about 5 billion gallons of blood in the world. 
+Central Park in New York has an area of 840 acres, or about 1.3 square miles. If walls
+were built about it, all the blood in the world would cover the park to a depth of something under 20
+feet. The Dead Sea on the Israel-Jordan border has an area of 390 square miles. If all the world's
+blood were put into the Dead Sea, it would add only three-fourths of an inch to its depth. Even
+without any particular context, these figures are surprising; there isn't that much blood in the
+world! Compare this with the volume of all the grass, or of all the leaves, or of all the algae in the
+world, and man's marginal status among life forms, at least volume-wise, is vividly apparent.
+Switching dimensions for a moment, consider the ratio of the speed of the supersonic
+Concorde, which travels about 2,000 miles per hour, to that of a snail, which moves 25 feet per
+hour, a pace equivalent to about .005 miles per hour. The Concorde's velocity is 400,000 times that
+of the snail. An even more impressive ratio is that between the speed with which an average
+computer adds ten-digit numbers and the rate at which human calculators do so. Computers perform
+this task more than a million times faster than we do with our snail-like scratchings, and for
+supercomputers the ratio is over a billion to one.
+One last earthly calculation that a scientific consultant from M.I.T. uses to weed out prospective
+employees during job interviews: How long, he asks, would it take dump trucks to cart away an
+isolated mountain, say Japan's Mount Fuji, to ground level? Assume trucks come every fifteen
+minutes, twenty-four hours a day, are instantaneously filled with mountain dirt and rock, and
+leave without getting in each other's way. The answer's a little surprising and will be given later.
+GARGANTUAN NUMBERS AND THE FORBES 400
+A concern with scale has been a mainstay of world literature from the Bible to Swift's
+Lilliputians, from Paul Bunyan to Rabelais' Gargantua. Yet it's always struck me how
+inconsistent these various authors have been in their use of large numbers.
+The infant Gargantua (whence "gargantuan") is said to have needed 17,913 cows to supply him
+with milk. As a young student he traveled to Paris on a mare that was as large as six elephants,
+and hung the bells of Notre Dame on the mare's neck as jingles. Returning home, he was attacked
+by cannon fire from a castle, and combed the cannonballs from his hair with a 900-foot-long rake.
+For a salad he cut lettuces as large as walnut trees, and devoured half a dozen pilgrims who'd
+hidden among the trees. Can you determine the internal inconsistencies of this story?
+The book of Genesis says of the Flood that ". . . all the high hills that were under the whole
+heaven were covered ..." Taken literally, this seems to indicate that there were 10,000 to 20,000
+feet of water on the surface of the earth, equivalent to more than half a billion cubic miles of liquid!
+Since, according to biblical accounts, it rained for forty days and forty nights, or for only 960
+hours, the rain must have fallen at a rate of at least fifteen feet per hour, certainly enough to sink
+any aircraft carrier, much less an ark with thousands of animals on board.
+Determining internal inconsistencies such as these is one of the minor pleasures of numeracy.
+The point, however, is not that one should be perpetually analyzing numbers for their consistency
+and plausibility, but that, when necessary, information can be gleaned from the barest numerical
+facts, and claims can often be refuted on the basis of these raw numbers alone. If people were
+more capable of estimation and simple calculation, many obvious inferences would be drawn (or
+not), and fewer ridiculous notions would be entertained.
+Before returning to Rabelais, let's consider two hanging wires of equal cross section. (This
+latter sentence, I'm sure, has never before appeared in print.) The forces on the wires are
+proportional to their masses, which are proportional to their lengths. Since the areas of the
+cross sections of the supporting wires are equal, the stresses in the wire, force divided by
+cross-sectional area, vary as the lengths of the wires. A wire ten times as long as another will
+have ten times the stress of the shorter one. Similar arguments show that, of two geometrically
+similar bridges of the same material, the larger one is necessarily the weaker of the two.
+Likewise, a six-foot man cannot be scaled up to thirty feet, Rabelais notwithstanding.
+
+There is a fundamental property of numbers named after the Greek mathematician
+Archimedes which states that any number, no matter how huge, can be exceeded by adding
+together sufficiently many of any smaller number, no matter how tiny. Though obvious in
+principle, the consequences are sometimes resisted, as they were by the student of mine who
+maintained that human hair just didn't grow in miles per hour. Unfortunately, the
+nanoseconds used up in a simple computer operation do add up to lengthy bottlenecks on
+intractable problems, many of which would require millennia to solve in general.

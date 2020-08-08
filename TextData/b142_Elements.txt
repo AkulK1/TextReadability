@@ -1,0 +1,63 @@
+A point is that of which there is no part.
+And a line is a length without breadth.
+And the extremities of a line are points.
+A straight-line is whatever lies evenly with points upon itself.
+And a surface is that which has length and breadth alone.
+And the extremities of a surface are lines.
+A plane surface is whatever lies evenly with straight-lines upon itself.
+And a plane angle is the inclination of the lines, when two lines in a plane meet one another, and are not laid
+down straight-on with respect to one another.
+And when the lines containing the angle are straight then the angle is called rectilinear.
+And when a straight-line stood upon (another) straight-line makes adjacent angles (which are) equal to one another, each of the equal angles is a right-angle, and the former straight-line is called perpendicular to that upon
+which it stands.
+An obtuse angle is greater than a right-angle.
+And an acute angle is less than a right-angle.
+A boundary is that which is the extremity of something.
+A figure is that which is contained by some boundary or boundaries.
+A circle is a plane figure contained by a single line [which is called a circumference], (such that) all of the
+straight-lines radiating towards [the circumference] from a single point lying inside the figure are equal to one
+another.
+And the point is called the center of the circle.
+And a diameter of the circle is any straight-line, being drawn through the center, which is brought to an end in
+each direction by the circumference of the circle. And any such (straight-line) cuts the circle in half.
+And a semi-circle is the figure contained by the diameter and the circumference it cuts off. And the center of the
+semi-circle is the same (point) as the (center of) the circle.
+Rectilinear figures are those figures contained by straight-lines: trilateral figures being contained by three
+straight-lines, quadrilateral by four, and multilateral by more than four.
+And of the trilateral figures: an equilateral triangle is that having three equal sides, an isosceles (triangle) that
+having only two equal sides, and a scalene (triangle) that having three unequal sides.
+And further of the trilateral figures: a right-angled triangle is that having a right-angle, an obtuse-angled (triangle) that having an obtuse angle, and an acute-angled (triangle) that having three acute angles.
+And of the quadrilateral figures: a square is that which is right-angled and equilateral, a rectangle that which is
+right-angled but not equilateral, a rhombus that which is equilateral but not right-angled, and a rhomboid that
+having opposite sides and angles equal to one another which is neither right-angled nor equilateral. And let
+quadrilateral figures besides these be called trapezia.
+Parallel lines are straight-lines which, being in the same plane, and being produced to infinity in each direction,
+meet with one another in neither (of these directions).
+Postulates
+Let it have been postulated to draw a straight-line from any point to any point.
+And to produce a finite straight-line continuously in a straight-line.
+And to draw a circle with any center and radius.
+And that all right-angles are equal to one another.
+And that if a straight-line falling across two (other) straight-lines makes internal angles on the same side (of
+itself) less than two right-angles, being produced to infinity, the two (other) straight-lines meet on that side (of
+the original straight-line) that the (internal angles) are less than two right-angles (and do not meet on the other
+side).
+Common Notions
+Things equal to the same thing are also equal to one another.
+And if equal things are added to equal things then the wholes are equal.
+And if equal things are subtracted from equal things then the remainders are equal.
+And things coinciding with one another are equal to one another.
+And the whole [is] greater than the part.
+Proposition 1
+To construct an equilateral triangle on a given finite straight-line.
+Let AB be the given finite straight-line.
+So it is required to construct an equilateral triangle on the straight-line AB.
+Let the circle BCD with center A and radius AB have been drawn [Post. 3], and again let the circle ACE with center
+B and radius BA have been drawn [Post. 3]. And let the straight-lines CA and CB have been joined from the point C,
+where the circles cut one another, to the points A and B (respectively) [Post. 1].
+And since the point A is the center of the circle CDB, AC is equal to AB [Def. 1.15]. Again, since the point B is the
+center of the circle CAE, BC is equal to BA [Def. 1.15]. But CA was also shown to be equal to AB. Thus, CA and CB are
+each equal to AB. But things equal to the same thing are also equal to one another [C.N.1]. Thus, CA is also equal to
+CB. Thus, the three (straight-lines) CA, AB, and BC are equal to one another.
+Thus, the triangle ABC is equilateral, and has been constructed on the given finite straight-line AB. (Which is) the very
+thing it was required to do.
