@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Aug  8 14:43:49 2020
+
+@author: kesar
+"""
+
+
 import pandas as pd
 
 df = pd.read_csv( "BookDataForMLTextComplexityProject.csv" )
@@ -22,4 +30,6 @@ def get_nlp( str ):
 
 
 df['docs'] = df['text'].apply( get_nlp )
-df.to_csv( "BookDataForMLTextComplexityProject.csv" )
+df.to_csv( "DataWithTexts.csv" )
+# for doc in df['docs']:
+#     print( len(list(doc.sents)) )
