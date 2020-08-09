@@ -24,3 +24,4 @@ def get_nlp( str ):
 
 
 df['docs'] = df['text'].apply( get_nlp )
+df.to_csv( "BookDataForMLTextComplexityProject.csv" )
