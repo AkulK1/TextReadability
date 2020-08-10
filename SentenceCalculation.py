@@ -18,4 +18,5 @@ print(df.iloc[-1])
 
 
 df['sentences'] = df['docs'].apply( lambda x: len(list(nlp(x).sents)))
+df['nlps'] = df['docs'].apply( lambda x: nlp(x))
 
