@@ -26,12 +26,9 @@ df.plot( x = 'syl_per_word', y = 'difficulty', style = 'o' )
 
 ##count the number of words in each sample text
 def wordCount (doc):
-    ws =0
-    for token in doc:
-        if token._.syllables_count != None:
-            ws+=1
-    return ws;
-df['ws'] = df['docs'].apply( lambda x: wordCount(nlp(x)))
+    return len( doc.split() )
+df['ws'] = df['docs'].apply( wordCount )
+
 
 #compute the average sentence length
 df['ws_per_sents'] = df['ws']/df['sentences']
@@ -80,4 +77,4 @@ df['ttl_Chars'] = df['docs'].apply( lambda x: countLetters(x))
 df['avg_wd_length'] = df['ttl_Chars']/df['ws']
 df.plot(x= 'avg_wd_length', y ='difficulty',style = 'o')
 
-df.to_csv( "updatedFeatures.csv", columns= [col1 for col1 in df.columns if col1 != 'docs']  )
+df.to_csv( "Data02.csv" )
