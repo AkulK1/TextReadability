@@ -1,193 +1,193 @@
-,title,author,text,difficulty,ws,ttl_Chars,avg_wd_length
-0,Little Bear,"Minarik, Else Holmelund",b002_LittleBear.txt,1,441,1680,3.8095238095238093
-1,Are You My Mother?,"Eastman, P. D.",b003_AreYouMyMother.txt,1,431,1442,3.3457076566125292
-2,Green Eggs and Ham,"Seuss, Dr.",b004_GreenEggsAndHam.txt,1,799,2404,3.0087609511889863
-3,Put Me in the Zoo,"Lopshire, Robert.",b005_Putmeinthezoo.txt,1,126,385,3.0555555555555554
-4,Frog and Toad Together,"Lobel, Arnold.",b006_FrogAndToadTogether.txt,1,1882,7161,3.8049946865037194
-5,Owl at Home,"Lobel, Arnold.",b007_OwlAtHome.txt,1,1503,5675,3.775781769793746
-6,Hi! Fly Guy,"Arnold, Tedd.",b008_HiFlyGuy.txt,1,82,323,3.9390243902439024
-7,A Tree Is a Plant,"Bulla, Clyde Robert.",b009_ATreeIsaPlant.txt,1,481,1871,3.8898128898128896
-8,My Five Senses,Aliki.,b010_MyFiveSenses.txt,1,310,1040,3.3548387096774195
-9,Starfish,"Hurd, Edith Thacher",b011_Starfish.txt,1,340,1309,3.85
-10,A Weed is a Flower: The Life of George Washington Carver,Aliki.,b012_AWeedisaFlower.txt,1,206,871,4.228155339805825
-11,“Garden Helpers.”,National Geographic Young Explorers,b016_GardenHelpers.txt,1,72,306,4.25
-12,“Wind Power.”,National Geographic Young Explorers,b017_WindPower.txt,1,70,268,3.8285714285714287
-13,My Father’s Dragon,"Gannett, Ruth Stiles. ",b018_MyFathersDragon.txt,2,396,1492,3.7676767676767677
-14,The Fire Cat,"Averill, Esther. ",b019_TheFireCat.txt,2,568,2200,3.8732394366197185
-15,Amos & Boris,"Steig, William",b020_AmosBoris.txt,2,1807,7378,4.083010514665191
-16,The Treasure,"Shulevitz, Uri",b021_TheTreasure.txt,2,138,497,3.601449275362319
-17,The Stories Julian Tells,"Cameron, Ann",b022_TheStoriesJulianTells.txt,2,678,2550,3.7610619469026547
-18,"Sarah, Plain and Tall","MacLachlan, Patricia",b023_SarahPlainandTall.txt,2,8386,33356,3.9775816837586455
-19, Henry and Mudge: The First Book of Their Adventures,"Rylant, Cynthia",b024_HenryandMudge.txt,2,816,3334,4.08578431372549
-20,Tops and Bottoms,"Stevens, Janet.",b025_TopsandBottoms.txt,2,765,3013,3.938562091503268
-21,The Raft,"LaMarche, Jim.",b026_TheRaft.txt,2,1942,7684,3.956745623069001
-22, Poppleton in Winter,"Rylant, Cynthia. ",b027_PoppletoninWinter.txt,2,209,960,4.5933014354066986
-23,The Lighthouse Family: The Storm,"Rylant, Cynthia. ",b028_TheLighthouseFamilyTheStorm.txt,2,3090,12953,4.191909385113268
-24,The One-Eyed Giant (Book One of Tales from the Odyssey),"Osborne, Mary Pope",b029_TheOneEyed.txt,2,402,1711,4.256218905472637
-25,Cowgirl Kate and Cocoa,"Silverman, Erica",b030_CowgirlKateandCocoa.txt,2,273,1030,3.772893772893773
-26,A Medieval Feast,Aliki,b031_AMedievalFeast.txt,2,329,1418,4.310030395136778
-27,From Seed to Plant,"Gibbons, Gail",b032_FromSeedtoPlant.txt,2,129,552,4.27906976744186
-28,Bats: Creatures of the Night,"Milton, Joyce",b033_BatsCreaturesoftheNight.txt,2,147,564,3.836734693877551
-29,Throw Your Tooth on the Roof: Tooth Traditions Around the World,"Beeler, Selby",b034_ThrowYourTooth.txt,2,282,1104,3.9148936170212765
-30,Martin Luther King and the March on Washington,"Ruffin, Frances E",b036_MartinLutherKingandtheMarchonWashington.txt,2,149,613,4.114093959731544
-31, So You Want to Be President?,"St George, Judith",b037_SoYouWanttoBePresident.txt,2,817,3724,4.558139534883721
-32,"Boy, Were We Wrong About Dinosaurs","Kudlinski, Kathleen V",b039_BoyWereWeWrongAboutDinosaurs.txt,2,276,1215,4.4021739130434785
-33,Bat Loves the Night,"Davies, Nicola",b040_BatLovestheNight.txt,2,264,1135,4.299242424242424
-34,Moonshot: The Flight of Apollo 11,"Floca, Brian",b041_MoonshotTheFlightofApollo.txt,2,293,1262,4.30716723549488
-35,Where Do Polar Bears Live?,"Thomson, Sarah L",b042_WhereDoPolarBearsLive.txt,2,269,1046,3.8884758364312266
-36,Alice’s Adventures in Wonderland,"Carroll, Lewis",b043_AlicesAdventuresinWonderland.txt,3,26503,107233,4.046070256197412
-37,The Secret Garden,"Burnett, Frances Hodgson",b044_TheSecretGarden.txt,3,80703,326256,4.042674993494666
-38,The Black Stallion,"Farley, Walter",b045_TheBlackStallion.txt,3,317,1361,4.2933753943217665
-39,The Little Prince,"Saint-Exupéry, Antoine de",b046_TheLittlePrince.txt,3,16860,67910,4.0278766310794785
-40,Tuck Everlasting,"Babbitt, Natalie",b047_TuckEverlasting.txt,3,363,1579,4.349862258953168
-41,“Zlateh the Goat.”,"Singer, Isaac Bashevis",b048_latehtheGoat.txt,3,188,752,4.0
-42,"M. C. Higgins, the Great","Hamilton, Virginia",b049_MCHigginstheGreat.txt,3,257,1135,4.416342412451362
-43,The Birchbark House,"Erdrich, Louise",b050_TheBirchbarkHouse.txt,3,241,1074,4.45643153526971
-44,"Bud, Not Buddy","Curtis, Christopher Paul",b051_BudNotBuddy.txt,3,53086,208486,3.927325471875824
-45,Where the Mountain Meets the Moon,"Lin, Grace",b052_WheretheMountain.txt,3,4691,19535,4.1643572798976765
-46,Discovering Mars: The Amazing Story of the Red Planet,"Berger, Melvin",b053_DiscoveringMarsTheAmaingStoryoftheRedPlanet.txt,3,410,1749,4.265853658536585
-47,Hurricanes: Earth’s Mightiest Storms,"Lauber, Patricia",b055_HurricanesEarthsMightiestStorms.txt,3,608,2684,4.4144736842105265
-48,Toys!: Amazing Stories Behind Some Great Inventions,"Wulffson, Don",b057_ToysAmaingStories.txt,3,750,3208,4.277333333333333
-49,"“Good Pet, Bad Pet.”","Schleichert, Elizabeth",b058_GoodPetBadPet.txt,3,173,640,3.699421965317919
-50,“Ancient Mound Builders.”,"Kavash, E. Barrie",b059_AncientMoundBuilders.txt,3,386,1962,5.082901554404145
-51,About Time: A First Look at Time and Clocks,"Koscielniak, Bruce",b060_AboutTime.txt,3,227,1099,4.841409691629956
-52,England the Land,"Banting, Erinn",b061_EnglandtheLand.txt,3,115,591,5.139130434782609
-53,A History of US,"Hakim, Joy",b062_AHistoryofUS.txt,3,251,1051,4.187250996015936
-54,My Librarian Is a Camel: How Books Are Brought to Children Around the World,"Ruurs, Margriet",b063_MyLibrarianIsaCamel.txt,3,463,2199,4.749460043196544
-55,Horses,"Simon, Seymour",b064_Horses.txt,3,593,2651,4.470489038785835
-56,Quest for the Tree Kangaroo:An Expedition to the Cloud Forest of New Guinea,"Montgomery, Sy",b065_QuestfortheTree.txt,3,283,1261,4.455830388692579
-57,Volcanoes,"Simon, Seymour",b066_Volcanoes.txt,3,218,962,4.412844036697248
-58,We Are the Ship: The Story of Negro League Baseball,"Nelson, Kadir",b067_WeAretheShip.txt,3,235,998,4.246808510638298
-59,“Kenya’s Long Dry Season.”,"Cutler, Nellie Gonzalez",b068_KenyasLongDrySeason.txt,3,252,1071,4.25
-60,“Seeing Eye to Eye.”,"Hall, Leslie",b069_SeeingEyetoEye.txt,3,601,2576,4.286189683860233
-61,“Telescopes.”,"Ronan, Colin A",b070_Telescopes.txt,3,384,1920,5.0
-62,“Underground Railroad.”,"Buckmaster, Henrietta",b071_UndergroundRailroad.txt,3,1309,5473,4.18105423987777
-63,Little Women,"Alcott, Louisa May",b072_LittleWomen.txt,4,13085,53132,4.060527321360336
-64,The Adventures of Tom Sawyer,"Twain, Mark",b073_TheAdventuresofTomSawyer.txt,4,12071,49820,4.127247121199569
-65,A Wrinkle in Time,"L’Engle, Madeleine",b074_AWrinkleinTime.txt,4,9329,39289,4.2114910494158
-66,The Dark Is Rising,"Cooper, Susan",b075_TheDarkIsRising.txt,4,306,1296,4.235294117647059
-67,Dragonwings,"Yep, Laurence",b076_Dragonwings.txt,4,265,1044,3.939622641509434
-68,"Roll of Thunder, Hear My Cry","Taylor, Mildred D",b077_RollofThunderHearMyCry.txt,4,20796,88535,4.257309097903443
-69,“The People Could Fly.”,"Hamilton, Virginia",b078_ThePeopleCouldFly.txt,4,1206,4772,3.956882255389718
-70,The Tale of the Mandarin Ducks,"Paterson, Katherine",b079_TheTaleoftheMandarinDucks.txt,4,323,1325,4.102167182662539
-71,“Eleven.”,"Cisneros, Sandra",b080_Eleven.txt,4,1181,4705,3.983911939034716
-72,Black Ships Before Troy: The Story of the Iliad,"Sutcliff, Rosemary",b081_BlackShipsBeforeTroy.txt,4,288,1230,4.270833333333333
-73,“Letter on Thomas Jefferson.”,"Adams, John",b082_LetteronThomasJefferson.txt,4,1667,7556,4.532693461307739
-74,"Narrative of the Life of Frederick Douglass an American Slave, Written by Himself","Douglass, Frederick",b083_NarrativeFrederickDouglass.txt,4,946,4009,4.23784355179704
-75,"“Blood, Toil, Tears and Sweat: Address to Parliament on May 13th, 1940.”","Churchill, Winston",b084_BloodToilTearsandSweat.txt,4,626,2751,4.394568690095847
-76,Harriet Tubman: Conductor on the Underground Railroad,"Petry, Ann",b085_HarrietTubman.txt,4,1015,4548,4.480788177339901
-77,Travels with Charley: In Search of America,"Steinbeck, John",b086_TravelswithCharley.txt,4,543,2325,4.281767955801105
-78,"Preamble and First Amendment to the United States Constitution. (1787, 1791)",United States,b087_PreambleandFirstAmendment.txt,4,99,505,5.101010101010101
-79,A Night to Remember,"Lord, Walter",b088_ANighttoRemember.txt,4,2513,11213,4.4619976124154395
-80,A Short Walk through the Pyramids and through the World of Art,"Isaacson, Phillip",b089_AShortWalkthroughthePyramids.txt,4,244,1052,4.311475409836065
-81,The Great Fire,"Murphy, Jim",b090_TheGreatFire.txt,4,272,1375,5.055147058823529
-82,Vincent Van Gogh: Portrait of an Artist,"Greenberg, Jan, and Sandra Jordan",b091_VincentVanGoghPortraitofanArtist.txt,4,276,1251,4.532608695652174
-83,This Land Was Made for You and Me: The Life and Songs of Woody Guthrie,"Partridge, Elizabeth",b092_ThisLandWasMadeforYou.txt,4,289,1228,4.249134948096886
-84,Words We Live By: Your Annotated Guide to the Constitution,"Monk, Linda R",b093_WordsWeLiveBy.txt,4,267,1324,4.9588014981273405
-85,Freedom Walkers: The Story of the Montgomery Bus Boycott,"Freedman, Russell",b094_FreedomWalkers.txt,4,321,1466,4.566978193146418
-86,Cathedral: The Story of Its Construction,"Macaulay, David",b095_CathedralTheStoryofItsConstruction.txt,4,302,1413,4.678807947019868
-87,The Building of Manhattan,"Mackay, Donald",b096_TheBuildingofManhattan.txt,4,242,1096,4.528925619834711
-88,The Number Devil: A Mathematical Adventure,"Enzensberger, Hans Magnus",b097_TheNumberDevilAMathematicalAdventure.txt,4,206,878,4.262135922330097
-89,Math Trek: Adventures in the Math Zone,"Peterson, Ivars and Nancy Henderson",b098_MathTrekAdventuresintheMathone.txt,4,341,1676,4.914956011730205
-90,Geeks: How Two Lost Boys Rode the Internet out of Idaho,"Katz, John",b099_GeeksHowTwoLostBoysRodetheInternetoutofIdaho.txt,4,246,1126,4.5772357723577235
-91,“The Evolution of the Grocery Bag.”,"Petroski, Henry",b100_TheEvolutionoftheGroceryBag.txt,4,361,1783,4.9390581717451525
-92,U*X*L Encyclopedia of Science,"“Geology""",b101_UXLEncyclopediaofScience.txt,4,292,1575,5.3938356164383565
-93,Astronomy & Space: From the Big Bang to the Big Crunch,"“Space Probe""",b102_AstronomySpaceFromtheBigBangtotheBigCrunch.txt,4,454,2239,4.931718061674009
-94,Invasive Plant Inventory,California Invasive Plant Council,b104_InvasivePlantInventory.txt,4,311,1799,5.784565916398714
-95,The Odyssey,Homer,b105_TheOdyssey.txt,5,4125,16547,4.0113939393939395
-96,Metamorphoses,Ovid,b106_Metamorphoses.txt,5,657,2736,4.164383561643835
-97,“The Nose.”,"Gogol, Nikolai",b107_TheNose.txt,5,904,3675,4.0652654867256635
-98,"A. M. Candide, Or The Optimist","De Voltaire, F",b108_AMCandideOrTheOptimist.txt,5,765,3553,4.644444444444445
-99,Fathers and Sons,"Turgenev, Ivan",b109_FathersandSons.txt,5,581,2524,4.344234079173838
-100,“The Gift of the Magi.”,"Henry, O",b110_TheGiftoftheMagi.txt,5,426,1766,4.145539906103286
-101,The Metamorphosis,"Kafka, Franz",b111_TheMetamorphosis.txt,5,315,1342,4.26031746031746
-102,The Grapes of Wrath,"Steinbeck, John",b112_TheGrapesofWrath.txt,5,616,2453,3.982142857142857
-103,Fahrenheit 451,"Bradbury, Ray",b113_Fahrenheit.txt,5,2549,10867,4.26324048646528
-104,“I Stand Here Ironing.”,"Olsen, Tillie",b114_IStandHereIroning.txt,5,3359,13715,4.083060434653171
-105,Things Fall Apart,"Achebe, Chinua",b115_ThingsFallApart.txt,5,667,2859,4.286356821589205
-106,To Kill A Mockingbird,"Lee, Harper",b116_ToKillAMockingbird.txt,5,4779,20375,4.263444235195648
-107,The Killer Angels,"Shaara, Michael",b117_TheKillerAngels.txt,5,274,1168,4.262773722627737
-108,The Joy Luck Club,"Tan, Amy",b118_TheJoyLuckClub.txt,5,225,947,4.208888888888889
-109,In the Time of the Butterflies,"Álvarez, Julia",b119_IntheTimeoftheButterflies.txt,5,301,1249,4.149501661129568
-110,The Book Thief,"Zusak, Marcus",b120_TheBookThief.txt,5,328,1423,4.338414634146342
-111,“Speech to the Second Virginia Convention.”,"Henry, Patrick",b121_SpeechtotheSecondVirginiaConvention.txt,5,1216,5147,4.232730263157895
-112,“Farewell Address.”,"Washington, George",b122_FarewellAddress.txt,5,490,2328,4.751020408163265
-113,“Gettysburg Address.”,"Lincoln, Abraham",b123_GettysburgAddress.txt,5,268,1132,4.223880597014926
-114,“Second Inaugural Address.”,"Lincoln, Abraham",b124_SecondInauguralAddress.txt,5,701,3141,4.480741797432239
-115,“State of the Union Address.”,"Roosevelt, Franklin Delano",b125_StateoftheUnionAddress.txt,5,379,1849,4.878627968337731
-116,“I Am an American Day Address.”,"Hand, Learned",b126_IAmanAmericanDayAddress.txt,5,414,1708,4.125603864734299
-117,“Remarks to the Senate in Support of a Declaration of Conscience.”,"Smith, Margaret Chase",b127_RemarkstotheSenatein.txt,5,1182,5569,4.711505922165821
-118,“Letter from Birmingham Jail.”,"Martin Luther King, Jr  ",b128_LetterfromBirminghamJail.txt,5,444,2105,4.740990990990991
-119," “I Have a Dream: Address Delivered at the March on Washington, D.C., for Civil Rights on August 28, 1963.”","Martin Luther King, Jr",b129_IHaveaDreamAddress.txt,5,1556,6801,4.370822622107969
-120,I Know Why the Caged Bird Sings,"Angelou, Maya",b130_IKnowWhytheCagedBirdSings.txt,5,273,1152,4.21978021978022
-121,"“Hope, Despair and Memory.”","Wiesel, Elie",b131_HopeDespairandMemory.txt,5,363,1609,4.432506887052342
-122,“Address to Students at Moscow State University.”,"Reagan, Ronald",b132_AddresstoStudents.txt,5,768,3671,4.779947916666667
-123,“A Quilt of a Country.”,"Quindlen, Anna",b133_AQuiltofaCountry.txt,5,550,2596,4.72
-124,Bury My Heart at Wounded Knee: An Indian History of the American West,"Brown, Dee",b134_BuryMyHeartatWoundedKnee.txt,5,311,1535,4.935691318327974
-125,Son of the Morning Star: Custer and the Little Bighorn,"Connell, Evan S",b135_SonoftheMorningStar.txt,5,306,1459,4.76797385620915
-126,"The Story of Art, 16th Edition","Gombrich, E.H. ",b136_TheStoryofArtthEdition.txt,5,287,1245,4.337979094076655
-127,Cod: A Biography of the Fish That Changed the World,"Kurlansky, Mark",b137_CodABiographyoftheFishThatChangedtheWorld.txt,5,240,1135,4.729166666666667
-128,"Black, Blue and Gray: African Americans in the Civil War","Haskins, Jim",b138_BlackBlue.txt,5,370,1846,4.989189189189189
-129,The Longitude Prize,"Dash, Joan",b139_TheLongitudePrie.txt,5,487,2157,4.429158110882957
-130,The Illustrated Book of Great Composers,"Thompson, Wendy",b140_TheIllustratedBook.txt,5,399,2065,5.175438596491228
-131,Before Columbus: The Americas of 1491,"Mann, Charles C",b141_BeforeColumbus.txt,5,257,1225,4.766536964980545
-132,Elements,Euclid,b142_Elements.txt,5,887,3924,4.423900789177001
-133,“Classifying the Stars.”,"Cannon, Annie J",b143_ClassifyingtheStars.txt,5,259,1188,4.586872586872587
-134,“Amusement Park Physics.”,"Walker, Jearl",b144_AmusementParkPhysics.txt,5,295,1353,4.5864406779661016
-135,The Hot Zone: A Terrifying True Story,"Preston, Richard",b145_TheHotoneATerrifyingTrueStory.txt,5,1707,7648,4.4803749267721145
-136,Life by the Numbers,"Devlin, Keith",b146_LifebytheNumbers.txt,5,255,1124,4.407843137254902
-137,The Race to Save Lord God Bird,"Hoose, Phillip",b147_TheRacetoSaveLordGodBird.txt,5,505,2388,4.7287128712871285
-138,The Story of Science: Newton at the Center,"Hakim, Joy",b148_TheStoryofScienceNewtonattheCenter.txt,5,185,802,4.335135135135135
-139,Circumference: Eratosthenes and the Ancient Quest to Measure the Globe,"Nicastro, Nicholas",b149_Circumference.txt,5,306,1530,5.0
-140,The Canterbury Tales,"Chaucer, Geoffrey",b151_TheCanterburyTales.txt,6,339,1377,4.061946902654867
-141,Don Quixote,"de Cervantes, Miguel",b152_DonQuixote.txt,6,2034,8576,4.216322517207473
-142,Pride and Prejudice,"Austen, Jane",b153_PrideandPrejudice.txt,6,839,3387,4.036948748510131
-143,“The Cask of Amontillado.”,"Poe, Edgar Allan",b154_TheCaskofAmontillado.txt,6,475,2044,4.3031578947368425
-144,Jane Eyre,"Brontë, Charlotte",b155_JaneEyre.txt,6,4004,17427,4.352397602397603
-145,The Scarlet Letter,"Hawthorne, Nathaniel",b156_TheScarletLetter.txt,6,593,2584,4.357504215851602
-146,Crime and Punishment,"Dostoevsky, Fyodor",b157_CrimeandPunishment.txt,6,908,3992,4.39647577092511
-147,“A White Heron.”,"Jewett, Sarah Orne",b158_AWhiteHeron.txt,6,961,4108,4.27471383975026
-148,"Billy Budd, Sailor","Melville, Herman",b159_BillyBuddSailor.txt,6,427,2011,4.709601873536299
-149,“Home.”,"Chekhov, Anton",b160_Home.txt,6,1006,4422,4.395626242544732
-150,The Great Gatsby,"Fitzgerald, F. Scott. ",b161_TheGreatGatsby.txt,6,4826,21346,4.423124740986324
-151,As I Lay Dying,"Faulkner, William",b162_AsILayDying.txt,6,436,1831,4.1995412844036695
-152,A Farewell to,"Hemingway, Ernest",b163_AFarewellto.txt,6,6787,26888,3.961691468984824
-153,Their Eyes Were Watching God,"Hurston, Zora Neale",b164_TheirEyesWereWatchingGod.txt,6,1714,6749,3.9375729288214703
-154,“The Garden of Forking Paths.”,"Borges, Jorge Luis",b165_TheGardenofForkingPaths.txt,6,400,1829,4.5725
-155,The Adventures of Augie March,"Bellow, Saul",b166_TheAdventuresofAugieMarch.txt,6,459,1833,3.9934640522875817
-156,The Bluest Eye,"Morrison, Toni",b167_TheBluestEye.txt,6,411,1861,4.527980535279806
-157,Dreaming in Cuban,"Garcia, Cristina",b168_DreaminginCuban.txt,6,236,1072,4.5423728813559325
-158,The Namesake,"Lahiri, Jhumpa",b169_TheNamesake.txt,6,490,2192,4.473469387755102
-159,Common Sense,"Paine, Thomas",b170_CommonSense.txt,6,196,911,4.6479591836734695
-160,The Declaration of Independence,"Jefferson, Thomas",b171_TheDeclarationofIndependence.txt,6,1300,6459,4.968461538461538
-161,The Bill of Rights (Amendments One through Ten of the United States Constitution).,United States,b172_TheBillofRights.txt,6,483,2240,4.63768115942029
-162,Walden,"Thoreau, Henry David",b173_Walden.txt,6,2866,11827,4.126657362177251
-163,“Society and Solitude.”,"Emerson, Ralph Waldo",b174_SocietyandSolitude.txt,6,1046,4533,4.333652007648183
-164,"“Lee Surrenders to Grant, April 9th, 1865.”","Porter, Horace",b175_LeeSurrenderstoGrantAprilth.txt,6,987,4302,4.358662613981763
-165,“The Fallacy of Success.”,"Chesterton, G. K.",b176_TheFallacyofSuccess.txt,6,857,3640,4.247374562427071
-166,"The American Language, 4th Edition","Mencken, H. L. ",b177_TheAmericanLanguagethEdition.txt,6,5791,26920,4.648592643757555
-167,Black Boy,"Wright, Richard",b178_BlackBoy.txt,6,278,1263,4.543165467625899
-168,“Politics and the English Language.”,"Orwell, George",b179_PoliticsandtheEnglishLanguage.txt,6,4004,19041,4.7554945054945055
-169,“Abraham Lincoln and the Self-Made Myth.”,"Hofstadter, Richard",b180_AbrahamLincolnandtheSelfMadeMyth.txt,6,298,1396,4.684563758389261
-170,“Mother Tongue.”,"Tan, Amy",b181_MotherTongue.txt,6,384,1586,4.130208333333333
-171,“Take the Tortillas Out of Your Poetry.”,"Anaya, Rudolfo",b182_TaketheTortillasOutofYourPoetry.txt,6,243,990,4.074074074074074
-172,Democracy in America,"Tocqueville, Alexis de",b183_DemocracyinAmerica.txt,6,518,2506,4.837837837837838
-173,Declaration of Sentiments by the Seneca Falls Conference,MISSING,b184_DeclarationofSentimentsbytheSenecaFallsConference.txt,6,941,4395,4.6705632306057385
-174,"“What to the Slave Is the Fourth of July?: An Address Delivered in Rochester, New York, on 5 July 1852.”","Douglass, Frederick",b185_WhattotheSlaveIstheFourthofJulyAnAddressDeliveredinRochesterNewYorkonJuly.txt,6,2087,9253,4.43363679923335
-175,Edited by Daniel J. Boorstin,An American Primer,b186_EditedbyDanielJBoorstin.txt,6,2969,13012,4.382620410912765
-176,“Education.”,"Lagemann, Ellen Condliffe",b187_Education.txt,6,366,1881,5.139344262295082
-177,What They Fought For 1861–1865,"McPherson, James M",b188_WhatTheyFoughtFor.txt,6,225,1103,4.902222222222222
-178,"The American Reader: Words that Moved a Nation, 2nd Edition",MISSING,b189_TheAmericanReaderWordsthatMovedaNationndEdition.txt,6,409,1897,4.638141809290953
-179,America’s Constitution: A Biography,"Amar, Akhil Reed",b190_AmericasConstitutionABiography.txt,6,273,1398,5.1208791208791204
-180,1776,"McCullough, David",b191_1776.txt,6,320,1371,4.284375
-181,Mirror of the World: A New History of Art,"Bell, Julian",b192_MirroroftheWorldANewHistoryofArt.txt,6,354,1786,5.045197740112994
-182,FedViews by the Federal Reserve Bank of San Francisco,MISSING,b193_FedViewsbytheFederalReserveBankofSanFrancisco.txt,6,268,1370,5.111940298507463
-183,Innumeracy: Mathematical Illiteracy and Its Consequences,"Paulos, John Allen",b194_InnumeracyMathematicalIlliteracyandItsConsequences.txt,6,3136,15130,4.824617346938775
-184,The Tipping Point: How Little Things Can Make a Big Difference,"Gladwell, Malcolm",b195_TheTippingPointHowLittleThingsCanMakeaBigDifference.txt,6,732,3372,4.60655737704918
-185,“Gravity in Reverse: The Tale of Albert Einstein’s ‘Greatest Blunder.’”,"Tyson, Neil deGrasse",b196_GravityinReverseTheTaleofAlbertEinsteinsGreatestBlunder.txt,6,266,1292,4.857142857142857
-186,"Google Hacks: Tips & Tools for Smarter Searching, 2nd Edition","Calishain, Tara, and Rael Dornfest",b197_GoogleHacksTipsToolsforSmarterSearchingndEdition.txt,6,347,1629,4.694524495677234
-187,“The Mysteries of Mass.”,"Kane, Gordon",b198_TheMysteriesofMass.txt,6,238,1118,4.697478991596639
-188,“Working Knowledge: Electronic Stability Control.”,"Fischetti, Mark",b199_WorkingKnowledgeElectronicStabilityControl.txt,6,199,1007,5.060301507537688
-189,“The Coming Merger of Mind and Machine.”,"Kurzweil, Ray",b201_TheComingMergerofMindandMachine.txt,6,2801,14540,5.191003213138165
-190,“Untangling the Roots of Cancer.”,"Gibbs, W Wayt",b202_UntanglingtheRootsofCancer.txt,6,3946,19808,5.0197668525088694
-191,"“The Cost Conundrum: Health Care Costs in McAllen, Texas.”","Gawande, Atul",b203_TheCostConundrumHealthCareCostsinMcAllenTexas.txt,6,7958,38375,4.822191505403367
+,title,author,text,difficulty,sentences,syl_per_word,ws,ws_per_sents,not_easy_words,ttl_Chars,avg_wd_length
+0,Little Bear,"Minarik, Else Holmelund",b002_LittleBear.txt,1,57,1.1700680272108843,441,7.7368421052631575,0.0,1680,3.8095238095238093
+1,Are You My Mother?,"Eastman, P. D.",b003_AreYouMyMother.txt,1,77,1.1206496519721578,431,5.597402597402597,0.04176334106728538,1442,3.3457076566125292
+2,Green Eggs and Ham,"Seuss, Dr.",b004_GreenEggsAndHam.txt,1,147,1.0100125156445556,799,5.4353741496598635,0.03879849812265332,2404,3.0087609511889863
+3,Put Me in the Zoo,"Lopshire, Robert.",b005_Putmeinthezoo.txt,1,25,1.0158730158730158,126,5.04,0.031746031746031744,385,3.0555555555555554
+4,Frog and Toad Together,"Lobel, Arnold.",b006_FrogAndToadTogether.txt,1,258,1.1030818278427206,1882,7.294573643410852,0.013283740701381509,7161,3.8049946865037194
+5,Owl at Home,"Lobel, Arnold.",b007_OwlAtHome.txt,1,201,1.127744510978044,1503,7.477611940298507,0.011976047904191617,5675,3.775781769793746
+6,Hi! Fly Guy,"Arnold, Tedd.",b008_HiFlyGuy.txt,1,13,1.1585365853658536,82,6.3076923076923075,0.06097560975609756,323,3.9390243902439024
+7,A Tree Is a Plant,"Bulla, Clyde Robert.",b009_ATreeIsaPlant.txt,1,66,1.137214137214137,481,7.287878787878788,0.012474012474012475,1871,3.8898128898128896
+8,My Five Senses,Aliki.,b010_MyFiveSenses.txt,1,37,1.1290322580645162,310,8.378378378378379,0.02258064516129032,1040,3.3548387096774195
+9,Starfish,"Hurd, Edith Thacher",b011_Starfish.txt,1,50,1.0852941176470587,340,6.8,0.10882352941176471,1309,3.85
+10,A Weed is a Flower: The Life of George Washington Carver,Aliki.,b012_AWeedisaFlower.txt,1,18,1.2378640776699028,206,11.444444444444445,0.16019417475728157,871,4.228155339805825
+11,“Garden Helpers.”,National Geographic Young Explorers,b016_GardenHelpers.txt,1,11,1.1388888888888888,72,6.545454545454546,0.05555555555555555,306,4.25
+12,“Wind Power.”,National Geographic Young Explorers,b017_WindPower.txt,1,14,1.2142857142857142,70,5.0,0.02857142857142857,268,3.8285714285714287
+13,My Father’s Dragon,"Gannett, Ruth Stiles. ",b018_MyFathersDragon.txt,2,28,1.2196969696969697,396,14.142857142857142,0.04040404040404041,1492,3.7676767676767677
+14,The Fire Cat,"Averill, Esther. ",b019_TheFireCat.txt,2,65,1.1355633802816902,568,8.738461538461538,0.07394366197183098,2200,3.8732394366197185
+15,Amos & Boris,"Steig, William",b020_AmosBoris.txt,2,137,1.2280022136137243,1807,13.18978102189781,0.11732152739346983,7378,4.083010514665191
+16,The Treasure,"Shulevitz, Uri",b021_TheTreasure.txt,2,11,1.1231884057971016,138,12.545454545454545,0.036231884057971016,497,3.601449275362319
+17,The Stories Julian Tells,"Cameron, Ann",b022_TheStoriesJulianTells.txt,2,104,1.12094395280236,678,6.519230769230769,0.06489675516224189,2550,3.7610619469026547
+18,"Sarah, Plain and Tall","MacLachlan, Patricia",b023_SarahPlainandTall.txt,2,1041,1.164559980920582,8386,8.055715658021134,0.09587407584068686,33356,3.9775816837586455
+19, Henry and Mudge: The First Book of Their Adventures,"Rylant, Cynthia",b024_HenryandMudge.txt,2,106,1.1642156862745099,816,7.69811320754717,0.11029411764705882,3334,4.08578431372549
+20,Tops and Bottoms,"Stevens, Janet.",b025_TopsandBottoms.txt,2,86,1.1490196078431372,765,8.895348837209303,0.036601307189542485,3013,3.938562091503268
+21,The Raft,"LaMarche, Jim.",b026_TheRaft.txt,2,175,1.2018537590113285,1942,11.097142857142858,0.09423274974253347,7684,3.956745623069001
+22, Poppleton in Winter,"Rylant, Cynthia. ",b027_PoppletoninWinter.txt,2,31,1.325358851674641,209,6.741935483870968,0.11004784688995216,960,4.5933014354066986
+23,The Lighthouse Family: The Storm,"Rylant, Cynthia. ",b028_TheLighthouseFamilyTheStorm.txt,2,297,1.2297734627831716,3090,10.404040404040405,0.09935275080906149,12953,4.191909385113268
+24,The One-Eyed Giant (Book One of Tales from the Odyssey),"Osborne, Mary Pope",b029_TheOneEyed.txt,2,42,1.2064676616915422,402,9.571428571428571,0.14427860696517414,1711,4.256218905472637
+25,Cowgirl Kate and Cocoa,"Silverman, Erica",b030_CowgirlKateandCocoa.txt,2,43,1.15018315018315,273,6.348837209302325,0.11721611721611722,1030,3.772893772893773
+26,A Medieval Feast,Aliki,b031_AMedievalFeast.txt,2,27,1.249240121580547,329,12.185185185185185,0.14285714285714285,1418,4.310030395136778
+27,From Seed to Plant,"Gibbons, Gail",b032_FromSeedtoPlant.txt,2,10,1.2713178294573644,129,12.9,0.10077519379844961,552,4.27906976744186
+28,Bats: Creatures of the Night,"Milton, Joyce",b033_BatsCreaturesoftheNight.txt,2,20,1.1088435374149659,147,7.35,0.034013605442176874,564,3.836734693877551
+29,Throw Your Tooth on the Roof: Tooth Traditions Around the World,"Beeler, Selby",b034_ThrowYourTooth.txt,2,30,1.1879432624113475,282,9.4,0.05673758865248227,1104,3.9148936170212765
+30,Martin Luther King and the March on Washington,"Ruffin, Frances E",b036_MartinLutherKingandtheMarchonWashington.txt,2,16,1.2684563758389262,149,9.3125,0.11409395973154363,613,4.114093959731544
+31, So You Want to Be President?,"St George, Judith",b037_SoYouWanttoBePresident.txt,2,75,1.3329253365973073,817,10.893333333333333,0.18482252141982863,3724,4.558139534883721
+32,"Boy, Were We Wrong About Dinosaurs","Kudlinski, Kathleen V",b039_BoyWereWeWrongAboutDinosaurs.txt,2,19,1.2282608695652173,276,14.526315789473685,0.12681159420289856,1215,4.4021739130434785
+33,Bat Loves the Night,"Davies, Nicola",b040_BatLovestheNight.txt,2,23,1.231060606060606,264,11.478260869565217,0.125,1135,4.299242424242424
+34,Moonshot: The Flight of Apollo 11,"Floca, Brian",b041_MoonshotTheFlightofApollo.txt,2,20,1.2218430034129693,293,14.65,0.10238907849829351,1262,4.30716723549488
+35,Where Do Polar Bears Live?,"Thomson, Sarah L",b042_WhereDoPolarBearsLive.txt,2,28,1.1598513011152416,269,9.607142857142858,0.07434944237918216,1046,3.8884758364312266
+36,Alice’s Adventures in Wonderland,"Carroll, Lewis",b043_AlicesAdventuresinWonderland.txt,3,1783,1.229181602082783,26503,14.864273696017948,0.09659283854657963,107233,4.046070256197412
+37,The Secret Garden,"Burnett, Frances Hodgson",b044_TheSecretGarden.txt,3,6454,1.2100789313904068,80703,12.504338394793926,0.1056218480106068,326256,4.042674993494666
+38,The Black Stallion,"Farley, Walter",b045_TheBlackStallion.txt,3,25,1.2429022082018928,317,12.68,0.15457413249211358,1361,4.2933753943217665
+39,The Little Prince,"Saint-Exupéry, Antoine de",b046_TheLittlePrince.txt,3,1568,1.2501779359430605,16860,10.752551020408163,0.08558718861209964,67910,4.0278766310794785
+40,Tuck Everlasting,"Babbitt, Natalie",b047_TuckEverlasting.txt,3,24,1.2699724517906337,363,15.125,0.09641873278236915,1579,4.349862258953168
+41,“Zlateh the Goat.”,"Singer, Isaac Bashevis",b048_latehtheGoat.txt,3,14,1.1542553191489362,188,13.428571428571429,0.07446808510638298,752,4.0
+42,"M. C. Higgins, the Great","Hamilton, Virginia",b049_MCHigginstheGreat.txt,3,20,1.2684824902723735,257,12.85,0.12840466926070038,1135,4.416342412451362
+43,The Birchbark House,"Erdrich, Louise",b050_TheBirchbarkHouse.txt,3,26,1.2199170124481329,241,9.26923076923077,0.14937759336099585,1074,4.45643153526971
+44,"Bud, Not Buddy","Curtis, Christopher Paul",b051_BudNotBuddy.txt,3,4066,1.1815356214444486,53086,13.05607476635514,0.08100064047018046,208486,3.927325471875824
+45,Where the Mountain Meets the Moon,"Lin, Grace",b052_WheretheMountain.txt,3,378,1.257514389256022,4691,12.41005291005291,0.0986996376039224,19535,4.1643572798976765
+46,Discovering Mars: The Amazing Story of the Red Planet,"Berger, Melvin",b053_DiscoveringMarsTheAmaingStoryoftheRedPlanet.txt,3,38,1.273170731707317,410,10.789473684210526,0.21707317073170732,1749,4.265853658536585
+47,Hurricanes: Earth’s Mightiest Storms,"Lauber, Patricia",b055_HurricanesEarthsMightiestStorms.txt,3,49,1.3157894736842106,608,12.408163265306122,0.15625,2684,4.4144736842105265
+48,Toys!: Amazing Stories Behind Some Great Inventions,"Wulffson, Don",b057_ToysAmaingStories.txt,3,55,1.3146666666666667,750,13.636363636363637,0.128,3208,4.277333333333333
+49,"“Good Pet, Bad Pet.”","Schleichert, Elizabeth",b058_GoodPetBadPet.txt,3,15,1.1618497109826589,173,11.533333333333333,0.03468208092485549,640,3.699421965317919
+50,“Ancient Mound Builders.”,"Kavash, E. Barrie",b059_AncientMoundBuilders.txt,3,19,1.461139896373057,386,20.31578947368421,0.2616580310880829,1962,5.082901554404145
+51,About Time: A First Look at Time and Clocks,"Koscielniak, Bruce",b060_AboutTime.txt,3,15,1.4096916299559472,227,15.133333333333333,0.19383259911894274,1099,4.841409691629956
+52,England the Land,"Banting, Erinn",b061_EnglandtheLand.txt,3,5,1.3652173913043477,115,23.0,0.21739130434782608,591,5.139130434782609
+53,A History of US,"Hakim, Joy",b062_AHistoryofUS.txt,3,19,1.2390438247011952,251,13.210526315789474,0.12749003984063745,1051,4.187250996015936
+54,My Librarian Is a Camel: How Books Are Brought to Children Around the World,"Ruurs, Margriet",b063_MyLibrarianIsaCamel.txt,3,29,1.4038876889848813,463,15.96551724137931,0.21382289416846653,2199,4.749460043196544
+55,Horses,"Simon, Seymour",b064_Horses.txt,3,42,1.296795952782462,593,14.119047619047619,0.11467116357504216,2651,4.470489038785835
+56,Quest for the Tree Kangaroo:An Expedition to the Cloud Forest of New Guinea,"Montgomery, Sy",b065_QuestfortheTree.txt,3,20,1.4028268551236749,283,14.15,0.2049469964664311,1261,4.455830388692579
+57,Volcanoes,"Simon, Seymour",b066_Volcanoes.txt,3,19,1.261467889908257,218,11.473684210526315,0.1834862385321101,962,4.412844036697248
+58,We Are the Ship: The Story of Negro League Baseball,"Nelson, Kadir",b067_WeAretheShip.txt,3,17,1.2340425531914894,235,13.823529411764707,0.12340425531914893,998,4.246808510638298
+59,“Kenya’s Long Dry Season.”,"Cutler, Nellie Gonzalez",b068_KenyasLongDrySeason.txt,3,22,1.2142857142857142,252,11.454545454545455,0.19444444444444445,1071,4.25
+60,“Seeing Eye to Eye.”,"Hall, Leslie",b069_SeeingEyetoEye.txt,3,76,1.242928452579035,601,7.907894736842105,0.11480865224625623,2576,4.286189683860233
+61,“Telescopes.”,"Ronan, Colin A",b070_Telescopes.txt,3,33,1.5442708333333333,384,11.636363636363637,0.3515625,1920,5.0
+62,“Underground Railroad.”,"Buckmaster, Henrietta",b071_UndergroundRailroad.txt,3,107,1.2482811306340718,1309,12.233644859813085,0.11229946524064172,5473,4.18105423987777
+63,Little Women,"Alcott, Louisa May",b072_LittleWomen.txt,4,813,1.2317157050057317,13085,16.094710947109473,0.11096675582728315,53132,4.060527321360336
+64,The Adventures of Tom Sawyer,"Twain, Mark",b073_TheAdventuresofTomSawyer.txt,4,925,1.2486952199486372,12071,13.04972972972973,0.14249026592660094,49820,4.127247121199569
+65,A Wrinkle in Time,"L’Engle, Madeleine",b074_AWrinkleinTime.txt,4,1014,1.241719369707364,9329,9.200197238658777,0.14095830206881765,39289,4.2114910494158
+66,The Dark Is Rising,"Cooper, Susan",b075_TheDarkIsRising.txt,4,15,1.2647058823529411,306,20.4,0.13398692810457516,1296,4.235294117647059
+67,Dragonwings,"Yep, Laurence",b076_Dragonwings.txt,4,13,1.230188679245283,265,20.384615384615383,0.07169811320754717,1044,3.939622641509434
+68,"Roll of Thunder, Hear My Cry","Taylor, Mildred D",b077_RollofThunderHearMyCry.txt,4,1791,1.2477880361608003,20796,11.61139028475712,0.1254087324485478,88535,4.257309097903443
+69,“The People Could Fly.”,"Hamilton, Virginia",b078_ThePeopleCouldFly.txt,4,154,1.1276948590381426,1206,7.8311688311688314,0.087893864013267,4772,3.956882255389718
+70,The Tale of the Mandarin Ducks,"Paterson, Katherine",b079_TheTaleoftheMandarinDucks.txt,4,18,1.241486068111455,323,17.944444444444443,0.13312693498452013,1325,4.102167182662539
+71,“Eleven.”,"Cisneros, Sandra",b080_Eleven.txt,4,89,1.1693480101608806,1181,13.269662921348315,0.03640982218458933,4705,3.983911939034716
+72,Black Ships Before Troy: The Story of the Iliad,"Sutcliff, Rosemary",b081_BlackShipsBeforeTroy.txt,4,13,1.2361111111111112,288,22.153846153846153,0.1284722222222222,1230,4.270833333333333
+73,“Letter on Thomas Jefferson.”,"Adams, John",b082_LetteronThomasJefferson.txt,4,84,1.4445110977804438,1667,19.845238095238095,0.22915416916616677,7556,4.532693461307739
+74,"Narrative of the Life of Frederick Douglass an American Slave, Written by Himself","Douglass, Frederick",b083_NarrativeFrederickDouglass.txt,4,49,1.331923890063425,946,19.306122448979593,0.13636363636363635,4009,4.23784355179704
+75,"“Blood, Toil, Tears and Sweat: Address to Parliament on May 13th, 1940.”","Churchill, Winston",b084_BloodToilTearsandSweat.txt,4,36,1.4217252396166133,626,17.38888888888889,0.19329073482428116,2751,4.394568690095847
+76,Harriet Tubman: Conductor on the Underground Railroad,"Petry, Ann",b085_HarrietTubman.txt,4,59,1.3054187192118227,1015,17.203389830508474,0.1438423645320197,4548,4.480788177339901
+77,Travels with Charley: In Search of America,"Steinbeck, John",b086_TravelswithCharley.txt,4,36,1.3572744014732965,543,15.083333333333334,0.16022099447513813,2325,4.281767955801105
+78,"Preamble and First Amendment to the United States Constitution. (1787, 1791)",United States,b087_PreambleandFirstAmendment.txt,4,4,1.6565656565656566,99,24.75,0.3434343434343434,505,5.101010101010101
+79,A Night to Remember,"Lord, Walter",b088_ANighttoRemember.txt,4,154,1.302825308396339,2513,16.318181818181817,0.18901711102268207,11213,4.4619976124154395
+80,A Short Walk through the Pyramids and through the World of Art,"Isaacson, Phillip",b089_AShortWalkthroughthePyramids.txt,4,10,1.2950819672131149,244,24.4,0.14754098360655737,1052,4.311475409836065
+81,The Great Fire,"Murphy, Jim",b090_TheGreatFire.txt,4,14,1.4963235294117647,272,19.428571428571427,0.19852941176470587,1375,5.055147058823529
+82,Vincent Van Gogh: Portrait of an Artist,"Greenberg, Jan, and Sandra Jordan",b091_VincentVanGoghPortraitofanArtist.txt,4,14,1.3514492753623188,276,19.714285714285715,0.21739130434782608,1251,4.532608695652174
+83,This Land Was Made for You and Me: The Life and Songs of Woody Guthrie,"Partridge, Elizabeth",b092_ThisLandWasMadeforYou.txt,4,15,1.2249134948096885,289,19.266666666666666,0.08304498269896193,1228,4.249134948096886
+84,Words We Live By: Your Annotated Guide to the Constitution,"Monk, Linda R",b093_WordsWeLiveBy.txt,4,19,1.4831460674157304,267,14.052631578947368,0.22846441947565543,1324,4.9588014981273405
+85,Freedom Walkers: The Story of the Montgomery Bus Boycott,"Freedman, Russell",b094_FreedomWalkers.txt,4,16,1.3800623052959502,321,20.0625,0.1806853582554517,1466,4.566978193146418
+86,Cathedral: The Story of Its Construction,"Macaulay, David",b095_CathedralTheStoryofItsConstruction.txt,4,17,1.3874172185430464,302,17.764705882352942,0.23841059602649006,1413,4.678807947019868
+87,The Building of Manhattan,"Mackay, Donald",b096_TheBuildingofManhattan.txt,4,19,1.322314049586777,242,12.736842105263158,0.1859504132231405,1096,4.528925619834711
+88,The Number Devil: A Mathematical Adventure,"Enzensberger, Hans Magnus",b097_TheNumberDevilAMathematicalAdventure.txt,4,20,1.3155339805825244,206,10.3,0.08737864077669903,878,4.262135922330097
+89,Math Trek: Adventures in the Math Zone,"Peterson, Ivars and Nancy Henderson",b098_MathTrekAdventuresintheMathone.txt,4,18,1.4926686217008798,341,18.944444444444443,0.2434017595307918,1676,4.914956011730205
+90,Geeks: How Two Lost Boys Rode the Internet out of Idaho,"Katz, John",b099_GeeksHowTwoLostBoysRodetheInternetoutofIdaho.txt,4,15,1.3455284552845528,246,16.4,0.32113821138211385,1126,4.5772357723577235
+91,“The Evolution of the Grocery Bag.”,"Petroski, Henry",b100_TheEvolutionoftheGroceryBag.txt,4,14,1.5678670360110802,361,25.785714285714285,0.25761772853185594,1783,4.9390581717451525
+92,U*X*L Encyclopedia of Science,"“Geology""",b101_UXLEncyclopediaofScience.txt,4,17,1.7534246575342465,292,17.176470588235293,0.339041095890411,1575,5.3938356164383565
+93,Astronomy & Space: From the Big Bang to the Big Crunch,"“Space Probe""",b102_AstronomySpaceFromtheBigBangtotheBigCrunch.txt,4,27,1.4691629955947136,454,16.814814814814813,0.34801762114537443,2239,4.931718061674009
+94,Invasive Plant Inventory,California Invasive Plant Council,b104_InvasivePlantInventory.txt,4,17,1.8231511254019293,311,18.294117647058822,0.47266881028938906,1799,5.784565916398714
+95,The Odyssey,Homer,b105_TheOdyssey.txt,5,148,1.2123636363636363,4125,27.87162162162162,0.11587878787878787,16547,4.0113939393939395
+96,Metamorphoses,Ovid,b106_Metamorphoses.txt,5,40,1.1933028919330289,657,16.425,0.121765601217656,2736,4.164383561643835
+97,“The Nose.”,"Gogol, Nikolai",b107_TheNose.txt,5,71,1.217920353982301,904,12.732394366197184,0.10176991150442478,3675,4.0652654867256635
+98,"A. M. Candide, Or The Optimist","De Voltaire, F",b108_AMCandideOrTheOptimist.txt,5,31,1.419607843137255,765,24.677419354838708,0.19607843137254902,3553,4.644444444444445
+99,Fathers and Sons,"Turgenev, Ivan",b109_FathersandSons.txt,5,29,1.3287435456110155,581,20.03448275862069,0.16523235800344235,2524,4.344234079173838
+100,“The Gift of the Magi.”,"Henry, O",b110_TheGiftoftheMagi.txt,5,30,1.2629107981220657,426,14.2,0.12910798122065728,1766,4.145539906103286
+101,The Metamorphosis,"Kafka, Franz",b111_TheMetamorphosis.txt,5,16,1.307936507936508,315,19.6875,0.15555555555555556,1342,4.26031746031746
+102,The Grapes of Wrath,"Steinbeck, John",b112_TheGrapesofWrath.txt,5,67,1.1850649350649352,616,9.194029850746269,0.14285714285714285,2453,3.982142857142857
+103,Fahrenheit 451,"Bradbury, Ray",b113_Fahrenheit.txt,5,222,1.2652020400156925,2549,11.481981981981981,0.10003923107100823,10867,4.26324048646528
+104,“I Stand Here Ironing.”,"Olsen, Tillie",b114_IStandHereIroning.txt,5,261,1.2667460553736232,3359,12.869731800766283,0.11461744566835368,13715,4.083060434653171
+105,Things Fall Apart,"Achebe, Chinua",b115_ThingsFallApart.txt,5,36,1.2533733133433282,667,18.52777777777778,0.1184407796101949,2859,4.286356821589205
+106,To Kill A Mockingbird,"Lee, Harper",b116_ToKillAMockingbird.txt,5,321,1.2707679430843273,4779,14.88785046728972,0.1717932621887424,20375,4.263444235195648
+107,The Killer Angels,"Shaara, Michael",b117_TheKillerAngels.txt,5,35,1.3102189781021898,274,7.828571428571428,0.20437956204379562,1168,4.262773722627737
+108,The Joy Luck Club,"Tan, Amy",b118_TheJoyLuckClub.txt,5,23,1.2844444444444445,225,9.782608695652174,0.12,947,4.208888888888889
+109,In the Time of the Butterflies,"Álvarez, Julia",b119_IntheTimeoftheButterflies.txt,5,20,1.2491694352159468,301,15.05,0.13953488372093023,1249,4.149501661129568
+110,The Book Thief,"Zusak, Marcus",b120_TheBookThief.txt,5,39,1.2134146341463414,328,8.41025641025641,0.13414634146341464,1423,4.338414634146342
+111,“Speech to the Second Virginia Convention.”,"Henry, Patrick",b121_SpeechtotheSecondVirginiaConvention.txt,5,78,1.3223684210526316,1216,15.58974358974359,0.15789473684210525,5147,4.232730263157895
+112,“Farewell Address.”,"Washington, George",b122_FarewellAddress.txt,5,22,1.579591836734694,490,22.272727272727273,0.2897959183673469,2328,4.751020408163265
+113,“Gettysburg Address.”,"Lincoln, Abraham",b123_GettysburgAddress.txt,5,11,1.3246268656716418,268,24.363636363636363,0.15298507462686567,1132,4.223880597014926
+114,“Second Inaugural Address.”,"Lincoln, Abraham",b124_SecondInauguralAddress.txt,5,31,1.3780313837375178,701,22.612903225806452,0.1840228245363766,3141,4.480741797432239
+115,“State of the Union Address.”,"Roosevelt, Franklin Delano",b125_StateoftheUnionAddress.txt,5,24,1.554089709762533,379,15.791666666666666,0.23482849604221637,1849,4.878627968337731
+116,“I Am an American Day Address.”,"Hand, Learned",b126_IAmanAmericanDayAddress.txt,5,19,1.3043478260869565,414,21.789473684210527,0.07971014492753623,1708,4.125603864734299
+117,“Remarks to the Senate in Support of a Declaration of Conscience.”,"Smith, Margaret Chase",b127_RemarkstotheSenatein.txt,5,58,1.5516074450084603,1182,20.379310344827587,0.23942470389170897,5569,4.711505922165821
+118,“Letter from Birmingham Jail.”,"Martin Luther King, Jr  ",b128_LetterfromBirminghamJail.txt,5,25,1.4977477477477477,444,17.76,0.2545045045045045,2105,4.740990990990991
+119," “I Have a Dream: Address Delivered at the March on Washington, D.C., for Civil Rights on August 28, 1963.”","Martin Luther King, Jr",b129_IHaveaDreamAddress.txt,5,81,1.3856041131105399,1556,19.209876543209877,0.16709511568123395,6801,4.370822622107969
+120,I Know Why the Caged Bird Sings,"Angelou, Maya",b130_IKnowWhytheCagedBirdSings.txt,5,20,1.2893772893772895,273,13.65,0.12454212454212454,1152,4.21978021978022
+121,"“Hope, Despair and Memory.”","Wiesel, Elie",b131_HopeDespairandMemory.txt,5,35,1.4242424242424243,363,10.371428571428572,0.16804407713498623,1609,4.432506887052342
+122,“Address to Students at Moscow State University.”,"Reagan, Ronald",b132_AddresstoStudents.txt,5,36,1.5078125,768,21.333333333333332,0.20963541666666666,3671,4.779947916666667
+123,“A Quilt of a Country.”,"Quindlen, Anna",b133_AQuiltofaCountry.txt,5,28,1.46,550,19.642857142857142,0.2509090909090909,2596,4.72
+124,Bury My Heart at Wounded Knee: An Indian History of the American West,"Brown, Dee",b134_BuryMyHeartatWoundedKnee.txt,5,15,1.4662379421221865,311,20.733333333333334,0.2508038585209003,1535,4.935691318327974
+125,Son of the Morning Star: Custer and the Little Bighorn,"Connell, Evan S",b135_SonoftheMorningStar.txt,5,16,1.4836601307189543,306,19.125,0.18627450980392157,1459,4.76797385620915
+126,"The Story of Art, 16th Edition","Gombrich, E.H. ",b136_TheStoryofArtthEdition.txt,5,14,1.372822299651568,287,20.5,0.1916376306620209,1245,4.337979094076655
+127,Cod: A Biography of the Fish That Changed the World,"Kurlansky, Mark",b137_CodABiographyoftheFishThatChangedtheWorld.txt,5,13,1.4041666666666666,240,18.46153846153846,0.24583333333333332,1135,4.729166666666667
+128,"Black, Blue and Gray: African Americans in the Civil War","Haskins, Jim",b138_BlackBlue.txt,5,16,1.5027027027027027,370,23.125,0.23513513513513515,1846,4.989189189189189
+129,The Longitude Prize,"Dash, Joan",b139_TheLongitudePrie.txt,5,19,1.271047227926078,487,25.63157894736842,0.17659137577002054,2157,4.429158110882957
+130,The Illustrated Book of Great Composers,"Thompson, Wendy",b140_TheIllustratedBook.txt,5,19,1.6967418546365916,399,21.0,0.3182957393483709,2065,5.175438596491228
+131,Before Columbus: The Americas of 1491,"Mann, Charles C",b141_BeforeColumbus.txt,5,15,1.4357976653696498,257,17.133333333333333,0.19066147859922178,1225,4.766536964980545
+132,Elements,Euclid,b142_Elements.txt,5,56,1.3754227733934612,887,15.839285714285714,0.18602029312288612,3924,4.423900789177001
+133,“Classifying the Stars.”,"Cannon, Annie J",b143_ClassifyingtheStars.txt,5,13,1.393822393822394,259,19.923076923076923,0.23166023166023167,1188,4.586872586872587
+134,“Amusement Park Physics.”,"Walker, Jearl",b144_AmusementParkPhysics.txt,5,16,1.4610169491525424,295,18.4375,0.2135593220338983,1353,4.5864406779661016
+135,The Hot Zone: A Terrifying True Story,"Preston, Richard",b145_TheHotoneATerrifyingTrueStory.txt,5,112,1.3555946104276508,1707,15.241071428571429,0.17809021675454012,7648,4.4803749267721145
+136,Life by the Numbers,"Devlin, Keith",b146_LifebytheNumbers.txt,5,14,1.3333333333333333,255,18.214285714285715,0.20784313725490197,1124,4.407843137254902
+137,The Race to Save Lord God Bird,"Hoose, Phillip",b147_TheRacetoSaveLordGodBird.txt,5,36,1.4356435643564356,505,14.027777777777779,0.2079207920792079,2388,4.7287128712871285
+138,The Story of Science: Newton at the Center,"Hakim, Joy",b148_TheStoryofScienceNewtonattheCenter.txt,5,10,1.4108108108108108,185,18.5,0.21081081081081082,802,4.335135135135135
+139,Circumference: Eratosthenes and the Ancient Quest to Measure the Globe,"Nicastro, Nicholas",b149_Circumference.txt,5,12,1.6143790849673203,306,25.5,0.30718954248366015,1530,5.0
+140,The Canterbury Tales,"Chaucer, Geoffrey",b151_TheCanterburyTales.txt,6,21,1.182890855457227,339,16.142857142857142,0.15339233038348082,1377,4.061946902654867
+141,Don Quixote,"de Cervantes, Miguel",b152_DonQuixote.txt,6,51,1.311701081612586,2034,39.88235294117647,0.17551622418879056,8576,4.216322517207473
+142,Pride and Prejudice,"Austen, Jane",b153_PrideandPrejudice.txt,6,61,1.2872467222884387,839,13.754098360655737,0.11799761620977355,3387,4.036948748510131
+143,“The Cask of Amontillado.”,"Poe, Edgar Allan",b154_TheCaskofAmontillado.txt,6,41,1.3810526315789473,475,11.585365853658537,0.1936842105263158,2044,4.3031578947368425
+144,Jane Eyre,"Brontë, Charlotte",b155_JaneEyre.txt,6,211,1.3281718281718282,4004,18.976303317535546,0.1853146853146853,17427,4.352397602397603
+145,The Scarlet Letter,"Hawthorne, Nathaniel",b156_TheScarletLetter.txt,6,34,1.3035413153456998,593,17.441176470588236,0.15851602023608768,2584,4.357504215851602
+146,Crime and Punishment,"Dostoevsky, Fyodor",b157_CrimeandPunishment.txt,6,46,1.3700440528634361,908,19.73913043478261,0.17400881057268722,3992,4.39647577092511
+147,“A White Heron.”,"Jewett, Sarah Orne",b158_AWhiteHeron.txt,6,33,1.2122788761706556,961,29.12121212121212,0.10301768990634755,4108,4.27471383975026
+148,"Billy Budd, Sailor","Melville, Herman",b159_BillyBuddSailor.txt,6,18,1.4824355971896956,427,23.72222222222222,0.28805620608899296,2011,4.709601873536299
+149,“Home.”,"Chekhov, Anton",b160_Home.txt,6,71,1.3320079522862822,1006,14.169014084507042,0.15109343936381708,4422,4.395626242544732
+150,The Great Gatsby,"Fitzgerald, F. Scott. ",b161_TheGreatGatsby.txt,6,417,1.3516369664318275,4826,11.573141486810552,0.15602983837546622,21346,4.423124740986324
+151,As I Lay Dying,"Faulkner, William",b162_AsILayDying.txt,6,26,1.2545871559633028,436,16.76923076923077,0.12614678899082568,1831,4.1995412844036695
+152,A Farewell to,"Hemingway, Ernest",b163_AFarewellto.txt,6,697,1.208928834536614,6787,9.737446197991392,0.08531015176071902,26888,3.961691468984824
+153,Their Eyes Were Watching God,"Hurston, Zora Neale",b164_TheirEyesWereWatchingGod.txt,6,190,1.159859976662777,1714,9.021052631578947,0.17386231038506417,6749,3.9375729288214703
+154,“The Garden of Forking Paths.”,"Borges, Jorge Luis",b165_TheGardenofForkingPaths.txt,6,23,1.475,400,17.391304347826086,0.23,1829,4.5725
+155,The Adventures of Augie March,"Bellow, Saul",b166_TheAdventuresofAugieMarch.txt,6,56,1.2352941176470589,459,8.196428571428571,0.06753812636165578,1833,3.9934640522875817
+156,The Bluest Eye,"Morrison, Toni",b167_TheBluestEye.txt,6,22,1.3479318734793186,411,18.681818181818183,0.145985401459854,1861,4.527980535279806
+157,Dreaming in Cuban,"Garcia, Cristina",b168_DreaminginCuban.txt,6,19,1.3728813559322033,236,12.421052631578947,0.19915254237288135,1072,4.5423728813559325
+158,The Namesake,"Lahiri, Jhumpa",b169_TheNamesake.txt,6,28,1.3877551020408163,490,17.5,0.20408163265306123,2192,4.473469387755102
+159,Common Sense,"Paine, Thomas",b170_CommonSense.txt,6,7,1.5,196,28.0,0.23979591836734693,911,4.6479591836734695
+160,The Declaration of Independence,"Jefferson, Thomas",b171_TheDeclarationofIndependence.txt,6,40,1.5392307692307692,1300,32.5,0.26692307692307693,6459,4.968461538461538
+161,The Bill of Rights (Amendments One through Ten of the United States Constitution).,United States,b172_TheBillofRights.txt,6,21,1.4927536231884058,483,23.0,0.2691511387163561,2240,4.63768115942029
+162,Walden,"Thoreau, Henry David",b173_Walden.txt,6,113,1.3004187020237266,2866,25.36283185840708,0.14724354501046755,11827,4.126657362177251
+163,“Society and Solitude.”,"Emerson, Ralph Waldo",b174_SocietyandSolitude.txt,6,57,1.3948374760994264,1046,18.350877192982455,0.19980879541108987,4533,4.333652007648183
+164,"“Lee Surrenders to Grant, April 9th, 1865.”","Porter, Horace",b175_LeeSurrenderstoGrantAprilth.txt,6,42,1.3596757852077002,987,23.5,0.17223910840932116,4302,4.358662613981763
+165,“The Fallacy of Success.”,"Chesterton, G. K.",b176_TheFallacyofSuccess.txt,6,37,1.3325554259043173,857,23.16216216216216,0.17969661610268378,3640,4.247374562427071
+166,"The American Language, 4th Edition","Mencken, H. L. ",b177_TheAmericanLanguagethEdition.txt,6,252,1.4588154032118805,5791,22.98015873015873,0.23830081160421343,26920,4.648592643757555
+167,Black Boy,"Wright, Richard",b178_BlackBoy.txt,6,23,1.3345323741007193,278,12.08695652173913,0.26618705035971224,1263,4.543165467625899
+168,“Politics and the English Language.”,"Orwell, George",b179_PoliticsandtheEnglishLanguage.txt,6,175,1.5032467532467533,4004,22.88,0.2544955044955045,19041,4.7554945054945055
+169,“Abraham Lincoln and the Self-Made Myth.”,"Hofstadter, Richard",b180_AbrahamLincolnandtheSelfMadeMyth.txt,6,12,1.516778523489933,298,24.833333333333332,0.22818791946308725,1396,4.684563758389261
+170,“Mother Tongue.”,"Tan, Amy",b181_MotherTongue.txt,6,29,1.3359375,384,13.241379310344827,0.125,1586,4.130208333333333
+171,“Take the Tortillas Out of Your Poetry.”,"Anaya, Rudolfo",b182_TaketheTortillasOutofYourPoetry.txt,6,13,1.2798353909465021,243,18.692307692307693,0.12345679012345678,990,4.074074074074074
+172,Democracy in America,"Tocqueville, Alexis de",b183_DemocracyinAmerica.txt,6,15,1.5521235521235521,518,34.53333333333333,0.277992277992278,2506,4.837837837837838
+173,Declaration of Sentiments by the Seneca Falls Conference,MISSING,b184_DeclarationofSentimentsbytheSenecaFallsConference.txt,6,32,1.4845908607863973,941,29.40625,0.21891604675876727,4395,4.6705632306057385
+174,"“What to the Slave Is the Fourth of July?: An Address Delivered in Rochester, New York, on 5 July 1852.”","Douglass, Frederick",b185_WhattotheSlaveIstheFourthofJulyAnAddressDeliveredinRochesterNewYorkonJuly.txt,6,107,1.3847628174413034,2087,19.50467289719626,0.19597508385241974,9253,4.43363679923335
+175,Edited by Daniel J. Boorstin,An American Primer,b186_EditedbyDanielJBoorstin.txt,6,115,1.3640956551027281,2969,25.817391304347826,0.16807005725833615,13012,4.382620410912765
+176,“Education.”,"Lagemann, Ellen Condliffe",b187_Education.txt,6,17,1.5874316939890711,366,21.529411764705884,0.32786885245901637,1881,5.139344262295082
+177,What They Fought For 1861–1865,"McPherson, James M",b188_WhatTheyFoughtFor.txt,6,14,1.5066666666666666,225,16.071428571428573,0.2088888888888889,1103,4.902222222222222
+178,"The American Reader: Words that Moved a Nation, 2nd Edition",MISSING,b189_TheAmericanReaderWordsthatMovedaNationndEdition.txt,6,27,1.3496332518337408,409,15.148148148148149,0.21271393643031786,1897,4.638141809290953
+179,America’s Constitution: A Biography,"Amar, Akhil Reed",b190_AmericasConstitutionABiography.txt,6,11,1.5567765567765568,273,24.818181818181817,0.27106227106227104,1398,5.1208791208791204
+180,1776,"McCullough, David",b191_1776.txt,6,16,1.325,320,20.0,0.146875,1371,4.284375
+181,Mirror of the World: A New History of Art,"Bell, Julian",b192_MirroroftheWorldANewHistoryofArt.txt,6,16,1.5282485875706215,354,22.125,0.2966101694915254,1786,5.045197740112994
+182,FedViews by the Federal Reserve Bank of San Francisco,MISSING,b193_FedViewsbytheFederalReserveBankofSanFrancisco.txt,6,13,1.6082089552238805,268,20.615384615384617,0.3358208955223881,1370,5.111940298507463
+183,Innumeracy: Mathematical Illiteracy and Its Consequences,"Paulos, John Allen",b194_InnumeracyMathematicalIlliteracyandItsConsequences.txt,6,156,1.5347576530612246,3136,20.102564102564102,0.2423469387755102,15130,4.824617346938775
+184,The Tipping Point: How Little Things Can Make a Big Difference,"Gladwell, Malcolm",b195_TheTippingPointHowLittleThingsCanMakeaBigDifference.txt,6,43,1.4166666666666667,732,17.023255813953487,0.1830601092896175,3372,4.60655737704918
+185,“Gravity in Reverse: The Tale of Albert Einstein’s ‘Greatest Blunder.’”,"Tyson, Neil deGrasse",b196_GravityinReverseTheTaleofAlbertEinsteinsGreatestBlunder.txt,6,12,1.5977443609022557,266,22.166666666666668,0.2857142857142857,1292,4.857142857142857
+186,"Google Hacks: Tips & Tools for Smarter Searching, 2nd Edition","Calishain, Tara, and Rael Dornfest",b197_GoogleHacksTipsToolsforSmarterSearchingndEdition.txt,6,20,1.4005763688760806,347,17.35,0.24495677233429394,1629,4.694524495677234
+187,“The Mysteries of Mass.”,"Kane, Gordon",b198_TheMysteriesofMass.txt,6,15,1.4915966386554622,238,15.866666666666667,0.2689075630252101,1118,4.697478991596639
+188,“Working Knowledge: Electronic Stability Control.”,"Fischetti, Mark",b199_WorkingKnowledgeElectronicStabilityControl.txt,6,9,1.5979899497487438,199,22.11111111111111,0.3165829145728643,1007,5.060301507537688
+189,“The Coming Merger of Mind and Machine.”,"Kurzweil, Ray",b201_TheComingMergerofMindandMachine.txt,6,145,1.6626204926811854,2801,19.317241379310346,0.33666547661549445,14540,5.191003213138165
+190,“Untangling the Roots of Cancer.”,"Gibbs, W Wayt",b202_UntanglingtheRootsofCancer.txt,6,206,1.5765331981753674,3946,19.155339805825243,0.3423720223010644,19808,5.0197668525088694
+191,"“The Cost Conundrum: Health Care Costs in McAllen, Texas.”","Gawande, Atul",b203_TheCostConundrumHealthCareCostsinMcAllenTexas.txt,6,488,1.4766272932897713,7958,16.307377049180328,0.24151796933902991,38375,4.822191505403367
