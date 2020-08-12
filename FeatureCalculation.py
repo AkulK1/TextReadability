@@ -56,4 +56,28 @@ def f_not_easy_words( doc ):
 df['not_easy_words'] = df['docs'].apply( lambda x: f_not_easy_words(nlp(x)) )/df['ws']
 df.plot(x= 'not_easy_words', y ='difficulty',style = 'o')
 
+#compute avergae word length
+
+def isLetter (input):
+    for x in range (ord('a'), ord('z')+1):
+        if (input==x):
+            return True
+    for x in range (ord('A'), ord('Z')+1):
+        if (input==x):
+            return True
+    return False
+
+def countLetters (doc):
+    ltrCount=0
+    for word in doc:
+        for char in word:
+            if (isLetter (ord(char))==True):
+                ltrCount+=1
+    print (ltrCount)
+    return ltrCount
+
+df['ttl_Chars'] = df['docs'].apply( lambda x: countLetters(x))
+df['avg_wd_length'] = df['ttl_Chars']/df['ws']
+df.plot(x= 'avg_wd_length', y ='difficulty',style = 'o')
+
 df.to_csv( "updatedFeatures.csv", columns= [col1 for col1 in df.columns if col1 != 'docs']  )
