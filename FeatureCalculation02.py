@@ -42,9 +42,7 @@ def calc_monosyls( doc ):
 df['monosyls'] = df['docs'].apply( lambda x: calc_monosyls( nlp(x) ))
 df.plot( x = 'monosyls', y = 'difficulty', style = 'o' )
 
-for col1 in df.columns:
-    if df[col1].dtypes in ["int64", 'float64' ]:
-        print( col1, df[col1].corr( df['difficulty'] ))
+
        
 #count principal modal verbs
 def count_Modals (x):
@@ -68,11 +66,24 @@ def count_Modals (x):
     mdls.add ('shall')
     mdls.add ('Should')
     mdls.add ('should')
-    for word in x.split():
-        TF=word in mdls
-        if (TF==True):
+    for token in x:
+        if (token.lemma_ in mdls):
             count+=1;
     return count
 
-count_Modals (text)
-df['modals_per_sent'] = df['docs'].apply( lambda x: count_Modals(x))/df['sentences']
+
+df['modals_per_sent'] = df['docs'].apply( lambda x: count_Modals(nlp(x)))/df['sentences']
+
+df.plot( x = 'modals_per_sent', y = 'difficulty', style = 'o' )
+
+from collections import Counter
+df['c'] = df['docs'].apply( lambda x: Counter( token.pos_ for token in nlp(x) ) )
+df.iloc[0]['c']['ADJ']
+df['adj']  = df['c'].apply( lambda x: x['ADP'] )/df['sentences']      
+df.plot( x = 'adj', y = 'difficulty', style = 'o' )        
+
+
+#correlation with difficulty
+for col1 in df.columns:
+    if df[col1].dtypes in ["int64", 'float64' ]:
+        print( col1, df[col1].corr( df['difficulty'] ))
