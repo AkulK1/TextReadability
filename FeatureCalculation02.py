@@ -45,3 +45,34 @@ df.plot( x = 'monosyls', y = 'difficulty', style = 'o' )
 for col1 in df.columns:
     if df[col1].dtypes in ["int64", 'float64' ]:
         print( col1, df[col1].corr( df['difficulty'] ))
+       
+#count principal modal verbs
+def count_Modals (x):
+    count=0
+    mdls= set ()
+    mdls.add ('Can')
+    mdls.add ('can')
+    mdls.add ('Could')
+    mdls.add ('could')
+    mdls.add ('May')
+    mdls.add ('may')
+    mdls.add ('Might')
+    mdls.add ('might')
+    mdls.add ('Will')
+    mdls.add ('will')
+    mdls.add ('Would')
+    mdls.add ('would')
+    mdls.add ('Must')
+    mdls.add ('must')
+    mdls.add ('Shall')
+    mdls.add ('shall')
+    mdls.add ('Should')
+    mdls.add ('should')
+    for word in x.split():
+        TF=word in mdls
+        if (TF==True):
+            count+=1;
+    return count
+
+count_Modals (text)
+df['modals_per_sent'] = df['docs'].apply( lambda x: count_Modals(x))/df['sentences']
