@@ -41,8 +41,6 @@ def calc_monosyls( doc ):
     return count/wss
 df['monosyls'] = df['docs'].apply( lambda x: calc_monosyls( nlp(x) ))
 df.plot( x = 'monosyls', y = 'difficulty', style = 'o' )
-
-
        
 #count principal modal verbs
 def count_Modals (x):
@@ -102,6 +100,64 @@ df.plot( x = 'aux', y = 'difficulty', style = 'o' )
 
 df['det']  = df['c'].apply( lambda x: x['DET'] )/df['sentences'] 
 df.plot( x = 'det', y = 'difficulty', style = 'o' ) 
+
+def isLetter (input):
+    for x in range (ord('a'), ord('z')+1):
+        if (input==x):
+            return True
+    for x in range (ord('A'), ord('Z')+1):
+        if (input==x):
+            return True
+    return False
+
+def countLetters (token):
+    ltrCount=0
+    for char in token:
+        if (isLetter (ord(char))==True):
+            ltrCount+=1
+    return ltrCount
+
+def count_Verbs (doc):
+    vCount=0;
+    cCount=0;
+    for token in doc:
+        if (token.pos_=="VERB"):
+            vCount+=1;
+            cCount+=countLetters (token.text)
+    if (cCount==0):
+        return 0
+    return cCount/vCount
+
+def count_Adjs (doc):
+    vCount=0;
+    cCount=0;
+    for token in doc:
+        if (token.pos_=="ADJ"):
+            vCount+=1;
+            cCount+=countLetters (token.text)
+    if (cCount==0):
+        return 0
+    return cCount/vCount
+
+def count_Advs (doc):
+    vCount=0;
+    cCount=0;
+    for token in doc:
+        if (token.pos_=="ADV"):
+            vCount+=1;
+            cCount+=countLetters (token.text)
+    if (cCount==0):
+        return 0
+    return cCount/vCount
+
+df['avg_verb_length'] = df['docs'].apply( lambda x: count_Verbs(nlp(x)))
+df.plot(x= 'avg_verb_length', y ='difficulty',style = 'o')
+
+df['avg_adj_length'] = df['docs'].apply( lambda x: count_Adjs(nlp(x)))
+df.plot(x= 'avg_adj_length', y ='difficulty',style = 'o')
+
+df['avg_adv_length'] = df['docs'].apply( lambda x: count_Advs(nlp(x)))
+df.plot(x= 'avg_adv_length', y ='difficulty',style = 'o')
 
 #correlation with difficulty
 for col1 in df.columns:
