@@ -78,10 +78,30 @@ df.plot( x = 'modals_per_sent', y = 'difficulty', style = 'o' )
 
 from collections import Counter
 df['c'] = df['docs'].apply( lambda x: Counter( token.pos_ for token in nlp(x) ) )
-df.iloc[0]['c']['ADJ']
-df['adj']  = df['c'].apply( lambda x: x['ADP'] )/df['sentences']      
-df.plot( x = 'adj', y = 'difficulty', style = 'o' )        
 
+df['adj']  = df['c'].apply( lambda x: x['ADJ'] )/df['sentences']      
+df.plot( x = 'adj', y = 'difficulty', style = 'o' )    
+    
+df['verb']  = df['c'].apply( lambda x: x['VERB'] )/df['sentences'] 
+df.plot( x = 'verb', y = 'difficulty', style = 'o' )        
+
+df['adp']  = df['c'].apply( lambda x: x['ADP'] )/df['sentences']      
+df.plot( x = 'adp', y = 'difficulty', style = 'o' )        
+
+df['adv']  = df['c'].apply( lambda x: x['ADV'] )/df['sentences'] 
+df.plot( x = 'adv', y = 'difficulty', style = 'o' ) 
+
+df['sconj']  = df['c'].apply( lambda x: x['SCONJ'] )/df['sentences'] 
+df.plot( x = 'sconj', y = 'difficulty', style = 'o' ) 
+
+df['cconj']  = df['c'].apply( lambda x: x['CCONJ'] )/df['sentences'] 
+df.plot( x = 'cconj', y = 'difficulty', style = 'o' ) 
+
+df['aux']  = df['c'].apply( lambda x: x['AUX'] )/df['sentences'] 
+df.plot( x = 'aux', y = 'difficulty', style = 'o' ) 
+
+df['det']  = df['c'].apply( lambda x: x['DET'] )/df['sentences'] 
+df.plot( x = 'det', y = 'difficulty', style = 'o' ) 
 
 #correlation with difficulty
 for col1 in df.columns:
