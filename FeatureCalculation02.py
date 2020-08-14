@@ -163,3 +163,6 @@ df.plot(x= 'avg_adv_length', y ='difficulty',style = 'o')
 for col1 in df.columns:
     if df[col1].dtypes in ["int64", 'float64' ]:
         print( col1, df[col1].corr( df['difficulty'] ))
+        
+
+df.to_csv( "Data03.csv" )
