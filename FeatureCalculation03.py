@@ -54,24 +54,17 @@ ff = open('google-10000-english-usa.txt', 'r')
 easy_words = [i.lower() for i in ff.read().split()]
 
 
-# def f_not_easy_words( doc ):
-#     res = 0
-#     for token in doc:
-#         t1 =  token.lemma_
-#         t1 = t1.lower()
-        
-#         if (token._.syllables_count != None) and not ( (token.text.lower() in easy_words) or ( t1.lower() in easy_words)):
-#             print(token)
-#             res+=1
-#     return res
-# df['uncommon'] = df['docs'].apply( lambda x: f_not_easy_words(nlp(x)) )/df['ws']
-# df.plot(x= 'uncommon', y ='difficulty',style = 'o')
 
 #dictionary of correlation with difficulty
+
+
+
 corr_dict = {}
 for col1 in df.columns:
     if df[col1].dtypes in ["int64", 'float64' ]:
         corr_dict[col1] = df[col1].corr( df['difficulty'] )
+
+
 
 #print correlations in increasing order
 for k,v in sorted(corr_dict.items(), key=lambda p:p[1]):
