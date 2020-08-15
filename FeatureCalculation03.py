@@ -42,7 +42,7 @@ df['gunning_fog'] = 0.4*(df['ws_per_sents']+df['not_easy_words'])
 df.plot( x = 'gunning_fog', y = 'difficulty', style = 'o' ) 
 
 #CLI
-df['CLI'] = 0.0588*100*df['avg_wd_length']-0.296*(100/df['ws_per_sents'])-15.8
+df['CLI'] = 0.0588*100*df['avg_wd_length']-0.296*(df['sentences']/df['ws']*100)-15.8
 df.plot( x = 'CLI', y = 'difficulty', style = 'o' ) 
 
 #correlation with difficulty
