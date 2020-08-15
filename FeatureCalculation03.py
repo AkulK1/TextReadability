@@ -77,3 +77,4 @@ for col1 in df.columns:
 for k,v in sorted(corr_dict.items(), key=lambda p:p[1]):
     print(k,v)
         
+df.to_csv( 'no_text.csv',  columns = [col1 for col1 in df.columns if col1 != 'docs'])
