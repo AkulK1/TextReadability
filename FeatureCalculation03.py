@@ -31,6 +31,20 @@ df['dale_score'] = df.apply( lambda row: calc_dale(row), axis =1  )
 plot_graph('dale_score')
 plot_graph('not_easy_words')
 
+#SMOG Index
+import math
+
+df['SMOG'] = 3+df['polysyls'].apply (lambda x: math.sqrt(x))
+df.plot( x = 'SMOG', y = 'difficulty', style = 'o' ) 
+
+#gunning fog
+df['gunning_fog'] = 0.4*(df['ws_per_sents']+df['not_easy_words'])
+df.plot( x = 'gunning_fog', y = 'difficulty', style = 'o' ) 
+
+#CLI
+df['CLI'] = 0.0588*100*df['avg_wd_length']-0.296*(100/df['ws_per_sents'])-15.8
+df.plot( x = 'CLI', y = 'difficulty', style = 'o' ) 
+
 #correlation with difficulty
 for col1 in df.columns:
     if df[col1].dtypes in ["int64", 'float64' ]:
