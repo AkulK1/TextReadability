@@ -34,20 +34,46 @@ plot_graph('not_easy_words')
 #SMOG Index
 import math
 
-df['SMOG'] = 3+df['polysyls'].apply (lambda x: math.sqrt(x))
-df.plot( x = 'SMOG', y = 'difficulty', style = 'o' ) 
+df['smog'] = 3+df['polysyls'].apply (lambda x: math.sqrt(x))
+df.plot( x = 'smog', y = 'difficulty', style = 'o' ) 
 
 #gunning fog
 df['gunning_fog'] = 0.4*(df['ws_per_sents']+df['not_easy_words'])
 df.plot( x = 'gunning_fog', y = 'difficulty', style = 'o' ) 
 
 #CLI
-df['CLI'] = 0.0588*100*df['avg_wd_length']-0.296*(df['sentences']/df['ws']*100)-15.8
-df.plot( x = 'CLI', y = 'difficulty', style = 'o' ) 
+df['cli'] = 0.0588*100*df['avg_wd_length']-0.296*(df['sentences']/df['ws']*100)-15.8
+df.plot( x = 'cli', y = 'difficulty', style = 'o' ) 
 
-#correlation with difficulty
+
+df['linsear_raw'] = (df['polysyls']*300 + (1-df['polysyls'])*100)/(df['sentences']/df['ws']*100)
+df['linsear'] = df['linsear_raw'].apply( lambda x: x/2 if x >20 else (x/2)-1)
+plot_graph('linsear')
+
+ff = open('google-10000-english-usa.txt', 'r')
+easy_words = [i.lower() for i in ff.read().split()]
+
+
+# def f_not_easy_words( doc ):
+#     res = 0
+#     for token in doc:
+#         t1 =  token.lemma_
+#         t1 = t1.lower()
+        
+#         if (token._.syllables_count != None) and not ( (token.text.lower() in easy_words) or ( t1.lower() in easy_words)):
+#             print(token)
+#             res+=1
+#     return res
+# df['uncommon'] = df['docs'].apply( lambda x: f_not_easy_words(nlp(x)) )/df['ws']
+# df.plot(x= 'uncommon', y ='difficulty',style = 'o')
+
+#dictionary of correlation with difficulty
+corr_dict = {}
 for col1 in df.columns:
     if df[col1].dtypes in ["int64", 'float64' ]:
-        print( col1, df[col1].corr( df['difficulty'] ))
+        corr_dict[col1] = df[col1].corr( df['difficulty'] )
+
+#print correlations in increasing order
+for k,v in sorted(corr_dict.items(), key=lambda p:p[1]):
+    print(k,v)
         
-dale_df = df[['title', 'difficulty','not_easy_words','ws_per_sents','dale_score']]
