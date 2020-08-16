@@ -64,3 +64,14 @@ gs.fit(X_train,y_train)
 
 print (gs.best_score_)
 print (gs.best_estimator_)
+
+import statsmodels.api as sm # import statsmodels 
+X_train = sm.add_constant(X_train) ## let's add an intercept (beta_0) to our model
+X_test = sm.add_constant(X_test) ## let's add an intercept (beta_0) to our model
+# Note the difference in argument order
+model = sm.OLS(y_train, X_train).fit() ## sm.OLS(output, input)
+predictions = model.predict(X_test)
+predictions.round ()
+print (MAE (y_test, predictions))
+# Print out the statistics
+print (model.summary())
