@@ -23,8 +23,8 @@ def calc_dale( row ):
     dw =row['not_easy_words']
     wps = row['ws_per_sents']
     res = 0.1579*(dw*100) + 0.0496*wps
-    # if dw > 0.05:
-    #     res+=3.6365
+    if dw > 0.05:
+        res+=3.6365
     return res
 
 df['dale_score'] = df.apply( lambda row: calc_dale(row), axis =1  )
