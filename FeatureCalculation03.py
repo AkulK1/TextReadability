@@ -23,8 +23,8 @@ def calc_dale( row ):
     dw =row['not_easy_words']
     wps = row['ws_per_sents']
     res = 0.1579*(dw*100) + 0.0496*wps
-    if dw > 0.05:
-        res+=3.6365
+    # if dw > 0.05:
+    #     res+=3.6365
     return res
 
 df['dale_score'] = df.apply( lambda row: calc_dale(row), axis =1  )
@@ -50,9 +50,6 @@ df['linsear_raw'] = (df['polysyls']*300 + (1-df['polysyls'])*100)/(df['sentences
 df['linsear'] = df['linsear_raw'].apply( lambda x: x/2 if x >20 else (x/2)-1)
 plot_graph('linsear')
 
-ff = open('google-10000-english-usa.txt', 'r')
-easy_words = [i.lower() for i in ff.read().split()]
-
 
 
 #dictionary of correlation with difficulty
@@ -70,4 +67,4 @@ for col1 in df.columns:
 for k,v in sorted(corr_dict.items(), key=lambda p:p[1]):
     print(k,v)
         
-df.to_csv( 'no_text.csv',  columns = [col1 for col1 in df.columns if col1 != 'docs' and col1 != 'modeals_per_sent' ])
+df.to_csv( 'no_text.csv',  columns = [col1 for col1 in df.columns if col1 != 'docs' and col1 != 'modals_per_sent' ])

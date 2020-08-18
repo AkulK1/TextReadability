@@ -18,7 +18,7 @@ df = pd.read_csv( "no_text.csv",  index_col = 0)
 print (df.columns)
 
 from sklearn.model_selection import train_test_split
-predictors =['sci_info', 'eng_lang', 'syl_per_word', 'ws_per_sents', 'not_easy_words', 'avg_wd_length', 'polysyls', 'monosyls', 'sconj', 'avg_verb_length', 'avg_adj_length', 'avg_adv_length', 'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear']
+predictors =['sci_info', 'syl_per_word', 'ws_per_sents', 'not_easy_words', 'avg_wd_length', 'polysyls', 'monosyls', 'sconj', 'avg_verb_length', 'avg_adj_length', 'avg_adv_length', 'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear']
 X=df[predictors]
 y=df['difficulty']
 
