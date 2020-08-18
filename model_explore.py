@@ -13,7 +13,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import GridSearchCV
 
 from sklearn.metrics import mean_absolute_error as MAE
-df = pd.read_csv( "no_text.csv",  index_col = 0)
+df = pd.read_csv( "no_text.csv" )
 
 print (df.columns)
 
