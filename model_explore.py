@@ -13,7 +13,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import GridSearchCV
 
 from sklearn.metrics import mean_absolute_error as MAE
-df = pd.read_csv( "no_text.csv" )
+df = pd.read_csv( "cleaned.csv" )
 
 print (df.columns)
 
@@ -25,14 +25,12 @@ y=df['difficulty']
 X_train, X_test, y_train, y_test =train_test_split (X, y, test_size=.2, random_state=1)
 
 model = RandomForestRegressor ( random_state=1)
-model.fit (X_train, y_train)
-y_pred=model.predict (X_test)
-y_pred_series = pd.Series(y_pred)
-y_pred_series=y_pred_series.round ()
-print (MAE (y_test, y_pred_series))
+cross_val_score(model, X, y, cv=5, scoring = 'neg_mean_absolute_error'  )
+
+
 param_grid1 = {
     'max_depth': [60, 70, 80],
-    'criterion':('mae'),
+    'criterion':['mae'],
     'n_estimators': range(10,100,10)
 }
 rf_model = RandomForestRegressor(random_state=1)
@@ -41,13 +39,11 @@ grid_s.fit(X_train, y_train)
 print (grid_s.best_score_)
 print (grid_s.best_estimator_)
 
-MAE( grid_s.best_estimator_.predict( X_train ), y_train )
+MAE( grid_s.best_estimator_.predict( X_test ), y_test )
 
 
 lm = LinearRegression()
-lm.fit(X_train, y_train)
-
-np.mean(cross_val_score(lm,X_train,y_train, scoring = 'neg_mean_absolute_error', cv= 3))
+np.mean(cross_val_score(lm,X,y, scoring = 'neg_mean_absolute_error', cv= 10))
 
 # lasso regression  
 #Ken Jee
