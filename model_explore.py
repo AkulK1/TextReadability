@@ -11,6 +11,7 @@ from sklearn.linear_model import LinearRegression, Lasso
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import mean_squared_error
 
 from sklearn.metrics import mean_absolute_error as MAE
 df = pd.read_csv( "cleaned.csv" )
@@ -43,7 +44,13 @@ MAE( grid_s.best_estimator_.predict( X_test ), y_test )
 
 
 lm = LinearRegression()
-np.mean(cross_val_score(lm,X,y, scoring = 'neg_mean_absolute_error', cv= 10))
+lm.fit( X_train, y_train )
+MAE( lm.predict(X_test).round(), y_test  )
+
+
+np.mean(cross_val_score(lm,X_train,y_train, scoring = 'neg_mean_squared_error', cv= 5))
+mean_squared_error( lm.predict( X_test).round(), y_test )
+
 
 # lasso regression  
 #Ken Jee
@@ -91,3 +98,6 @@ predictions.round ()
 print (MAE (y_test, predictions))
 # Print out the statistics
 print (model.summary())
+
+
+
