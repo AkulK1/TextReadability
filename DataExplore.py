@@ -65,8 +65,20 @@ df_s[ 'z_fk' ] = df_s.apply( lambda row: z_score( row ),  axis =1)
 df_s['z_l']=df_s.apply( lambda row: z_score2( row ),  axis =1) 
 df_s['z_d'] = df_s.apply( lambda row: z_score3( row ),  axis =1) 
 
-df_s = df_s.sort_values( by= ['difficulty', 'dale_score'])
+df_s = df_s.sort_values( by= ['difficulty', 'flesch_score'])
 
 zscores = df_s
 
 print( zscores )
+
+ex_df = zscores.loc[ (abs(zscores['z_fk'])>=2) | (abs(zscores['z_l'])>=2)  | (abs(zscores['z_d'])>=2)]['titles']
+
+
+extremes = list(zscores.loc[ (abs(zscores['z_fk'])>=2) | (abs(zscores['z_l'])>=2)  | (abs(zscores['z_d'])>=2)]['titles']  )
+extremes
+extremes.remove('b183_DemocracyinAmerica.txt' )
+extremes.remove( 'b171_TheDeclarationofIndependence.txt' )
+extremes.remove( 'b152_DonQuixote.txt'  )  
+
+new_df = df.loc[ np.logical_not( df.titles.isin(extremes)) ]
+new_df.to_csv( 'cleaned.csv' )
