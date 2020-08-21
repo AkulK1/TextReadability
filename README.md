@@ -1,6 +1,7 @@
+<meta name="google-site-verification" content="VaCgRfEuw9XSNFb-97t0Kqlj54OQxj7PbVL2fAXmVCU" />
+
 # TextReadability
 
 A ML-based model to assess readibility, trained on data from Common Core. The project also hopes to create a glossary, whereby a list of 10-15 hardest words will be picked out and printed alongside their dictionary definitions. 
 
 By Akul Kesarwani and Anchi (Bryant) Xia, 2020
-<meta name="google-site-verification" content="VaCgRfEuw9XSNFb-97t0Kqlj54OQxj7PbVL2fAXmVCU" />
