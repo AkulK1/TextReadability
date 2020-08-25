@@ -18,18 +18,27 @@ from sklearn.metrics import mean_squared_error as MSE
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.gaussian_process import GaussianProcessClassifier
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 
 
 df = pd.read_csv( "cleaned.csv" )
+#print( df.columns )
 
-#predictors =['syl_per_word', 'ws_per_sents', 'monosyls',  'adj', 'verb', 'adp', 'adv', 'sconj', 'det', 'avg_verb_length', 'avg_adj_length', 'avg_adv_length',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear']
+# corr_dict = {}
+# for col1 in df.columns:
+#     if df[col1].dtypes in ["int64", 'float64' ]:
+#         corr_dict[col1] = df[col1].corr( df['difficulty'] )
+
+
+
+# #print correlations in increasing order
+# for k1,v1 in sorted(corr_dict.items(), key=lambda p:p[1]):
+#     print(k1,v1)
+# print('\n')
 
 predictors =['syl_per_word', 'ws_per_sents', 'monosyls',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear']
-
 
 df[predictors] = StandardScaler().fit_transform( df[predictors] )
 predictors.append( 'sci_info' )
@@ -63,7 +72,7 @@ def testit( model, name ):
         temp3/=temp2
         adj+=temp
         acc+=temp3
-    print(  '{:10.3f}'.format(acc/50),  '{:10.3f}'.format(adj/50), '{:10.3f}'.format(ttl_mae/50) )
+    print(  '{:10.5f}'.format(acc/50),  '{:10.5f}'.format(adj/50), '{:10.5f}'.format(ttl_mae/50) )
 
 logreg = LogisticRegression( random_state = 10, max_iter = 400 )
 testit( logreg, 'LogReg')
@@ -78,8 +87,7 @@ testit( knn, 'KNN5' )
 lda = LinearDiscriminantAnalysis()
 testit( lda, "LDA")
 
-gp = GaussianProcessClassifier( random_state = 10)
-testit(gp, "GP")
+
 
 
 lsvc = SVC( kernel  = 'linear', random_state=10 )
@@ -156,8 +164,6 @@ testit( ordknn, 'KNN5' )
 ordlda = OrdinalClassifier(LinearDiscriminantAnalysis())
 testit( ordlda, "LDA")
 
-ordgp = OrdinalClassifier(GaussianProcessClassifier( random_state = 10))
-testit(ordgp, "GP")
 
 
 ordlsvc = OrdinalClassifier(SVC( kernel  = 'linear', random_state=10, probability = True))
@@ -165,4 +171,14 @@ testit( ordlsvc, 'Linear SVC')
 
 ordrbf_svc = OrdinalClassifier(SVC( kernel = 'rbf', random_state = 10, probability = True ))
 testit( ordrbf_svc, 'RBF SVC')
+
+print("\n")
+from mord import LogisticAT
+
+# for a in range(130, 160 ):
+    
+#     model_ordinal = LogisticAT(alpha=a/10000)
+#     testit( model_ordinal, 'Ordinal '+  str(a/10000) )
+model_ordinal = LogisticAT( alpha = .014 )
+testit( model_ordinal, "Ordinal LR")
 
