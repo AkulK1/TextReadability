@@ -26,9 +26,9 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 df = pd.read_csv( "cleaned.csv" )
 
-predictors =['syl_per_word', 'ws_per_sents', 'monosyls',  'adj', 'verb', 'adp', 'adv', 'sconj', 'det', 'avg_verb_length', 'avg_adj_length', 'avg_adv_length',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear']
+#predictors =['syl_per_word', 'ws_per_sents', 'monosyls',  'adj', 'verb', 'adp', 'adv', 'sconj', 'det', 'avg_verb_length', 'avg_adj_length', 'avg_adv_length',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear']
 
-#predictors =['monosyls','adj', 'verb', 'adp', 'adv', 'sconj', 'det', 'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear']
+predictors =['syl_per_word', 'ws_per_sents', 'monosyls',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear']
 
 
 df[predictors] = StandardScaler().fit_transform( df[predictors] )
