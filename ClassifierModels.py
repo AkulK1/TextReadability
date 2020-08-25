@@ -20,8 +20,9 @@ from sklearn.svm import SVC
 from sklearn.gaussian_process import GaussianProcessClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-
-
+from sklearn.linear_model import LinearRegression,Ridge, HuberRegressor, TheilSenRegressor, RANSACRegressor
+from sklearn.ensemble import VotingClassifier
+from sklearn.base import BaseEstimator, ClassifierMixin
 
 df = pd.read_csv( "cleaned.csv" )
 #print( df.columns )
@@ -38,7 +39,7 @@ df = pd.read_csv( "cleaned.csv" )
 #     print(k1,v1)
 # print('\n')
 
-predictors =['syl_per_word', 'ws_per_sents', 'monosyls',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear']
+predictors =['syl_per_word', 'ws_per_sents', 'monosyls',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear', 'det', 'sconj', 'avg_verb_length']
 
 df[predictors] = StandardScaler().fit_transform( df[predictors] )
 predictors.append( 'sci_info' )
@@ -58,11 +59,11 @@ def testit( model, name ):
     for x in range(50):
         X_train, X_test, y_train, y_test =train_test_split (X, y, test_size=.3, random_state=x)
         model.fit( X_train, y_train )
-        ttl_mae +=MAE(y_test, model.predict(X_test))
+        ttl_mae +=MAE(y_test, model.predict(X_test).round())
         temp = 0
         temp2 = 0
         temp3 = 0
-        for i,j in zip(model.predict(X_test), y_test):
+        for i,j in zip(model.predict(X_test).round(), y_test):
             temp2+=1
             if (i==j):
                 temp3+=1
@@ -101,7 +102,7 @@ testit( rbf_svc, 'RBF SVC')
 from sklearn.base import clone
 
 #https://gist.github.com/M46F/c574f688715d5f7e4b65bce4b3ec5fdc
-class OrdinalClassifier():
+class OrdinalClassifier(BaseEstimator, ClassifierMixin):
     
     def __init__(self, clf):
         self.clf = clf
@@ -181,4 +182,49 @@ from mord import LogisticAT
 #     testit( model_ordinal, 'Ordinal '+  str(a/10000) )
 model_ordinal = LogisticAT( alpha = .014 )
 testit( model_ordinal, "Ordinal LR")
+
+
+print("\nLinear Models")
+ols = LinearRegression()
+testit( ols, "OLS" )
+
+
+ridgereg = Ridge( alpha = .0097 )
+testit( ridgereg, "Ridge" )
+
+huber = HuberRegressor( alpha = 0.1 , max_iter = 3000)
+testit( huber, "Huber" )
+
+ordlda.predict(X).shape
+from scipy import stats
+
+#combines models and takes the most common output
+def testvote( ests ):
+    acc = 0
+    ttl_mae = 0
+    adj = 0
+    for x in range(50):
+        X_train, X_test, y_train, y_test =train_test_split (X, y, test_size=.3, random_state=x)
+        y_preds=[]
+        for model in ests:
+            model.fit( X_train, y_train )
+            y_preds.append(model.predict( X_test ))
+        final_pred =  stats.mode( y_preds)[0]
+        final_pred = final_pred.T
+        ttl_mae +=MAE(y_test, final_pred)
+        temp = 0
+        temp2 = 0
+        temp3 = 0
+        for i,j in zip(final_pred, y_test):
+            temp2+=1
+            if (i==j):
+                temp3+=1
+            if abs( i-j) <= 1:
+                temp+=1
+        temp /= temp2
+        temp3/=temp2
+        adj+=temp
+        acc+=temp3
+    print(  '           ', '{:10.5f}'.format(acc/50),  '{:10.5f}'.format(adj/50), '{:10.5f}'.format(ttl_mae/50) )
+
 
