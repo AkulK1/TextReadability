@@ -6,7 +6,7 @@ from data_input import dt_in
 import numpy as np
 
 def load_models():
-    file_name = "models/model_file.p"
+    file_name = "models/full_model.p"
     with open(file_name, 'rb') as pickled:
        data = pickle.load(pickled)
        model = data['model']
