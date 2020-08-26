@@ -65,7 +65,7 @@ model_ordinal = LogisticAT( alpha = .014 )
 
 
 X_train, X_test, y_train, y_test =train_test_split (X, y, test_size=.3, random_state=23)
-model_ordinal.fit( X_train, y_train)
+model_ordinal.fit( X, y )
 print (MAE(y_test, model_ordinal.predict(X_test).round()))
 
 temp = 0
@@ -89,9 +89,9 @@ print (temp)
 
 import pickle
 pickl = {'model': model_ordinal}
-pickle.dump( pickl, open( 'model_file' + ".p", "wb" ) )
+pickle.dump( pickl, open( 'full_model' + ".p", "wb" ) )
 
-file_name = "model_file.p"
+file_name = "full_model.p"
 with open(file_name, 'rb') as pickled:
     data = pickle.load(pickled)
     model = data['model']
