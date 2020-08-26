@@ -197,21 +197,25 @@ testit( huber, "Huber" )
 
 ordlda.predict(X).shape
 from scipy import stats
+print('\n')
 
 #combines models and takes the most common output
-def testvote( ests ):
+def testvote( dict1 ):
     acc = 0
     ttl_mae = 0
     adj = 0
+    print( dict1.keys() )
+    ests = dict1.values()
     for x in range(50):
         X_train, X_test, y_train, y_test =train_test_split (X, y, test_size=.3, random_state=x)
         y_preds=[]
         for model in ests:
             model.fit( X_train, y_train )
-            y_preds.append(model.predict( X_test ))
+            y_preds.append( model.predict( X_test ).round() )
         final_pred =  stats.mode( y_preds)[0]
         final_pred = final_pred.T
         ttl_mae +=MAE(y_test, final_pred)
+        
         temp = 0
         temp2 = 0
         temp3 = 0
@@ -225,6 +229,16 @@ def testvote( ests ):
         temp3/=temp2
         adj+=temp
         acc+=temp3
-    print(  '           ', '{:10.5f}'.format(acc/50),  '{:10.5f}'.format(adj/50), '{:10.5f}'.format(ttl_mae/50) )
+    print( '{:10}'.format( ' ' ), '{:10.5f}'.format(acc/50),  '{:10.5f}'.format(adj/50), '{:10.5f}'.format(ttl_mae/50), '\n' )
 
 
+# testvote( [model_ordinal, ridgereg, ordlda] )
+    
+model_list= {"Ordinal LR": model_ordinal, "ordlogreg": ordlogreg, "GNB": gnb, "Lin SVC": lsvc, 'Ord LDA': ordlda, 'Ord RBF SVC': ordrbf_svc, "Ridge Reg": ridgereg}
+
+import itertools
+
+for L in range( 1, len(model_list)+1 ):
+    for subset in itertools.combinations(model_list, L):
+        temp_dict = {i: model_list[i] for i in subset}
+        testvote( temp_dict )
