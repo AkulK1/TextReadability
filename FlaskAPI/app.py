@@ -19,8 +19,6 @@ x = np.array (dt_in).reshape (1, -1)
 k=model.predict(x)
 
 @app.route('/predict', methods=['GET'])
-
-
 def predict():
     # stub input features
     # parse input features from request
@@ -31,6 +29,7 @@ def predict():
     model = load_models()
     prediction = str(model.predict(x_in)[0])
     print (prediction)
+    
     response = json.dumps({'response': prediction})
     return response, 200
 
