@@ -7,7 +7,7 @@ This snipet is from Ken Jee's github'
 import requests 
 from data_input import dt_in
 
-URL = 'https://txt-readability-20.herokuapp.com/predict'
+URL = 'https://ds-text-readability-20.herokuapp.com/'
 headers = {"Content-Type": "application/json"}
 data = {"input": dt_in}
 
