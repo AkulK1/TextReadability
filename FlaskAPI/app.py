@@ -2,8 +2,9 @@ import flask
 from flask import Flask, jsonify, request
 import json
 import pickle
-from data_input import dt_in
 import numpy as np
+
+app = Flask(__name__)
 
 def load_models():
     file_name = "models/full_model.p"
@@ -12,13 +13,8 @@ def load_models():
        model = data['model']
     return model
 
-app = Flask(__name__)
-model = load_models()
-x = np.array (dt_in).reshape (1, -1)
-
-k=model.predict(x)
-
 @app.route('/predict', methods=['GET'])
+
 def predict():
     # stub input features
     # parse input features from request
