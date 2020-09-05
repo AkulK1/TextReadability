@@ -1,5 +1,4 @@
-import flask
-from flask import Flask, jsonify, request
+from flask import Flask, request
 import json
 import pickle
 import numpy as np
@@ -13,14 +12,14 @@ def load_models():
        model = data['model']
     return model
 
-@app.route('/predict', methods=['GET'])
+@app.route('/predict', methods=['POST'])
 
 def predict():
     # stub input features
     # parse input features from request
     request_json = request.get_json()
     x = request_json['input']
-    x_in = np.array (x).reshape (1, -1)
+    x_in = np.array(x).reshape(1, -1)
     # load model
     model = load_models()
     prediction = str(model.predict(x_in)[0])
