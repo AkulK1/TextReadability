@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.10/brython.js" integrity="sha512-DAVgjwE5oxpf+1YuU4mZJVAkR7w1x5Ab5tQMXzVcPZqTAtJEdGb77IU8kUAJ/qYPoh9ZD92opwho8ExdYYG0uQ==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.10/brython_stdlib.js" integrity="sha512-m5jgelDELlRYGZ0Ec1taWEUpNkAgdp64sALDpQe90n0WQ2i39TPxvrAVnRwzD5IaG1fq/bn/9p/g+k2OnH9MKA==" crossorigin="anonymous"></script>
+</head>
+<body onload="brython()">
+	<h1> Brython Trial </h1>
+	<h2 id="hello"></h2>
+	<button id="alert-btn"> Alert and Insert </button>
+	<input type="text" id="text" placeholder="Enter Something">
+	<span id="output"></span>
+	<button id="sub-btn"> Submit </button>
+	<!--Alert-->
+	<script type="text/python" id=script0>
+		from browser import document, console, alert
+
+		def show (e):
+			console.log ('Hello')
+			alert ('Hello World')
+			document ['hello'] <='Hello World'
+
+		document['alert-btn'].bind ('click', show)
+	</script>
+	<!--text field-->
+	<script type="text/python" id=script1>
+		from browser import document, console
+		def show_text (e):
+			document['output'].textContent=document['text'].value
+
+		document['sub-btn'].bind ('click', show_text)
+	</script>
+</body>
+</html>
