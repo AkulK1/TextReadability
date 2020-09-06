@@ -26,8 +26,6 @@ def predict():
     # load model
     model = load_models()
     prediction = str(model.predict(x_in)[0])
-    print (prediction)
-    
     response = json.dumps({'response': prediction})
     return response, 200
 
@@ -39,6 +37,13 @@ def isLetter (input):
         if (input==x):
             return True
     return False
+
+def countLetters (token):
+    ltrCount=0
+    for char in token:
+        if (isLetter (ord(char))==True):
+            ltrCount+=1
+    return ltrCount
 
 @app.route( '/textpred', methods = ['POST'] )
 def textpred():
@@ -61,7 +66,7 @@ def textpred():
         if token._.syllables_count != None:
             ws+=1
             syls+=token._.syllables_count
-    feature_list.append( syls/ws )
+    feature_list.append(syls/ws )
     
     #ws_per_sents    
     sentenceCount = len(list(doc.sents))
@@ -85,7 +90,6 @@ def textpred():
     feature_list.append( fkscore )
     
     #ari_score
-    #df['ari_score'] = 4.71*df['avg_wd_length']+0.5*df['ws_per_sents']
     ltrCount=0
     for word in req_text:
         for char in word:
@@ -103,13 +107,71 @@ def textpred():
         t1 = t1.lower()
         
         if (token._.syllables_count != None) and not ( (token.text.lower() in easy_words) or ( t1.lower() in easy_words)):
-            print(token)
             res+=1
+            
     percent_easy = res/wordCount
     feature_list.append( 0.1579*percent_easy*100 + 0.0496*feature_list[1] )
-    
+
     #smog
+    import math
     
+    poly  = 0
+    
+    for token in doc:
+        syl1 = token._.syllables_count
+        if  syl1 != None and syl1 > 2:
+            poly+=1
+            
+    polysyls = poly/ws
+    smog=3+math.sqrt(polysyls)
+    feature_list.append(smog)
+
+     
+    #'gunning_fog'
+    
+    feature_list.append(0.4(wordCount/sentenceCount+percent_easy))
+ 
+    #'cli'
+    cli = 0.0588*100*avg_wd_len-0.296*(sentenceCount/wordCount*100)-15.8
+    feature_list.append(cli)
+    
+    #'linsear'
+    linsear = (polysyls*300 +(1-polysyls)*100)/(sentenceCount/wordCount*100)
+    feature_list.append(linsear)
+
+    #'det'
+    det=0
+    for token in doc:
+        if (token.pos_=="DET"):
+            det+=1;
+    det=det/sentenceCount
+    feature_list.append(det)
+    
+    #'sconj'
+    sconj=0
+    for token in doc:
+        if (token.pos_=="SCONJ"):
+            sconj+=1;
+    sconj=sconj/sentenceCount
+    feature_list.append(det)
+    
+    #'avg_verb_length'
+    vCount=0;
+    cCount=0;
+    for token in doc:
+        if (token.pos_=="VERB"):
+            vCount+=1;
+            cCount+=countLetters (token.text)
+    avg_vb_length=0
+    if (cCount==0):
+        avg_vb_length=0
+    else:
+        avg_vb_length=cCount/vCount
+    feature_list.append(avg_vb_length)
+    
+    #manually adding info text
+    
+    feature_list.append(1)
     
     #scaling data and getting model's prediction
     x_in = np.array(feature_list).reshape(1, -1)
@@ -117,7 +179,6 @@ def textpred():
     # load model
     model = load_models()
     prediction = str(model.predict(x_in)[0])
-    print (prediction)
     
     response = json.dumps({'response': prediction})
     return response, 200
