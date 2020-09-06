@@ -129,7 +129,7 @@ def textpred():
      
     #'gunning_fog'
     
-    feature_list.append(0.4(wordCount/sentenceCount+percent_easy))
+    feature_list.append(0.4*(wordCount/sentenceCount+percent_easy))
  
     #'cli'
     cli = 0.0588*100*avg_wd_len-0.296*(sentenceCount/wordCount*100)-15.8
