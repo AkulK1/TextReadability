@@ -111,6 +111,7 @@ def textpred():
     #smog
     
     
+    #scaling data and getting model's prediction
     x_in = np.array(feature_list).reshape(1, -1)
     x_in =  StandardScaler().fit_transform( x_in )
     # load model
