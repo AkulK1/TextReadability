@@ -234,11 +234,13 @@ def testvote( dict1 ):
 
 # testvote( [model_ordinal, ridgereg, ordlda] )
     
-model_list= {"Ordinal LR": model_ordinal, "ordlogreg": ordlogreg, "GNB": gnb, "Lin SVC": lsvc, 'Ord LDA': ordlda, 'Ord RBF SVC': ordrbf_svc, "Ridge Reg": ridgereg}
+# model_list= {"Ordinal LR": model_ordinal, "ordlogreg": ordlogreg, "GNB": gnb, "Lin SVC": lsvc, 'Ord LDA': ordlda, 'Ord RBF SVC': ordrbf_svc, "Ridge Reg": ridgereg}
 
-import itertools
+# import itertools
 
-for L in range( 1, len(model_list)+1 ):
-    for subset in itertools.combinations(model_list, L):
-        temp_dict = {i: model_list[i] for i in subset}
-        testvote( temp_dict )
+# for L in range( 1, len(model_list)+1 ):
+#     for subset in itertools.combinations(model_list, L):
+#         temp_dict = {i: model_list[i] for i in subset}
+#         testvote( temp_dict )
+
+

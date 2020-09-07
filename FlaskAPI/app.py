@@ -47,7 +47,8 @@ def countLetters (token):
 
 @app.route( '/textpred', methods = ['POST'] )
 def textpred():
-    req_text = request.get_json()['input']
+    req_json = request.get_json()
+    req_text = req_json['input']
     feature_list = []
     
     
@@ -169,13 +170,14 @@ def textpred():
         avg_vb_length=cCount/vCount
     feature_list.append(avg_vb_length)
     
-    #manually adding info text
-    
-    feature_list.append(1)
     
     #scaling data and getting model's prediction
     x_in = np.array(feature_list).reshape(1, -1)
     x_in =  StandardScaler().fit_transform( x_in )
+    
+    #add info
+    x_in = np.append(x_in, [req_json['info']])
+    
     # load model
     model = load_models()
     prediction = str(model.predict(x_in)[0])
