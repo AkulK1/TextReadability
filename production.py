@@ -18,8 +18,8 @@ predictors =['syl_per_word', 'ws_per_sents', 'monosyls',  'flesch_score', 'ari_s
 
 # Xu = df[predictors2]
 # yu = df['difficulty']
-
-df[predictors] = StandardScaler().fit_transform( df[predictors] )
+scaler = StandardScaler()
+df[predictors] = scaler.fit_transform( df[predictors] )
 
 predictors.append( 'sci_info' )
 
@@ -90,17 +90,18 @@ temp3/=temp2
 print (temp3)
 print (temp)
 
-import pickle
-pickl = {'model': model_ordinal}
-pickle.dump( pickl, open( 'full_model' + ".p", "wb" ) )
+# import pickle
+# pickl = {'model': model_ordinal, 'scaler': scaler}
+# pickle.dump( pickl, open( 'model_scaler' + ".p", "wb" ) )
 
-file_name = "full_model.p"
-with open(file_name, 'rb') as pickled:
-    data = pickle.load(pickled)
-    model = data['model']
+# file_name = "model_scaler.p"
+# with open(file_name, 'rb') as pickled:
+#     data = pickle.load(pickled)
+#     model = data['model']
 
-print (list(X_test2.iloc[0,:])) ## prints all the predictors in X_test index 0
-print (model.predict(np.array(list(X_test2.iloc[0,:])).reshape(1,-1))[0])
+print (list(X.iloc[0,:])) ## prints all the predictors in X_test index 0
+print (model_ordinal.predict(np.array(list(X.iloc[0,:])).reshape(1,-1))[0])
+
 
 #pickled model works as intended; spits out the same predictions as train test split for the first (0th row) in X_test
 
