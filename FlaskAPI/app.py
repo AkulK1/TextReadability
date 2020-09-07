@@ -2,18 +2,24 @@ from flask import Flask, request
 import json
 import pickle
 import numpy as np
-from sklearn.preprocessing import StandardScaler
 import spacy
 from spacy_syllables import SpacySyllables
 
 app = Flask(__name__)
 
 def load_models():
-    file_name = "models/full_model.p"
+    file_name = "models/model_scaler.p"
     with open(file_name, 'rb') as pickled:
        data = pickle.load(pickled)
        model = data['model']
     return model
+
+def load_scaler():
+    file_name = "models/model_scaler.p"
+    with open(file_name, 'rb') as pickled:
+       data = pickle.load(pickled)
+       sc = data['scaler']
+    return sc
 
 @app.route('/predict', methods=['POST'])
 
@@ -50,8 +56,8 @@ def textpred():
     req_json = request.get_json()
     req_text = req_json['input']
     feature_list = []
-    
-    
+
+
     #calculating features
     #features are ['syl_per_word', 'ws_per_sents', 'monosyls',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear', 'det', 'sconj', 'avg_verb_length']
     nlp = spacy.load("en_core_web_sm")
@@ -61,18 +67,19 @@ def textpred():
     doc = nlp(req_text)
     
     #syl_per_word
-    ws =0
-    syls =0
+    ws=0
+    syls=0
     for token in doc:
         if token._.syllables_count != None:
             ws+=1
             syls+=token._.syllables_count
-    feature_list.append(syls/ws )
+    feature_list.append(syls/ws)
     
     #ws_per_sents    
     sentenceCount = len(list(doc.sents))
-    wordCount = req_text.split()
-    feature_list.append( wordCount/sentenceCount )
+    ws = len(req_text.split())
+    temp=  ws/sentenceCount
+    feature_list.append(temp)
     
     #monosyls
     count_mono  = 0
@@ -83,12 +90,13 @@ def textpred():
             wss+=1
             if syl1 == 1:
                 count_mono+=1
-    feature_list.append( count_mono/wss )
+    temp=count_mono/wss
+    feature_list.append(temp)
     
     #flesch_score
     #df['flesch_score'] = 206.835 - 1.015*df['ws_per_sents'] -84.6*df['syl_per_word']
     fkscore = 206.835 - 1.015*feature_list[1] - 84.6*feature_list[0]
-    feature_list.append( fkscore )
+    feature_list.append(fkscore)
     
     #ari_score
     ltrCount=0
@@ -96,7 +104,7 @@ def textpred():
         for char in word:
             if (isLetter(ord(char))==True):
                 ltrCount+=1
-    avg_wd_len = ltrCount/wordCount
+    avg_wd_len = ltrCount/ws
     feature_list.append( 4.71*avg_wd_len + 0.5*feature_list[1] )
     
     #dale_score
@@ -106,13 +114,11 @@ def textpred():
     for token in doc:
         t1 =  token.lemma_
         t1 = t1.lower()
-        
         if (token._.syllables_count != None) and not ( (token.text.lower() in easy_words) or ( t1.lower() in easy_words)):
             res+=1
-            
-    percent_easy = res/wordCount
-    feature_list.append( 0.1579*percent_easy*100 + 0.0496*feature_list[1] )
-
+    percent_easy = res/ws
+    feature_list.append( 0.1579*percent_easy*100 + 0.0496*feature_list[1])
+    
     #smog
     import math
     
@@ -126,20 +132,24 @@ def textpred():
     polysyls = poly/ws
     smog=3+math.sqrt(polysyls)
     feature_list.append(smog)
-
+    
      
     #'gunning_fog'
     
-    feature_list.append(0.4*(wordCount/sentenceCount+percent_easy))
- 
+    feature_list.append(0.4*(ws/sentenceCount+percent_easy))
+     
     #'cli'
-    cli = 0.0588*100*avg_wd_len-0.296*(sentenceCount/wordCount*100)-15.8
+    cli = 0.0588*100*avg_wd_len-0.296*(sentenceCount/ws*100)-15.8
     feature_list.append(cli)
     
     #'linsear'
-    linsear = (polysyls*300 +(1-polysyls)*100)/(sentenceCount/wordCount*100)
+    linsear = (polysyls*300 +(1-polysyls)*100)/(sentenceCount/ws*100)
+    if (linsear>20):
+        linsear=linsear/2
+    else:
+        linsear=linsear/2-1
     feature_list.append(linsear)
-
+    
     #'det'
     det=0
     for token in doc:
@@ -154,7 +164,7 @@ def textpred():
         if (token.pos_=="SCONJ"):
             sconj+=1;
     sconj=sconj/sentenceCount
-    feature_list.append(det)
+    feature_list.append(sconj)
     
     #'avg_verb_length'
     vCount=0;
@@ -171,9 +181,10 @@ def textpred():
     feature_list.append(avg_vb_length)
     
     
+    
     #scaling data and getting model's prediction
     x_in = np.array(feature_list).reshape(1, -1)
-    x_in =  StandardScaler().fit_transform( x_in )
+    x_in =  load_scaler().transform( x_in )
     
     #add info
     x_in = np.append(x_in, [req_json['info']])

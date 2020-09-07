@@ -1,7 +1,7 @@
 
 
 #input the file name in text_title
-text_title = 'b123_GettysburgAddress.txt'
+text_title = 'b002_LittleBear.txt'
 
 #input 1 for info and 0 for fiction
 number_for_info = 0
@@ -13,7 +13,6 @@ number_for_info = 0
 
 import pickle
 import numpy as np
-from sklearn.preprocessing import StandardScaler
 import spacy
 from spacy_syllables import SpacySyllables
 
@@ -21,11 +20,18 @@ import pandas as pd
 
 
 def load_models():
-    file_name = "models/full_model.p"
+    file_name = "models/model_scaler.p"
     with open(file_name, 'rb') as pickled:
        data = pickle.load(pickled)
        model = data['model']
     return model
+
+def load_scaler():
+    file_name = "models/model_scaler.p"
+    with open(file_name, 'rb') as pickled:
+       data = pickle.load(pickled)
+       sc = data['scaler']
+    return sc
 
 def isLetter (input):
     for x in range (ord('a'), ord('z')+1):
@@ -189,7 +195,7 @@ feature_list.append(avg_vb_length)
 
 #scaling data and getting model's prediction
 x_in = np.array(feature_list).reshape(1, -1)
-#x_in =  StandardScaler().fit_transform( x_in )
+x_in =  load_scaler().transform( x_in )
 
 #add info
 x_in = np.append(x_in, [req_json['info']])
@@ -197,16 +203,20 @@ x_in = np.append(x_in, [req_json['info']])
 # load model
 model = load_models()
 prediction = str(model.predict(x_in)[0])
-
+print( "difficulty:", prediction )
 
 df2 = pd.read_csv( "../cleaned.csv" )
 predictors =['syl_per_word', 'ws_per_sents', 'monosyls',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear', 'det', 'sconj', 'avg_verb_length']
 
 feature_list_actual = (df2.loc[df2['titles']==text_title][predictors]).iloc[0].tolist()
 
+print()
 print( text_title )
 print( "calculated by flask" )
 print( feature_list )
 print()
 print( "actually used to train model")
 print( feature_list_actual )
+print()
+print( "scaled" )
+print( x_in )
