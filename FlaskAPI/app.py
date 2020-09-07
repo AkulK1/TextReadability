@@ -15,8 +15,6 @@ def load_models():
        model = data['model']
     return model
 
-@app.route('/predict', methods=['POST'])
-
 def predict():
     # stub input features
     # parse input features from request
@@ -46,10 +44,10 @@ def countLetters (token):
     return ltrCount
 
 @app.route( '/textpred', methods = ['POST'] )
+
 def textpred():
     req_text = request.get_json()['input']
     feature_list = []
-    
     
     #calculating features
     #features are ['syl_per_word', 'ws_per_sents', 'monosyls',  'flesch_score', 'ari_score', 'dale_score', 'smog','gunning_fog', 'cli', 'linsear', 'det', 'sconj', 'avg_verb_length']
@@ -60,18 +58,18 @@ def textpred():
     doc = nlp(req_text)
     
     #syl_per_word
-    ws =0
-    syls =0
+    ws=0
+    syls=0
     for token in doc:
         if token._.syllables_count != None:
             ws+=1
             syls+=token._.syllables_count
-    feature_list.append(syls/ws )
+    feature_list.append(syls/ws)
     
     #ws_per_sents    
     sentenceCount = len(list(doc.sents))
-    wordCount = req_text.split()
-    feature_list.append( wordCount/sentenceCount )
+    temp=ws/sentenceCount
+    feature_list.append(temp)
     
     #monosyls
     count_mono  = 0
@@ -82,7 +80,8 @@ def textpred():
             wss+=1
             if syl1 == 1:
                 count_mono+=1
-    feature_list.append( count_mono/wss )
+    temp=count_mono/wss
+    feature_list.append(temp)
     
     #flesch_score
     #df['flesch_score'] = 206.835 - 1.015*df['ws_per_sents'] -84.6*df['syl_per_word']
@@ -95,11 +94,11 @@ def textpred():
         for char in word:
             if (isLetter(ord(char))==True):
                 ltrCount+=1
-    avg_wd_len = ltrCount/wordCount
+    avg_wd_len = ltrCount/ws
     feature_list.append( 4.71*avg_wd_len + 0.5*feature_list[1] )
     
     #dale_score
-    ff = open('EasyList.txt', 'r')
+    ff = open('EasyWordList.txt', 'r')
     easy_words = [i.lower() for i in ff.read().split()]
     res = 0
     for token in doc:
@@ -109,7 +108,7 @@ def textpred():
         if (token._.syllables_count != None) and not ( (token.text.lower() in easy_words) or ( t1.lower() in easy_words)):
             res+=1
             
-    percent_easy = res/wordCount
+    percent_easy = res/ws
     feature_list.append( 0.1579*percent_easy*100 + 0.0496*feature_list[1] )
 
     #smog
@@ -129,14 +128,14 @@ def textpred():
      
     #'gunning_fog'
     
-    feature_list.append(0.4*(wordCount/sentenceCount+percent_easy))
+    feature_list.append(0.4*(ws/sentenceCount+percent_easy))
  
     #'cli'
-    cli = 0.0588*100*avg_wd_len-0.296*(sentenceCount/wordCount*100)-15.8
+    cli = 0.0588*100*avg_wd_len-0.296*(sentenceCount/ws*100)-15.8
     feature_list.append(cli)
     
     #'linsear'
-    linsear = (polysyls*300 +(1-polysyls)*100)/(sentenceCount/wordCount*100)
+    linsear = (polysyls*300 +(1-polysyls)*100)/(sentenceCount/ws*100)
     feature_list.append(linsear)
 
     #'det'
@@ -175,7 +174,7 @@ def textpred():
     
     #scaling data and getting model's prediction
     x_in = np.array(feature_list).reshape(1, -1)
-    x_in =  StandardScaler().fit_transform( x_in )
+    
     # load model
     model = load_models()
     prediction = str(model.predict(x_in)[0])
