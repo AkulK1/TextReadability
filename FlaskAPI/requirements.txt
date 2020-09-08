@@ -1,4 +1,5 @@
 blis==0.4.1
+boilerpy3==1.0.2
 catalogue==1.0.0
 certifi==2020.6.20
 chardet==3.0.4
