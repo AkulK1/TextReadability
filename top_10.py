@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-Created on Tue Sep  8 20:49:24 2020
-@author: Bryant_Xia
-"""
-
 from wordfreq import zipf_frequency
 from PyDictionary import PyDictionary
 from wordfreq import tokenize
