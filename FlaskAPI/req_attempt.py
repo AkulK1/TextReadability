@@ -9,7 +9,7 @@ import time
 
 t0 = time.time()
 
-URL = 'http://127.0.0.1:5000/fullpredict'
+URL = "https://ds-text-readability-20.herokuapp.com/fullpredict"
 # https://ds-text-readability-20.herokuapp.com
 articleURL = 'https://www.newyorker.com/books/flash-fiction/keys' 
 headers = {"Content-Type": "application/json"}
