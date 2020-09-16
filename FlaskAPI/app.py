@@ -347,7 +347,7 @@ def urlpred():
     model = load_models()
     prediction = str(model.predict(x_in)[0])
     
-    response = json.dumps({'response': prediction, 'text_scraped': req_text})
+    response = json.dumps({'response': prediction})
     return response, 200
 
 
@@ -546,7 +546,7 @@ def fullpredict():
         else:
             break
     
-    response = json.dumps({'response': prediction, 'text_scraped': req_text, 'diff_words': diff_words })
+    response = json.dumps({'response': prediction, 'diff_words': diff_words })
     return response, 200
     
     
