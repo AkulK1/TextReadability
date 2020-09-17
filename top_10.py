@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from wordfreq import zipf_frequency
-from PyDictionary import PyDictionary
 from wordfreq import tokenize
 import spacy
 
@@ -14,7 +13,6 @@ nlp.add_pipe(syllables, after="tagger")
 
 import pandas as pd
 
-dictionary=PyDictionary()
 
 raw_text = """
 It began as a trickle of coronavirus infections as college students arrived for the fall semester. Soon that trickle became a stream, with campuses reporting dozens, and sometimes hundreds of new cases each day.
@@ -161,13 +159,18 @@ df=df.sort_values('tabulate', ascending=False)
 
 
 index=0
+import json
+with open("FlaskAPI/dictionary_compact.json") as f:
+    webster = json.load(f)
+
 
 for wd in df['words']:
     if (index<10):
-        if( dictionary.meaning( wd, True) != dictionary.meaning( 'and', True ) ):
+        if( wd in webster ):
             print (wd)
-            print (dictionary.meaning(wd))
-            diff_words[wd] = dictionary.meaning(wd)
+            print ( webster[wd] )
+            print()
+            diff_words[wd] = webster[wd]
             index=index+1
     else:
         break

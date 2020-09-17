@@ -4,7 +4,6 @@ import pickle
 import pandas as pd
 import numpy as np
 from wordfreq import zipf_frequency
-from PyDictionary import PyDictionary
 
 import spacy
 from spacy_syllables import SpacySyllables
@@ -347,7 +346,7 @@ def urlpred():
     model = load_models()
     prediction = str(model.predict(x_in)[0])
     
-    response = json.dumps({'response': prediction})
+    response = json.dumps({'response': prediction, 'text_scraped': req_text})
     return response, 200
 
 
@@ -534,19 +533,23 @@ def fullpredict():
     
     
     index=0
-    dictionary=PyDictionary()
-
+    import json
+    with open("dictionary_compact.json") as f:
+        webster = json.load(f)
+    
+    
     for wd in df['words']:
         if (index<10):
-            if( dictionary.meaning( wd, True) != dictionary.meaning( 'and', True ) ):
+            if( wd in webster ):
                 print (wd)
-                print (dictionary.meaning(wd))
-                diff_words[wd] = dictionary.meaning(wd)
+                print ( webster[wd] )
+                print()
+                diff_words[wd] = webster[wd]
                 index=index+1
         else:
             break
     
-    response = json.dumps({'response': prediction, 'diff_words': diff_words })
+    response = json.dumps({'response': prediction,'text_scraped': req_text, 'diff_words': diff_words })
     return response, 200
     
     

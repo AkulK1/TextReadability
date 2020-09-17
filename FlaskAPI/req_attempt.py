@@ -9,17 +9,19 @@ import time
 
 t0 = time.time()
 
-URL = "https://ds-text-readability-20.herokuapp.com/fullpredict"
+URL = "http://127.0.0.1:5000/fullpredict"
 # https://ds-text-readability-20.herokuapp.com
-articleURL = 'https://www.newyorker.com/books/flash-fiction/keys' 
+articleURL = 'https://www.reuters.com/article/us-usa-fed/fed-touts-economic-recovery-vows-to-keep-interest-rates-low-idUSKBN2673L2' 
 headers = {"Content-Type": "application/json"}
-data = {"article_url": articleURL, "info": 0}
+data = {"article_url": articleURL, "info": 1}
 
 r=requests.post(URL, headers = headers, json=data)
 
 
 print( time.time()-t0 )
 print (r.json() )
+
+wordsl = r.json()['diff_words']
 
 
 # URL = 'http://127.0.0.1:5000/textpred'
