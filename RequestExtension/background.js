@@ -4,15 +4,17 @@ chrome.runtime.onMessage.addListener( function (message, sender, sendResponse) {
 		var xhr = new XMLHttpRequest();
 		xhr.open( "POST", "https://ds-text-readability-20.herokuapp.com/fullpredict" );
 		xhr.setRequestHeader('Content-Type', 'application/json');
-		
 		let url = message.curTab.url;
-		
 		console.log (String(url));
+		var category=-1
+		if (message.info)
+			category=1
+		else
+			category=0
+		console.log(category)
 		xhr.send( JSON.stringify({
-			article_url: String(url), info: 0
+			article_url: String(url), info: category
 		}));
-		
-
 		xhr.onreadystatechange = function(){
 			if (this.readyState == 4 && this.status == 200){
 				sendResponse( {res: xhr.responseText } );
