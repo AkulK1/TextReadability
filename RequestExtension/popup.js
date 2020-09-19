@@ -8,18 +8,15 @@ var z = document.createTextNode("Click here if it's an English Language text");
 y.appendChild(z);
 document.body.appendChild(y);
 
-x.onclick = function() {
-    var query = { active: true, currentWindow: true };
-	function callback(tabs) {
-  	var currentTab = tabs[0]; 
-  	chrome.runtime.sendMessage( {clicked: true, curTab: currentTab, info: true}, function( response ){
-	  	document.getElementById( "textdifficulty" ).innerHTML = response.res;
-  		});
-	}
-	chrome.tabs.query(query, callback);
-}	
+x.onclick = function(){
+	getAnswer( true );
+}
 
-y.onclick = function() {
+
+y.onclick = function(){
+	getAnswer( false );
+}
+/*function() {
     var query = { active: true, currentWindow: true };
 	function callback(tabs) {
   	var currentTab = tabs[0]; 
@@ -28,4 +25,30 @@ y.onclick = function() {
   		});
 	}
 	chrome.tabs.query(query, callback);
-}	
+}	*/
+
+
+function getAnswer( isInfo ){
+	var query = { active: true, currentWindow: true };
+	function callback(tabs) {
+		var currentTab = tabs[0]; 
+		chrome.runtime.sendMessage( {clicked: true, curTab: currentTab, info: Boolean(isInfo)}, function( response ){
+			var responseJSON = JSON.parse( response.res );
+			var tdiff = responseJSON.response;
+			document.getElementById( "textdifficulty" ).innerHTML = tdiff;
+			
+			htmlList = document.getElementById( "worddefs" );
+			console.log( responseJSON.diff_words );
+			for( var propt in responseJSON.diff_words ){
+				var cur_li = document.createElement( "li" );
+				var temp_str = propt + ": " + responseJSON.diff_words[propt];
+				cur_li.appendChild(document.createTextNode( temp_str ));
+				
+				htmlList.appendChild( cur_li );
+				
+			}
+			
+  		});
+	}
+	chrome.tabs.query(query, callback);
+}
