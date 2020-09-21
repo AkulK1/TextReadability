@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h1> Brython Trial </h1>
+	<h2 id="hello"></h2>
+	<input name="textfield1" type="text" maxlength="512" id="tx1"/>
+	<span id="output"></span>
+	<!--text field-->
+	<button type="button" id="myBtn" onclick="printText()">Submit</button>
+    <script type ="text/javascript">
+		function printText (){
+			var x=document.getElementById('tx1').value
+			console.log (x);
+			console.log('background running');
+			var xhr = new XMLHttpRequest();
+			xhr.open( "POST", "https://ds-text-readability-20.herokuapp.com/textpred" );
+			xhr.setRequestHeader('Content-Type', 'application/json');
+			xhr.send( JSON.stringify({
+				input: String (x)
+			}));
+			xhr.onreadystatechange = function(){
+				if (this.readyState == 4 && this.status == 200){
+				console.log (xhr.responseText());
+				}
+			}
+		}
+	</script>
+</body>
+</html>
