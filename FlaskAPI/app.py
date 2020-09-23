@@ -4,12 +4,15 @@ import pickle
 import pandas as pd
 import numpy as np
 from wordfreq import zipf_frequency
+from flask_cors import CORS
 
 import spacy
 from spacy_syllables import SpacySyllables
 import boilerpy3
 
 app = Flask(__name__)
+CORS(app)
+
 
 def load_models():
     file_name = "models/model_scaler.p"

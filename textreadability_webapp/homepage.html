@@ -3,12 +3,13 @@
 <head>
 </head>
 <body>
-	<h1> Brython Trial </h1>
+	<h1> Text Trial </h1>
 	<h2 id="hello"></h2>
-	<input name="textfield1" type="text" maxlength="512" id="tx1"/>
-	<span id="output"></span>
+	<input name="textfield1" type="text" maxlength="512" id="tx1"/> </input>
 	<!--text field-->
 	<button type="button" id="myBtn" onclick="printText()">Submit</button>
+	<p id="output"> Output </p>
+	
     <script type ="text/javascript">
 		function printText (){
 			var x=document.getElementById('tx1').value
@@ -18,11 +19,13 @@
 			xhr.open( "POST", "https://ds-text-readability-20.herokuapp.com/textpred" );
 			xhr.setRequestHeader('Content-Type', 'application/json');
 			xhr.send( JSON.stringify({
-				input: String (x)
+				input: String (x),
+				info: 0
 			}));
 			xhr.onreadystatechange = function(){
 				if (this.readyState == 4 && this.status == 200){
-				console.log (xhr.responseText());
+					console.log (xhr.responseText);
+					document.getElementById("output").innerHTML = xhr.responseText;
 				}
 			}
 		}
