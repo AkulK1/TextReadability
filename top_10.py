@@ -115,7 +115,6 @@ Bars, however, seem likely to remain closed in Miami-Dade, the state’s most po
 “The activities there are not conducive to maintaining a six-feet separation,” he said. “I don’t foresee us opening bars and nightclubs here for the foreseeable future — until we get a vaccine.”
 In Puerto Rico, Gov. Wanda Vázquez eased some of the island’s tight restrictions on Thursday, citing a recent drop in cases. Ms. Vázquez lifted a lockdown that had forced people to stay home on Sundays, and reopened beaches to everyone. She also authorized the reopening of gyms, movie theaters and casinos at 25 percent capacity.
 Bars and nightclubs remain closed, and a nightly curfew will remain in effect.
-Reporting was contributed by Aurelien Breeden, Kenneth Chang, Choe Sang-Hun, Emily Cochrane, Abdi Latif Dahir, Marie Fazio, Emma G. Fitzsimmons, Michael Gold, Peter S. Goodman, Sophie Hardach, Sarah Kliff, David Leonhardt, Dan Levin, Patricia Mazzei, Benjamin Mueller, Saw Nang, Richard C. Paddock, Roni Caryn Rabin, Dana Rubinstein, Karan Deep Singh, Megan Specia, Jim Tankersley, Kate Taylor and Noah Weiland.
 """
 
 
