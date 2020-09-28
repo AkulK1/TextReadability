@@ -1,6 +1,6 @@
 # TextReadability
 
-Overview: A ML-based model to assess readibility, trained on data from Common Core. The project also hopes to create a glossary, whereby a list of 10 hardest words will be picked out and printed alongside their dictionary definitions. 
+Overview: A model to assess readibility, trained on data from Common Core. The project also creates a glossary, whereby a list of 10 hardest words will be picked out and printed alongside their dictionary definitions. 
 
 * Text data and reading level classficiation taken from Common Core English Language Arts, Appendix B
 * Cleaned and processed texts for key features
