@@ -18,7 +18,7 @@ By Akul Kesarwani and Anchi (Bryant) Xia, 2020
 # Explorartory Data Analysis and Model Fitting
 
 Below is a heatmap showing the correlation coefificent of all variables involved (calculated / constructed variables + difficulty)
-![](/images/corr.png)
+![Correlation](/images/corr.png)
 
 # Model Performance
 
