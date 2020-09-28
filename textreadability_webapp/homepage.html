@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Radability</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
-<body>
-	<h1> Text Trial </h1>
-	<h2 id="hello"></h2>
-	<input name="textfield1" type="text" maxlength="512" id="tx1"/> </input>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="text-readability">Text Readability</h1>
+<p>Overview: A model to assess readability, trained on data from Common Core. The project also creates a glossary, whereby a list of 10 hardest words will be picked out and printed alongside their dictionary definitions.</p>
+<ul>
+<li>Text data and reading level classification taken from Common Core English Language Arts, Appendix B</li>
+<li>Cleaned and processed texts for key features</li>
+<li>Fitted using an ordinal regression model (mord.LogisticAT: <a href="https://pythonhosted.org/mord/reference.html#mord.LogisticAT">https://pythonhosted.org/mord/reference.html#mord.LogisticAT</a>)</li>
+<li>Sorts words by difficulty (calculated using combined z-scores based on word frequency, length, and syllables per word)</li>
+<li>Prints the definitions of the ten most difficult words</li>
+<li>Pickled and fully productionized, now exists as a web application: <a href="http://www.lexlearntogether.com">www.lexlearntogether.com</a></li>
+</ul>
+<p>By Akul Kesarwani and Anchi (Bryant) Xia, 2020</p>
+<h1 id="readibility-analysis">Readability Analysis</h1>
+	<img class="marginauto" src="pictures/scale.png" alt="scale" style="middle"/>
+	<br>
 	<!--text field-->
+	<input name="textfield1" type="text" maxlength="512" id="tx1"/> </input>
 	<button type="button" id="myBtn" onclick="printText()">Submit</button>
-	<p id="output"> Output </p>
-	
+	<p id = "textdifficulty"> </p>
+	<iframe id="loading" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+	<ul id = "worddefs">  </ul>
     <script type ="text/javascript">
 		function printText (){
+			document.getElementById ('loading').width=300;
+			document.getElementById ('loading').height=300;
+			document.getElementById ('loading').src='https://giphy.com/embed/l3nWhI38IWDofyDrW';
 			var x=document.getElementById('tx1').value
 			console.log (x);
 			console.log('background running');
@@ -24,11 +46,34 @@
 			}));
 			xhr.onreadystatechange = function(){
 				if (this.readyState == 4 && this.status == 200){
+					document.getElementById ('loading').src='';
+					document.getElementById ('loading').width=0;
+					document.getElementById ('loading').height=0;
 					console.log (xhr.responseText);
-					document.getElementById("output").innerHTML = xhr.responseText;
+					var responseJSON = JSON.parse(xhr.responseText);
+					var tdiff = responseJSON.response;
+					document.getElementById( "textdifficulty" ).innerHTML = "Difficulty: "+tdiff;
+					document.getElementById( "worddefs" ).innerHTML = "";
+					htmlList = document.getElementById( "worddefs" );
+					console.log( responseJSON.diff_words );
+					for( var propt in responseJSON.diff_words ){
+						var cur_li = document.createElement( "li" );
+						var temp_str = propt + ": " + responseJSON.diff_words[propt];
+						cur_li.appendChild(document.createTextNode( temp_str ));
+						htmlList.appendChild( cur_li );
+					}
 				}
 			}
 		}
 	</script>
+<h1 id="purpose">Purpose</h1>
+<h1 id="data-used">Data Used</h1>
+<h1 id="exploratory-data-analysis-and-model-fitting">Exploratory Data Analysis and Model Fitting</h1>
+<p>Below is a heatmap showing the correlation coefficient of all variables involved (calculated / constructed variables + difficulty)</p>
+<p><img src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/images/corr.PNG" alt="Correlation"></p>
+<h1 id="model-performance">Model Performance</h1>
+<h1 id="final-product">Final Product</h1>
+</div>
 </body>
+
 </html>
