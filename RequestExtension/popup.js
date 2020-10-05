@@ -31,6 +31,7 @@ y.onclick = function(){
 function getAnswer( isInfo ){
 	var query = { active: true, currentWindow: true };
 	function callback(tabs) {
+		document.getElementById( "textdifficulty" ).innerHTML = "Loading";
 		var currentTab = tabs[0]; 
 		chrome.runtime.sendMessage( {clicked: true, curTab: currentTab, info: Boolean(isInfo)}, function( response ){
 			var responseJSON = JSON.parse( response.res );
@@ -41,9 +42,8 @@ function getAnswer( isInfo ){
 			console.log( responseJSON.diff_words );
 			for( var propt in responseJSON.diff_words ){
 				var cur_li = document.createElement( "li" );
-				var temp_str = propt + ": " + responseJSON.diff_words[propt];
-				cur_li.appendChild(document.createTextNode( temp_str ));
-				
+				var temp_str =  propt.bold()  + ": " + responseJSON.diff_words[propt];
+				cur_li.innerHTML =  temp_str ;
 				htmlList.appendChild( cur_li );
 				
 			}

@@ -58,8 +58,8 @@
 					console.log( responseJSON.diff_words );
 					for( var propt in responseJSON.diff_words ){
 						var cur_li = document.createElement( "li" );
-						var temp_str = propt + ": " + responseJSON.diff_words[propt];
-						cur_li.appendChild(document.createTextNode( temp_str ));
+						var temp_str = propt.bold() + ": " + responseJSON.diff_words[propt];
+						cur_li.innerHTML = temp_str ;
 						htmlList.appendChild( cur_li );
 					}
 				}
