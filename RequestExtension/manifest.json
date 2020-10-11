@@ -3,7 +3,7 @@
 	"name": "Request Test",
 	"version": "0.1",
 	"permissions": [
-   		"tabs",
+   		"activeTab",
 		"storage"
 	],
 	"content_scripts": [

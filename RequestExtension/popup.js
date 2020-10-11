@@ -34,6 +34,7 @@ function getAnswer( isInfo ){
 		document.getElementById( "textdifficulty" ).innerHTML = "Loading";
 		var currentTab = tabs[0]; 
 		chrome.runtime.sendMessage( {clicked: true, curTab: currentTab, info: Boolean(isInfo)}, function( response ){
+			document.body.style.width = "500px";
 			var responseJSON = JSON.parse( response.res );
 			var tdiff = responseJSON.response;
 			document.getElementById( "textdifficulty" ).innerHTML = tdiff;
