@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-<body>
-	<p id = "textdifficulty">  </p>
+<head>
+	<style>
+		/* https://www.bestcssbuttongenerator.com/#/9 */
+		
+		.myButton {
+			box-shadow:inset 0px 1px 0px 0px #cf866c;
+			background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+			background-color:#d0451b;
+			border-radius:3px;
+			border:1px solid #942911;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:Arial;
+			font-size:13px;
+			padding:6px 24px;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #854629;
+		}
+		.myButton:hover {
+			background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+			background-color:#bc3315;
+		}
+		.myButton:active {
+			position:relative;
+			top:1px;
+		}
+		
+		/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader*/
+		.loader {
+		  border: 6px solid #f3f3f3;
+		  border-radius: 50%;
+		  border-top: 6px solid #3498db;
+		  width: 25px;
+		  height: 25px;
+		  -webkit-animation: spin 2s linear infinite; /* Safari */
+		  animation: spin 2s linear infinite;
+		  margin: 0 auto;
+		}
+		/* Safari */
+		@-webkit-keyframes spin {
+		  0% { -webkit-transform: rotate(0deg); }
+		  100% { -webkit-transform: rotate(360deg); }
+		}
 
+		@keyframes spin {
+		  0% { transform: rotate(0deg); }
+		  100% { transform: rotate(360deg); }
+		}
+
+	</style>
+</head>
+
+
+<body>
+	<div id = "loadingScreen"> </div>
+	<p id = "textdifficulty">  </p>
+	
 	<p> </p>
 	<p> </p>
 	<ul id = "worddefs">  </ul>
+	
+	
+	<button class="myButton" id="infoButton"  >Info Text</a>
+	<button class="myButton" id="fictionButton"  >Fiction Text</a>
 	
 	
 	<script src="popup.js"> </script>
