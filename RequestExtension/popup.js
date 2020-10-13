@@ -13,7 +13,7 @@ function getAnswer( isInfo ){
 	var loadScreen  = document.getElementById( "loadingScreen" );
 	loadScreen.className = "loader";
 	var query = { active: true, currentWindow: true };
-	document.body.style.width = "500px";
+	document.body.style.width = "400px";
 	document.getElementById( "textdifficulty" ).innerHTML = "";
 	document.getElementById( "worddefs" ).innerHTML = "";
 	
@@ -64,6 +64,11 @@ function getAnswer( isInfo ){
 					htmlList.appendChild( cur_li );
 				}
 				
+			}
+			if( this.status >= 500 ){
+				loadScreen.className = "";
+				var gradeLevel = "Sorry. URL not compatible. Try copy and pasting text at our <a href ='http://lexlearntogether.com/' target='_blank'> website </a>";
+				document.getElementById( "textdifficulty" ).innerHTML = gradeLevel;
 			}
 			
 		}
