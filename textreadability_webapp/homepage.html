@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Radability</title>
+  <title>Read Fluid</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/AkulK1/TextReadability/master/RequestExtension/favicon-16x16.png">
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
   	<style>
 		/* https://www.bestcssbuttongenerator.com/#/9 */
@@ -56,8 +56,8 @@
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__html"><h1 id="text-readability">Text Readability</h1>
-<p>Overview: A model to assess readability, trained on data from Common Core. The project also creates a glossary, whereby a list of 10 hardest words will be picked out and printed alongside their dictionary definitions.</p>
+  <div class="stackedit__html"><h1 id="text-readability">Read Fluid</h1>
+<p>Overview: <strong>A model to assess readability, trained on data from Common Core.</strong> The project also creates a glossary, whereby a list of 10 hardest words will be picked out and printed alongside their dictionary definitions.</p>
 <ul>
 <li>Text data and reading level classification taken from Common Core English Language Arts, Appendix B</li>
 <li>Cleaned and processed texts for key features</li>
@@ -66,24 +66,76 @@
 <li>Prints the definitions of the ten most difficult words</li>
 <li>Pickled and fully productionized, now exists as a web application: <a href="http://www.lexlearntogether.com">www.lexlearntogether.com</a></li>
 </ul>
-<p>By Akul Kesarwani and Anchi (Bryant) Xia, 2020</p>
+<p><strong>By Akul Kesarwani and Anchi (Bryant) Xia, 2020</strong></p>
 <h1 id="readibility-analysis">Readability Analysis</h1>
 	<img class="marginauto" src="pictures/scale.png" alt="scale" style="middle"/>
 	<br>
+	<p><strong> Paste in your text below to generate a glossary and evaluate for readability </strong></p>
 	<textarea placeholder="Enter your text here..." style="resize: none; overflow: hidden; height: 278px; min-height: 250px; width:700px; font-family: Arial; overflow-wrap: break-word; overflow:scroll;" rows="12" id="tx1"></textarea>
 	<br>
 	<br>
-	<p> Which of the following best describes your text input? Select to receive your analysis.</p> 
+	<p><strong>Which of the following best describes your text input? Select to receive your analysis.</strong></p> 
 	<button class="myButton" id="infoButton" onclick="printText(1)"> Info Text </button>
 	<button class="myButton" id="fictionButton" onclick="printText(0)"> Fiction Text </button>
 	<p id = "ALERT"> </p>
-	<br>
-	<br>
-	<iframe id="loading" frameBorder="0" src='https://giphy.com/embed/lSOsYF2W66t8YPx0Zn' allowFullScreen></iframe>
+	<iframe id="loading" frameBorder="0" allowFullScreen></iframe>
 	<p id = "textdifficulty"> </p>
 	<ul id = "worddefs">  </ul>
-	<button class="myButton" onClick="window.location.reload();">Clear Everything</button>
+	<p><strong> Paste in the url of a webpage you'd like to analyze </strong></p>
+	<input id="urlpred" type="text" id="lname" name="lname" placeholder="Paste in your URL here..."><br><br>
+	<button class="myButton" id="infoButtonURL" onclick="urlPred(1)"> Info Text </button>
+	<button class="myButton" id="fictionButtonURL" onclick="urlPred(0)"> Fiction Text </button><br><br>
+	<p id = "ALERTURL"> </p>
+	<iframe id="loadingURL" frameBorder="0" allowFullScreen></iframe>
+	<p id = "textdifficultyURL"> </p>
+	<ul id = "worddefsURL">  </ul>
+	<button class="myButton" onClick="window.location.reload();" text-align: center>Clear Everything</button>
     <script type ="text/javascript">
+		function urlPred (tp){
+			console.log ('working...');
+			if(document.getElementById("urlpred").value == '')
+			{
+				document.getElementById ('loadingURL').src='';
+				document.getElementById ('loadingURL').width=0;
+				document.getElementById ('loadingURL').height=0;
+				document.getElementById( "ALERTURL" ).innerHTML = "Please enter something first :-) ";
+			}
+			else{
+				document.getElementById( "ALERTURL" ).innerHTML = "";
+				document.getElementById ('loadingURL').src='https://giphy.com/embed/l3nWhI38IWDofyDrW';
+				document.getElementById ('loadingURL').width=300;
+				document.getElementById ('loadingURL').height=300;
+				var x=document.getElementById('urlpred').value
+				var xhr = new XMLHttpRequest();
+				xhr.open( "POST", "https://ds-text-readability-20.herokuapp.com/urlpred" );
+				xhr.setRequestHeader('Content-Type', 'application/json');
+				xhr.send( JSON.stringify({
+					article_url: String (x),
+					info: tp
+				}));
+				xhr.onreadystatechange = function(){
+					if (this.readyState == 4 && this.status == 200){
+						document.getElementById ('loadingURL').src='';
+						document.getElementById ('loadingURL').width=0;
+						document.getElementById ('loadingURL').height=0;
+						console.log (xhr.responseText);
+						var responseJSON = JSON.parse(xhr.responseText);
+						var tdiff = responseJSON.response;
+						document.getElementById( "textdifficultyURL" ).innerHTML = "Difficulty: "+tdiff;
+						document.getElementById( "worddefsURL" ).innerHTML = "";
+						htmlList = document.getElementById( "worddefsURL" );
+						for( var propt in responseJSON.diff_words ){
+							var cur_li = document.createElement( "li" );
+							var temp_str =  propt.bold()  + ": " + responseJSON.diff_words[propt];
+							cur_li.innerHTML =  temp_str ;
+							htmlList.appendChild( cur_li );
+						}
+					}
+				}
+			}
+		}
+	</script>
+	<script type ="text/javascript">
 		function printText (tp){
 			if(document.getElementById("tx1").value == '')
 			{
@@ -127,8 +179,9 @@
 			}
 		}
 	</script>
+
 <h1 id="purpose">Purpose</h1>
-<p>Our intention with the app is to make for a smoother reading experience by helping users understand how complex their text is and provide them with a glossary of some of the most difficult words, printed alongside of their dictionary definitions. </p>
+<p><strong>Our intention with the app is to make for a smoother reading experience by helping users understand how complex their text is and provide them with a glossary of some of the most difficult words, printed alongside of their dictionary definitions. </strong></p>
 <p>There is a considerable number of English Language Learners in our school district (Lexington Public Schools). For english language learners and young readers, building up their reading ability entails engaging with texts of increasing difficulty. Using various linguistic attributes from the text, from syllables per word to the average length of verbs, we can fit these calculated features into a ordinal regression based model that would return a readability level prediction. This will be informative to users who are interested in knowing how challenging the text is before reading.<p>
 <p> By having a glossary, we wish to help users improve their vocabulary without needing to constantly interrupt their reading experience to look up new words. And having familiarized themselves with some of the most difficult words in the text, seeing them again in context could potentially strengthen both the users’ understanding of new vocab and their overall compression of the text. 
 </p>
@@ -142,25 +195,31 @@
 <br>
 <p>We performed some exploratory data analysis after calculating text attributes. The heat map above shows how predictors correlate with assigned text difficulty as well as with each other. The following list is what went into generating the predictions you get:
 <ul>
-	<li>Syllables per word</li>
-	<li>Words per sentence</li>
-	<li>Percentage of monosyllabic words</li>
-	<li>Flesch-Kincaid readability score</li>
-	<li>Ari readability score</li>
-	<li>Dale readability score</li>
-	<li>Gunning-Fog readability score</li>
-	<li>CLI readability score</li>
-	<li>Linsear Write readability score</li>
-	<li># of determiners / sentence </li>
-	<li># Subordinating conjunctions / sentence</li>
-	<li>Average verb length</li>
+	<li><strong> Syllables per word </strong></li>
+	<li><strong>Words per sentence</strong></li>
+	<li><strong>Percentage of monosyllabic words</strong></li>
+	<li><strong>Flesch-Kincaid readability score</strong></li>
+	<li><strong>Ari readability score</strong></li>
+	<li><strong>Dale readability score</strong></li>
+	<li><strong>Gunning-Fog readability score</strong></li>
+	<li><strong>CLI readability score</strong></li>
+	<li><strong>Linsear Write readability score</strong></li>
+	<li><strong># of determiners / sentence</strong></li>
+	<li><strong># Subordinating conjunctions / sentence</strong></li>
+	<li><strong>Average verb length</strong></li>
 
 </ul> 
 </p>
-<p> We tried a number of models, from a simple decision tree regressor to random forest, before settling on an implementation of the ordinal logistic regression model by Mord (https://pythonhosted.org/mord/reference.html#mord.LogisticAT). Since our response variable, text difficulty / readability, is a categorical variable with multiple levels, it is no surprise that their model stood out in our model fitting process. </p>
+<p> We tried a number of models, from a simple decision tree regressor to random forest, before settling on an implementation of the <strong> ordinal logistic regression model by Mord </strong>. Since our response variable, text difficulty / readability, is a categorical variable with multiple levels, it is no surprise that their model stood out in our model fitting process. </p>
 <h1 id="model-performance">Model Performance</h1>
-<p>Our final model had an accuracy of 0.41519, an adjacency of 0.84074 (prediction within +/- 1 of the actual reading level), and a mean absolute error of 0.77037. These measures are averages computed over 50 train-test-split sets with 30% of our data as the test size. </p>
+<p>Our final model had an <strong>accuracy of 0.41519</strong>, an <strong>adjacency of 0.84074</strong> (prediction within +/- 1 of the actual reading level), and a <strong>mean absolute error of 0.77037</strong>. These measures are averages computed over 50 train-test-split sets with 30% of our data as the test size.</p>
+<img class="marginauto" src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/RequestExtension/ReadFluidText.png
+	" alt="scale" style="middle"/>
 </div>
 </body>
 
 </html>
+
+
+
+
