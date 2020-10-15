@@ -40,7 +40,7 @@ function getAnswer( isInfo ){
 				loadScreen.className = "";
 				var responseJSON = JSON.parse( xhr.responseText );
 				var tdiff = responseJSON.response;
-				var gradeLevel = "Sorry. URL not compatible. Try copy and pasting text at our <a href ='http://lexlearntogether.com/'> website </a>";
+				var gradeLevel = "Sorry. URL not compatible. Try copy and pasting text at our <a href ='http://readfluid.com/'> website </a>";
 				if( tdiff == 1 ){
 					gradeLevel = "Kindergarten";
 				} else if( tdiff == 2 ){
