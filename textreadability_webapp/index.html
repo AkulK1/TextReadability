@@ -51,11 +51,50 @@
 		  0% { transform: rotate(0deg); }
 		  100% { transform: rotate(360deg); }
 		}
+		.active {
+		  background-color: #ec4c4c;
+		}
+		li a:hover:not(.active) {
+		  background-color: #111;
+		}
+		.headerbar {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		}
 
+		.hElement {
+		  float: left;
+		  border-right:1px solid #bbb;
+		}
+
+		li:last-child {
+		  border-right: none;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
 	</style>
 </head>
 
 <body class="stackedit">
+	<ul class = "headerbar">
+	  <li class = " active hElement"><a href="#home">Home</a></li>
+	  <li class = "hElement"><a href="#news"> Model </a></li>
+	  <li class = "hElement"><a href="#contact">Contact</a></li>
+	  <li class = "hElement" style="float:right"><a href="#about">
+		<img src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/RequestExtension/ReadFluidText.png" alt="scale" style="width:60%;height:60%;">
+	  </a></li>
+	</ul>
+	
+	
   <div class="stackedit__html"><h1 id="text-readability">Read Fluid</h1>
 <p>Overview: <strong>A model to assess readability, trained on data from Common Core.</strong> The project also creates a glossary, whereby a list of 10 hardest words will be picked out and printed alongside their dictionary definitions.</p>
 <ul>
@@ -213,8 +252,7 @@
 <p> We tried a number of models, from a simple decision tree regressor to random forest, before settling on an implementation of the <strong> ordinal logistic regression model by Mord </strong>. Since our response variable, text difficulty / readability, is a categorical variable with multiple levels, it is no surprise that their model stood out in our model fitting process. </p>
 <h1 id="model-performance">Model Performance</h1>
 <p>Our final model had an <strong>accuracy of 0.41519</strong>, an <strong>adjacency of 0.84074</strong> (prediction within +/- 1 of the actual reading level), and a <strong>mean absolute error of 0.77037</strong>. These measures are averages computed over 50 train-test-split sets with 30% of our data as the test size.</p>
-<img class="marginauto" src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/RequestExtension/ReadFluidText.png
-	" alt="scale" style="middle"/>
+<img class="marginauto" src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/RequestExtension/ReadFluidText.png" alt="scale" style="middle"/>
 </div>
 </body>
 
