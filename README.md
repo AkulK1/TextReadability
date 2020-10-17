@@ -41,8 +41,8 @@ We performed some exploratory data analysis after calculating text attributes. T
 * Gunning-Fog readability score
 * CLI readability score
 * Linsear Write readability score
-* # of determiners / sentence
-* # Subordinating conjunctions / sentence
+* number of determiners / sentence
+* number of Subordinating conjunctions / sentence
 * Average verb length
 
 We tried a number of models, from a simple decision tree regressor to random forest, before settling on an implementation of the ordinal logistic regression model by Mord . Since our response variable, text difficulty / readability, is a categorical variable with multiple levels, it is no surprise that their model stood out in our model fitting process.
