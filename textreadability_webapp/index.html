@@ -81,14 +81,12 @@
 </head>
 
 <body class="stackedit">
+
 	<ul class = "headerbar">
-	  <li class = " active hElement"><a class = "header1" href="#">Home</a></li>
+	  <li class = " active hElement"><a class = "header1" href="#"> Home </a></li>
 	  <li class = "hElement"><a class = "header1" href="model.html"> Model </a></li>
 	  <!--<li class = "hElement"><a class = "header1" href="extension.html">Extension</a></li>-->
-	  <li class = "hElement"><a class = "header1" href="contact.html">Contact</a></li>
-	  <li style="float:right;">
-		<img src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/RequestExtension/ReadFluidText.png" alt="ReadFluid" style="width:91%;height:91%;">
-	  </li>
+	  <li class = "hElement"><a class = "header1" href="contact.html"> Contact </a></li>
 	</ul>
 	
 	
@@ -103,31 +101,38 @@
 <li>Pickled and fully productionized, now exists as a web application: <a href="http://www.lexlearntogether.com">www.lexlearntogether.com</a></li>
 </ul>
 <p><strong>By Akul Kesarwani and Anchi (Bryant) Xia, 2020</strong></p>-->
-<h1 id="readibility-analysis">ReadFluid</h1>
+	<br>
+	<br>
+	<img src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/RequestExtension/ReadFluidText.png" alt="ReadFluid">
+	<br>
+	<p>Hey there! Thanks for visiting readfluid.com :)</p>
+	<p>Paste in any text in the field below (or scroll all the way down to paste in an URL to a webpage you want to be analyzed) to receive an evaluation of its reading difficulty + a glossary of the ten most complex words in your input.</p>
+	<p>For more about the data we used to train the model, the model itself, and other relevant information, click on the “Model” tab on the navigation bar. To view the complete GitHub page of our project, please go to “Contact.” Out app also exists as a chrome extension to make it more accessible.</p>
+	<p>Below is a scale to help you better interpret the numerical predicted scores you'll receive when you submit a text / url.</p>
+	<br>
 	<img class="marginauto" src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/images/scale.png" alt="scale" style="middle"/>
 	<br>
+	<h1 id="textpred">Predict Using Texts</h1>
 	<p><strong> Paste in your text below to generate a glossary and evaluate for readability </strong></p>
 	<textarea placeholder="Enter your text here..." style="resize: none; overflow: hidden; height: 278px; min-height: 250px; width:700px; font-family: Arial; overflow-wrap: break-word; overflow:scroll;" rows="12" id="tx1"></textarea>
 	<br>
 	<br>
 	<p><strong>Which of the following best describes your text input? Select to receive your analysis.</strong></p> 
 	<button class="myButton" id="infoButton" onclick="printText(1)"> Info Text </button>
-	<button class="myButton" id="fictionButton" onclick="printText(0)"> Fiction Text </button>
+	<button class="myButton" id="fictionButton" onclick="printText(0)"> Fiction Text </button><br><br>
+	<iframe id="loading" frameBorder="0" allowFullScreen></iframe>
 	<p id = "ALERT"> </p>
 	<p id = "textdifficulty"> </p>
 	<ul id = "worddefs">  </ul>
-	<iframe id="loading" frameBorder="0" allowFullScreen></iframe>
 	
-	
+	<h1 id="textpred">Predict Using URLs</h1>
 	<p><strong> Paste in the url of a webpage you'd like to analyze </strong></p>
 	<input id="urlpred" type="text" id="lname" name="lname" placeholder="Paste in your URL here..."><br><br>
 	<button class="myButton" id="infoButtonURL" onclick="urlPred(1)"> Info Text </button>
 	<button class="myButton" id="fictionButtonURL" onclick="urlPred(0)"> Fiction Text </button><br><br>
-	<p id = "ALERTURL"> </p>
-	
-	<p id = "textdifficultyURL"> </p>
-	
 	<iframe id="loadingURL" frameBorder="0" allowFullScreen></iframe>
+	<p id = "ALERTURL"> </p>
+	<p id = "textdifficultyURL"> </p>
 	<ul id = "worddefsURL">  </ul>
 	<button class="myButton" onClick="window.location.reload();" text-align: center>Clear Everything</button>
     <script type ="text/javascript">
@@ -162,19 +167,19 @@
 						var responseJSON = JSON.parse(xhr.responseText);
 						var tdiff = responseJSON.response;
 						var gradeLevel = "Sorry. URL not compatible. Try copy and pasting text at our <a href ='http://readfluid.com/'> website </a>";
-				if( tdiff == 1 ){
-					gradeLevel = "Kindergarten";
-				} else if( tdiff == 2 ){
-					gradeLevel = "First to Second Grade";
-				} else if( tdiff == 3 ){
-					gradeLevel = "Third to Fourth Grade";
-				} else if( tdiff == 4 ){
-					gradeLevel = "Fifth to Sixth Grade";
-				} else if( tdiff == 5 ){
-					gradeLevel = "Seventh to Eighth Grade";
-				} else if( tdiff == 6 ){
-						gradeLevel = "High School Level or Above";
-				}
+						if( tdiff == 1 ){
+							gradeLevel = "Difficulty: 1, Kindergarten";
+						} else if( tdiff == 2 ){
+							gradeLevel = "Difficulty: 2, First to Second Grade";
+						} else if( tdiff == 3 ){
+							gradeLevel = "Difficulty: 3, Third to Fourth Grade";
+						} else if( tdiff == 4 ){
+							gradeLevel = "Difficulty: 4, Fifth to Sixth Grade";
+						} else if( tdiff == 5 ){
+							gradeLevel = "Difficulty: 5, Seventh to Eighth Grade";
+						} else if( tdiff == 6 ){
+							gradeLevel = "Difficulty: 6, High School Level or Above";
+						}
 						document.getElementById( "textdifficultyURL" ).innerHTML = "<b> Difficulty: </b>"+gradeLevel;
 						document.getElementById( "worddefsURL" ).innerHTML = "";
 						htmlList = document.getElementById( "worddefsURL" );
@@ -199,6 +204,7 @@
 	</script>
 	<script type ="text/javascript">
 		function printText (tp){
+			console.log ('working.....');
 			if(document.getElementById("tx1").value == '')
 			{
 				document.getElementById ('loading').src='';
@@ -228,19 +234,19 @@
 						var responseJSON = JSON.parse(xhr.responseText);
 						var tdiff = responseJSON.response;
 						var gradeLevel = "Sorry. URL not compatible. Try copy and pasting text at our <a href ='http://readfluid.com/'> website </a>";
-				if( tdiff == 1 ){
-					gradeLevel = "Kindergarten";
-				} else if( tdiff == 2 ){
-					gradeLevel = "First to Second Grade";
-				} else if( tdiff == 3 ){
-					gradeLevel = "Third to Fourth Grade";
-				} else if( tdiff == 4 ){
-					gradeLevel = "Fifth to Sixth Grade";
-				} else if( tdiff == 5 ){
-					gradeLevel = "Seventh to Eighth Grade";
-				} else if( tdiff == 6 ){
-						gradeLevel = "High School Level or Above";
-				}
+						if( tdiff == 1 ){
+							gradeLevel = "Difficulty: 1, Kindergarten";
+						} else if( tdiff == 2 ){
+							gradeLevel = "Difficulty: 2, First to Second Grade";
+						} else if( tdiff == 3 ){
+							gradeLevel = "Difficulty: 3, Third to Fourth Grade";
+						} else if( tdiff == 4 ){
+							gradeLevel = "Difficulty: 4, Fifth to Sixth Grade";
+						} else if( tdiff == 5 ){
+							gradeLevel = "Difficulty: 5, Seventh to Eighth Grade";
+						} else if( tdiff == 6 ){
+							gradeLevel = "Difficulty: 6, High School Level or Above";
+						}
 						document.getElementById( "textdifficulty" ).innerHTML = "<b>Difficulty: </b>"+gradeLevel;
 						document.getElementById( "worddefs" ).innerHTML = "";
 						htmlList = document.getElementById( "worddefs" );
@@ -255,41 +261,6 @@
 			}
 		}
 	</script>
-<!--
-<h1 id="purpose">Purpose</h1>
-<p><strong>Our intention with the app is to make for a smoother reading experience by helping users understand how complex their text is and provide them with a glossary of some of the most difficult words, printed alongside of their dictionary definitions. </strong></p>
-<p>There is a considerable number of English Language Learners in our school district (Lexington Public Schools). For english language learners and young readers, building up their reading ability entails engaging with texts of increasing difficulty. Using various linguistic attributes from the text, from syllables per word to the average length of verbs, we can fit these calculated features into a ordinal regression based model that would return a readability level prediction. This will be informative to users who are interested in knowing how challenging the text is before reading.<p>
-<p> By having a glossary, we wish to help users improve their vocabulary without needing to constantly interrupt their reading experience to look up new words. And having familiarized themselves with some of the most difficult words in the text, seeing them again in context could potentially strengthen both the users’ understanding of new vocab and their overall compression of the text. 
-</p>
-
-<h1 id="data-used">Data Used</h1>
-<p>Texts we used to train the model are from Common Core’s English Language Arts Appendix B. Since text difficulty is our response variable, we wanted to make sure that it cannot simply be calculated from the predictor variables themselves. This meant we could not use, say, the Lexile score as a measurement of readability. <p>
-<p> To address the issue, we turned to Common Core’s Appendix B. Included in the appendix are sample texts sorted by grade level. Though educators who performed the sorting did refer to quantitative data like Lexile scores, their insights and experience undoubtedly played a significant role as well. By training our model with their text classifications, we look to capture patterns underlying their understanding instead of relying on quantitative attributes alone. </p>
-
-<h1 id="exploratory-data-analysis-and-model-fitting">Exploratory Data Analysis and Model Fitting</h1>
-<p><img src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/images/corr.PNG" alt="Correlation"></p>
-<br>
-<p>We performed some exploratory data analysis after calculating text attributes. The heat map above shows how predictors correlate with assigned text difficulty as well as with each other. The following list is what went into generating the predictions you get:
-<ul>
-	<li><strong> Syllables per word </strong></li>
-	<li><strong>Words per sentence</strong></li>
-	<li><strong>Percentage of monosyllabic words</strong></li>
-	<li><strong>Flesch-Kincaid readability score</strong></li>
-	<li><strong>Ari readability score</strong></li>
-	<li><strong>Dale readability score</strong></li>
-	<li><strong>Gunning-Fog readability score</strong></li>
-	<li><strong>CLI readability score</strong></li>
-	<li><strong>Linsear Write readability score</strong></li>
-	<li><strong># of determiners / sentence</strong></li>
-	<li><strong># Subordinating conjunctions / sentence</strong></li>
-	<li><strong>Average verb length</strong></li>
-
-</ul> 
-</p>
-<p> We tried a number of models, from a simple decision tree regressor to random forest, before settling on an implementation of the <strong> ordinal logistic regression model by Mord </strong>. Since our response variable, text difficulty / readability, is a categorical variable with multiple levels, it is no surprise that their model stood out in our model fitting process. </p>
-<h1 id="model-performance">Model Performance</h1>
-<p>Our final model had an <strong>accuracy of 0.41519</strong>, an <strong>adjacency of 0.84074</strong> (prediction within +/- 1 of the actual reading level), and a <strong>mean absolute error of 0.77037</strong>. These measures are averages computed over 50 train-test-split sets with 30% of our data as the test size.</p>
-<img class="marginauto" src="https://raw.githubusercontent.com/AkulK1/TextReadability/master/RequestExtension/ReadFluidText.png" alt="scale" style="middle"/>-->
 </div>
 </body>
 
