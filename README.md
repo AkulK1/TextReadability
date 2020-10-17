@@ -32,18 +32,18 @@ To address the issue, we turned to Common Core’s Appendix B. Included in the a
 
 We performed some exploratory data analysis after calculating text attributes. The heat map above shows how predictors correlate with assigned text difficulty as well as with each other. The following list is what went into generating the predictions you get:
 
-*Syllables per word
-*Words per sentence
-*Percentage of monosyllabic words
-*Flesch-Kincaid readability score
-*Ari readability score
-*Dale readability score
-*Gunning-Fog readability score
-*CLI readability score
-*Linsear Write readability score
-*# of determiners / sentence
-*# Subordinating conjunctions / sentence
-*Average verb length
+* Syllables per word
+* Words per sentence
+* Percentage of monosyllabic words
+* Flesch-Kincaid readability score
+* Ari readability score
+* Dale readability score
+* Gunning-Fog readability score
+* CLI readability score
+* Linsear Write readability score
+* # of determiners / sentence
+* # Subordinating conjunctions / sentence
+* Average verb length
 
 We tried a number of models, from a simple decision tree regressor to random forest, before settling on an implementation of the ordinal logistic regression model by Mord . Since our response variable, text difficulty / readability, is a categorical variable with multiple levels, it is no surprise that their model stood out in our model fitting process.
 
