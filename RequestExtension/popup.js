@@ -40,7 +40,7 @@ function getAnswer( isInfo ){
 				loadScreen.className = "";
 				var responseJSON = JSON.parse( xhr.responseText );
 				var tdiff = responseJSON.response;
-				var gradeLevel = "Sorry. URL not compatible. Try copy and pasting text at our <a href ='http://readfluid.com/'> website </a>";
+				var gradeLevel = "Sorry. URL not compatible. Try copy and pasting text at our <a href ='https://readfluid.com/'> website </a>";
 				if( tdiff == 1 ){
 					gradeLevel = "Kindergarten";
 				} else if( tdiff == 2 ){
@@ -67,7 +67,7 @@ function getAnswer( isInfo ){
 			}
 			if( this.status >= 500 ){
 				loadScreen.className = "";
-				var gradeLevel = "Sorry. URL not compatible. Try copy and pasting text at our <a href ='http://lexlearntogether.com/' target='_blank'> website </a>";
+				var gradeLevel = "Sorry. URL not compatible. Try copy and pasting text at our <a href ='https://lexlearntogether.com/' target='_blank'> website </a>";
 				document.getElementById( "textdifficulty" ).innerHTML = gradeLevel;
 			}
 			
