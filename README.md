@@ -8,7 +8,7 @@ Overview: A model to assess readability, trained on data from Common Core. The p
 * Fitted using an ordinal regression model (mord.LogisticAT: https://pythonhosted.org/mord/reference.html#mord.LogisticAT)
 * Sorts words by difficulty (calculated using combined z-scores based on word frequency, length, and syllables per word)
 * Prints the definitions of the ten most difficult words
-* Pickled and fully productionized, now exists as a web application: www.lexlearntogether.com
+* Pickled and fully productionized, now exists as a web application: https://readfluid.com/
 
 By Akul Kesarwani and Anchi (Bryant) Xia, 2020
 
