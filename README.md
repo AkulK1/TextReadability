@@ -1,5 +1,5 @@
 
-# Text Readability
+# [Text Readability](https://readfluid.com)
 
 Overview: A model to assess readability, trained on data from Common Core. The project also creates a glossary, whereby a list of 10 hardest words will be picked out and printed alongside their dictionary definitions. 
 
