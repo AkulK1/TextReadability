@@ -55,4 +55,4 @@ That said, there are reasons to believe that the productionized model is actuall
 
 # Final Product
 
-https://readfluid.com/model.html
+https://readfluid.com/
